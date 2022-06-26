@@ -1,1 +1,1 @@
-# ElFrikiAmv.github.io
+# elfrikiamv.github.io
