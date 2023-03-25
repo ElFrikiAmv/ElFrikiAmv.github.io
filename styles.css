@@ -1,0 +1,95 @@
+/* Estilos generales */
+
+body {
+    background-color: #1e1e30;
+    color: #b5b5c3;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('path/to/OpenSans-Regular.ttf') format('truetype');
+  }
+  
+  h1 {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  a {
+    color: #b5b5c3;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  
+  /* Barra de navegación */
+  
+  .navbar {
+    background-color: #4e4e67;
+    border: none;
+  }
+  
+  .navbar-brand {
+    color: #b5b5c3;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-brand:hover {
+    color: #fff;
+  }
+  
+  .nav-link {
+    color: #b5b5c3;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+  }
+  
+  /* Sección de bienvenida */
+  
+  .display-4 {
+    color: #fff;
+  }
+  
+  .lead {
+    font-size: 1.2rem;
+  }
+  
+  /* Sección de habilidades */
+  
+  .text-primary {
+    color: #9153c3;
+  }
+  
+  .card {
+    background-color: #4e4e67;
+    border: none;
+    color: #b5b5c3;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Media queries */
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+    }
+  }
+  
+  
