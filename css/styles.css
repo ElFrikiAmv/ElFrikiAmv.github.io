@@ -1,0 +1,210 @@
+/* Navigation Bar */
+
+.navbar {
+  background-color: #222;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  /* Other styles */
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: #6f42c1;
+}
+
+/* Welcome Section */
+
+.welcome-text h1,
+.welcome-text p,
+.btn-primary {
+  font-family: 'Open Sans', sans-serif;
+  /* Other styles */
+}
+
+#welcome-section {
+  position: relative;
+  height: 100vh;
+}
+
+.welcome-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://i.imgur.com/nhX3VEW.jpeg') no-repeat center center/cover;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.welcome-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.welcome-text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-text .btn-primary {
+  font-size: 1.2rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 2rem;
+  background-color: #4c4c4c;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.welcome-text .btn-primary:hover {
+  background-color: #555;
+}
+
+/* Animations */
+
+.welcome-text h1,
+.welcome-text p,
+.welcome-text .btn-primary {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Skills Section */
+
+.skills-section h2,
+.card-title,
+.card-text {
+  font-family: 'Raleway', sans-serif;
+  /* Other styles */
+}
+
+.skills-section {
+  padding: 5rem 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.skills-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #6f42c1;
+}
+
+.card {
+  background-color: #292929;
+  color: #fff;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+/* Footer */
+
+.footer-section p,
+.social-icon i {
+  font-family: 'Lato', sans-serif;
+  /* Other styles */
+}
+
+.footer-section {
+  padding: 3rem 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.footer-section p {
+  margin-bottom: 0;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icon {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #6f42c1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: translateY(-10px);
+  background-color: #6f42c1;
+}
+
+.social-icon i {
+  font-size: 1.5rem;
+}
