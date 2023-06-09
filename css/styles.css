@@ -1,104 +1,25 @@
 :root {
-  --background-color: #1a1319;
+  --backgroundColorDark: #1a1319;
 
   --surface01dp: #121212;
   --surface06dp: #2c2c2c;
   --surface12dp: #313131;
 
-  --white_87: rgba(255, 255, 255, 0.87);
-  --white_60: rgba(255, 255, 255, 0.6);
-  --white_38: rgba(255, 255, 255, 0.38);
+  --white87: rgba(255, 255, 255, 0.87);
+  --white60: rgba(255, 255, 255, 0.6);
+  --white38: rgba(255, 255, 255, 0.38);
 }
 
 /* Set background color of the whole page */
+
 body {
-  background-color: var(--background-color);
-}
-
-/* Navigation Bar */
-
-.navbar {
-  background-color: var(--background-color);
-  border: none;
+  background-color: var(--backgroundColorDark);
   font-family: "Montserrat", sans-serif;
-  /* Other styles */
 }
-
-.navbar-collapse {
-  justify-content: flex-end;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--white_87);
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--white_60);
-  padding: 0 1rem;
-  transition: color 0.3s ease;
-}
-
-/* Welcome Section */
-
-.welcome-text h1,
-.welcome-text p,
-.btn-primary {
-  font-family: "Open Sans", sans-serif;
-  /* Other styles */
-}
-
-.welcome-section {
-  position: relative;
-  height: 100vh;
-}
-
-/* .welcome-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-} */
-
-.welcome-text img {
-  margin-top: 9%;
-}
-
-.welcome-text h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: var(--white_87);
-}
-
-.welcome-text p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: var(--white_60);
-  margin-top: 2%;
-}
-
-.welcome-text .btn-primary {
-  font-size: 1.2rem;
-  padding: 0.75rem 2.5rem;
-  border-radius: 2rem;
-  background-color: var(--surface06dp);
-  border: none;
-  transition: background-color 0.3s ease;
-  color: var(--white_87);
-}
-
-.welcome-text .btn-primary:hover {
-  background-color: var(--surface01dp);
-}
+/* Set background color of the whole page */
 
 /* Animations */
 
-.welcome-text h1,
 .welcome-text p,
 .welcome-text img,
 .welcome-text .btn-primary {
@@ -109,7 +30,6 @@ body {
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
-
 @keyframes slide-up {
   from {
     opacity: 0;
@@ -121,93 +41,138 @@ body {
     transform: translateY(0);
   }
 }
-/* About me Section */
-.about-me-text p {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  font-family: "Raleway", sans-serif;
-  color: var(--white_87);
-}
-.col-about-section-line {
-  border-top: 1px solid var(--white_60);
-  margin-top: 3rem;
-}
-.col-about-section-line p {
-  font-size: 3rem;
-  font-family: "Raleway", sans-serif;
-  color: var(--white_87);
-  padding: 2rem;
-}
-.about-me-text .card {
-  padding: 2rem;
-  
-}
-/* Skills Section */
+/* Animations */
 
-.skills-section {
-  border-top: 1px solid var(--white_60);
-  padding: 5rem 0;
-}
+/* card */
 
-.skills-section img {
+.card img {
   height: 82px;
-  margin-top: 2rem;
-}
-
-.skills-section h2,
-.card-title,
-.card-text {
-  font-family: "Raleway", sans-serif;
-  /* Other styles */
-}
-
-.skills-section h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-  color: var(--white_87);
 }
 
 .card {
   background-color: var(--surface01dp);
-  color: var(--white_87);
-  margin-bottom: 0rem;
-  border: none;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
+  padding: 1rem;
 }
-
 .card:hover {
   transform: translateY(-10px);
 }
-
 .card-body {
-  padding: 1.5rem;
+  padding: 0rem;
 }
-
 .card-title {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin: 9px;
+  color: var(--white87);
 }
-
 .card-text {
   font-size: 1.2rem;
   line-height: 1.5rem;
+  color: var(--white87);
 }
 
-.container-academic-line {
+#cardGlass .card  {
+  background-color: var(--background-color);
+  margin-bottom: 0rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+/* card */
+
+/* Navigation Bar */
+.navbar {
+  background-color: var(--backgroundColorDark);
+  border: none;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white87);
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white60);
+  padding: 0 1rem;
+  transition: color 0.3s ease;
+}
+/* Navigation Bar */
+
+/* Welcome Section */
+
+.welcome-section {
+  position: relative;
+  height: 100vh;
+}
+.welcome-text img {
+  margin-top: 9%;
+}
+.welcome-text p {
+  font-size: 1.5rem;
+  margin-top: 2%;
+  margin-bottom: 2rem;
+  color: var(--white87);
+  
+}
+.welcome-text .btn-primary {
+  font-size: 1.2rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  color: var(--surface01dp);
+  background-color: var(--white87);
+  transition: background-color 0.3s ease;
+}
+.welcome-text .btn-primary:hover {
+  color: var(--white87);
+  background-color: var(--surface01dp);
+}
+/* Welcome Section */
+
+/* About me Section */
+
+.simpleTitle {
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  color: var(--white87);
+  margin: 3rem;
+}
+.simpleLine {
+  border-top: 1px solid var(--white60);
   margin-top: 3rem;
 }
+.simpleText {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: var(--white87);
+  margin: 3rem;
+}
+.btn-light {
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  color: var(--surface01dp);
+  background-color: var(--white87);
+  transition: background-color 0.3s ease;
+}
+.btn-light:hover {
+  color: var(--white87);
+  background-color: var(--surface01dp);
+}
+/* About me Section */ 
 
 /* Timeline */
-.main-timeline {
-  font-family: "Raleway", sans-serif;
-}
-.col-academy-card .card {
-  padding: 2rem;
-  transition: all 0.3s ease-in-out;
+
+.container-academic-line img {
+  height: 122px;
 }
 .main-timeline:after {
   content: "";
@@ -216,14 +181,14 @@ body {
 }
 .main-timeline .timeline {
   width: calc(50% + 58px);
-  border-top: 2px solid var(--white_60);
+  border-top: 2px solid var(--white60);
   float: left;
   position: relative;
   z-index: 1;
 }
 .main-timeline .timeline:before {
   content: "";
-  background: var(--white_60);
+  background: var(--white60);
   width: 10px;
   height: 10px;
   border-radius: 50px;
@@ -232,7 +197,7 @@ body {
   right: 0;
 }
 .main-timeline .timeline-content {
-  color: var(--white_87);
+  color: var(--white87);
   text-align: center;
   padding: 15px 80px 15px 10px;
   display: block;
@@ -240,7 +205,7 @@ body {
 }
 .main-timeline p {
   font-size: 1.5rem;
-  color: var(--white_87);
+  color: var(--white87);
   padding-top: 1rem;
 }
 .main-timeline .timeline-content:hover {
@@ -248,7 +213,7 @@ body {
 }
 .main-timeline .timeline-content:before {
   content: "";
-  background: var(--white_60);
+  background: var(--white60);
   width: 15px;
   height: 100%;
   position: absolute;
@@ -295,7 +260,7 @@ body {
   left: -15px;
 }
 .main-timeline .timeline:nth-child(4n + 2) .timeline-content:before {
-  background: var(--white_60);
+  background: var(--white60);
 }
 @media screen and (max-width: 767px) {
   .main-timeline .timeline {
@@ -306,104 +271,11 @@ body {
 
 /* Portfolio Section */
 
-.col-projects-list .card {
-  padding-bottom: 2rem;
-  background-color: var(--background-color);
-  color: var(--white_87);
-  margin-bottom: 0rem;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
-}
-
-.container-list-projets {
-  margin-bottom: 2rem;
-}
-
-.col-projects-list img {
-  height: 82px;
-}
-
-.col-projects-section {
-  padding-bottom: 2rem;
-}
-
-.col-projects-section img {
-  height: 82px;
-  margin-top: 5rem;
-}
-
-.projects-section {
-  border-top: 1px solid var(--white_60);
-  padding: 5rem 0;
-}
-
-.col-projects-section-other {
-  border-top: 1px solid var(--white_60);
-}
-
-.col-projects-section-line {
-  border-top: 1px solid var(--white_60);
-}
-
-.col-projects-section-line p {
-  font-size: 3rem;
-  font-family: "Raleway", sans-serif;
-  color: var(--white_87);
-  padding: 2rem;
-}
-
-.col-projects-section-other p {
-  font-size: 1.5rem;
-  font-family: "Raleway", sans-serif;
-  color: var(--white_87);
-  padding-top: 2rem;
-}
-
-.projects-section h2,
-.card-title,
-.card-text {
-  font-family: "Raleway", sans-serif;
-  /* Other styles */
-}
-
-.projects-section h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-  color: var(--white_87);
-}
+/* Portfolio Section */
 
 /* contact Section */
-.contact-section {
-  border-top: 1px solid var(--white_60);
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-}
 
-.col-contact-section img {
-  height: 82px;
-  margin-top: 2rem;
-}
-
-.contact-section h2,
-.card-title,
-.card-text {
-  font-family: "Raleway", sans-serif;
-  /* Other styles */
-}
-
-.contact-section h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-  color: var(--white_87);
-}
-
-.col-contact-section {
-  padding-bottom: 2rem;
-}
+/* contact Section */
 
 /* Footer */
 
@@ -412,17 +284,14 @@ body {
   font-family: "Lato", sans-serif;
   /* Other styles */
 }
-
 .footer-section {
   padding: 3rem 0;
   background-color: var(--surface01dp);
-  color: var(--white_87);
+  color: var(--white87);
 }
-
 .footer-section p {
   margin-bottom: 0;
 }
-
 .social-icons {
   list-style: none;
   display: flex;
@@ -431,14 +300,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .social-icon img {
   height: 40px;
   width: 40px;
   margin: 0 10px;
   transition: transform 0.3s ease-in-out;
 }
-
 .social-icon {
   background-color: transparent;
   border-radius: 50%;
@@ -450,11 +317,10 @@ body {
   margin: 0 10px;
   transition: transform 0.3s ease-in-out;
 }
-
 .social-icon:hover {
   transform: translateY(-10px);
 }
-
 .social-icon i {
   font-size: 1.5rem;
 }
+/* Footer */
