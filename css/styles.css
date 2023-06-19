@@ -1,5 +1,8 @@
 :root {
   --backgroundColorDark: #1a1319;
+  --backgroundColorLight: #ffffff;
+  --backgroundColorDarkTranslucid: #1a1319ee;
+  --backgroundColorLightTranslucid: #ffffffee;
 
   --surface01dp: #121212;
   --surface06dp: #2c2c2c;
@@ -9,11 +12,118 @@
   --white60: rgba(255, 255, 255, 0.6);
   --white38: rgba(255, 255, 255, 0.38);
 }
+/* dark theme  */
+
+body.dark-theme {
+  background-color: var(--backgroundColorDark);
+}
+/* dark theme  */
+
+/* light theme  */
+
+body.light-theme {
+  background-color: var(--backgroundColorLight);
+}
+
+body.light-theme .card {
+  background-color: var(--white87);
+}
+body.light-theme .card-title {
+
+  color: var(--surface01dp);
+}
+body.light-theme .card-text {
+
+  color: var(--surface01dp);
+}
+
+body.light-theme .simpleTitle {
+  color: var(--surface01dp);
+}
+body.light-theme .simpleLine {
+  border-top: 1px solid var(--surface06dp);
+}
+body.light-theme .simpleText {
+  color: var(--surface01dp);
+}
+body.light-theme .btn-light {
+  color: var(--white87);
+  background-color: var(--surface06dp);
+  transition: background-color 0.3s ease;
+}
+body.light-theme .btn-light:hover {
+  color: var(--surface06dp);
+  background-color: var(--white87);
+}
+
+/* Timeline */
+
+body.light-theme .main-timeline .timeline {
+  border-top: 2px solid var(--surface06dp);
+}
+body.light-theme .main-timeline .timeline:before {
+  background: var(--surface06dp);
+}
+body.light-theme .main-timeline .timeline-content {
+  color: var(--surface01dp);
+}
+body.light-theme .main-timeline p {
+  color: var(--surface01dp);
+}
+
+body.light-theme .main-timeline .timeline-content:before {
+  background: var(--surface06dp);
+}
+body.light-theme .main-timeline .timeline:nth-child(4n + 2) .timeline-content:before {
+  background: var(--surface06dp);
+}
+/* timeline */
+
+/* Navigation Bar */
+
+body.light-theme .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--surface01dp);
+}
+body.light-theme .nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--surface06dp);
+  padding: 0 1rem;
+  transition: color 0.3s ease;
+}
+/* Navigation Bar */
+
+/* Welcome Section */
+
+body.light-theme .welcome-text p {
+  font-size: 1.5rem;
+  margin-top: 2%;
+  margin-bottom: 2rem;
+  color: var(--surface01dp);
+  
+}
+body.light-theme .welcome-text .btn-primary {
+  font-size: 1.2rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  color: var(--white87);
+  background-color: var(--surface01dp);
+  transition: background-color 0.3s ease;
+}
+body.light-theme .welcome-text .btn-primary:hover {
+  color: var(--surface01dp);
+  background-color: var(--white87);
+}
+/* Welcome Section */
+/* light theme  */
 
 /* Set background color of the whole page */
 
 body {
-  background-color: var(--backgroundColorDark);
+  
   font-family: "Montserrat", sans-serif;
 }
 /* Set background color of the whole page */
@@ -42,6 +152,63 @@ body {
   }
 }
 /* Animations */
+
+/* fload button language-switche*/
+.language-switcher {
+  position: fixed;
+  bottom: 77%;
+  right: 0px;
+  z-index: 9999;
+}
+#language-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0rem;
+}
+#language-icon {
+  width: 45px;
+}
+/* fload button language-switche*/
+
+/* fload button theme-switche*/
+.theme-switcher {
+  position: fixed;
+  bottom: 70%;
+  right: 0px;
+  z-index: 9999;
+}
+#theme-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0rem;
+}
+#theme-icon {
+  width: 40px;
+}
+/* fload button theme-switche*/
+
+/* fload button up-button*/
+.up-button {
+  position: fixed;
+  bottom: 5%;
+  right: 0px;
+  z-index: 9999;
+}
+#up-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0rem;
+}
+#up-icon {
+  width: 40px;
+}
+/* fload button language-switche*/
 
 /* card */
 
@@ -86,7 +253,7 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  background-color: var(--backgroundColorDark);
+  background-color: transparent;
   border: none;
 }
 .navbar-collapse {
@@ -113,11 +280,10 @@ body {
   height: 100vh;
 }
 .welcome-text img {
-  margin-top: 9%;
+  margin-top: 13%;
 }
 .welcome-text p {
   font-size: 1.5rem;
-  margin-top: 2%;
   margin-bottom: 2rem;
   color: var(--white87);
   

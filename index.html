@@ -1,6 +1,6 @@
 <!-- Portafolio de Desarrollador Android -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -22,13 +22,37 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
+<!-- language switcher -->
+<div class="language-switcher">
+  <button id="language-button" class="language-button" onclick="toggleLanguage()">
+    <img id="language-icon" src="https://donfriki.000webhostapp.com/img/flag-mx.png">
+  </button>
+</div>
+<!-- language switcher -->
+
+<!-- theme switcher -->
+<div class="theme-switcher">
+  <button id="theme-button" class="theme-button" onclick="toggleTheme()">
+    <img id="theme-icon" src="https://donfriki.000webhostapp.com/img/light-mode.png">
+  </button>
+</div>
+<!-- theme switcher -->
+
+<!-- up button-->
+<div class="up-button">
+  <button id="up-button" class="up-button" onclick="toggleUp()">
+    <img id="up-icon" src="https://donfriki.000webhostapp.com/img/up-arrow.png">
+  </button>
+</div>
+<!-- up button -->
+
+<body class="dark-theme">
   <!-- navigation bar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="https://donfriki.000webhostapp.com/img/elfrikiamv-logo.ico" alt="Bootstrap" width="60" height="60">
+          <img src="https://donfriki.000webhostapp.com/img/elfrikiamv-logo.ico" alt="Bootstrap" height="40">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,16 +61,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#home-section">Home</a>
+              <a class="nav-link" href="#home-section" id="homeTextNav">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about-section">About</a>
+              <a class="nav-link" href="#about-section" id="aboutTextNav">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio-section">Portfolio</a>
+              <a class="nav-link" href="#portfolio-section" id="portfolioTextNav">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact-section">Contact</a>
+              <a class="nav-link" href="#contact-section" id="contactTextNav">Contact</a>
             </li>
           </ul>
         </div>
@@ -61,12 +85,12 @@
         <div class="container text-center">
           <div class="row">
             <div class="col">
-              <img src="https://donfriki.000webhostapp.com/img/elfrikiamv-V-sBG.png" class="img-fluid" alt="">
-              <p>
+              <img id="logo-icon" src="https://donfriki.000webhostapp.com/img/elfrikiamv-V-sBG.png" class="img-fluid" alt="">
+              <p id="WelcomeText">
                 I'm an Android programmer. I specialize in creating high-quality, user-friendly Android applications
                 that meet the needs of my clients.
               </p>
-              <a href="#contact-section" class="btn btn-primary">Contact me</a>
+              <a href="#contact-section" class="btn btn-primary" id="contactButtonText">Contact me</a>
             </div>
           </div>
         </div>
@@ -77,16 +101,16 @@
     <div class="simpleLine"></div>
     <section class="about-section" id="about-section">
       <div class="container text-center">
-        <p class="simpleTitle">About me.</p>
+        <p class="simpleTitle" id="AboutMeText">About me.</p>
         <div class="container text-center">
           <div class="row row-cols-1">
             <div class="col">
               <div class="card">
                 <div class="card-body">
-                  <p class="card-text">
+                  <p class="card-text" id="AboutMeText01">
                     Hello! I'm elfrikiamv, a Mexican Android developer with a passion for technology.
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" id="AboutMeText02">
                     In addition to my love for programming, I have several interests that keep me balanced. One of them
                     is my love
                     for pizza; it's hard to resist a good slice of melted cheese. I also find great peace and a sense of
@@ -94,7 +118,7 @@
                     rejuvenating
                     escape from everyday life.
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" id="AboutMeText03">
                     The name "elfrikiamv" initially emerged as my nickname in the gaming world, but it has since
                     transformed into
                     my personal brand. I identify with that name and use it in my projects and online presence.
@@ -108,7 +132,7 @@
 
       <div class="container text-center">
         <div class="simpleLine"></div>
-        <p class="simpleTitle">My skills</p>
+        <p class="simpleTitle" id="mySkillsText">My skills</p>
         <div class="container text-center">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
             <div class="col">
@@ -117,7 +141,7 @@
                   alt="Kotlin Logo" />
                 <div class="card-body">
                   <p class="card-title">Kotlin</p>
-                  <p class="card-text">Primary programming language used in Android application development.
+                  <p class="card-text" id="cardKotlinText">Primary programming language used in Android application development.
                   </p>
                 </div>
               </div>
@@ -128,7 +152,7 @@
                   alt="Java Logo" />
                 <div class="card-body">
                   <p class="card-title">Java</p>
-                  <p class="card-text">Programming language used in Android application development.
+                  <p class="card-text" id="cardJavaText">Programming language used in Android application development.
                   </p>
                 </div>
               </div>
@@ -139,7 +163,7 @@
                   alt="Android Studio Logo" />
                 <div class="card-body">
                   <p class="card-title">Android Studio</p>
-                  <p class="card-text">Official IDE (Integrated Development Environment) for Android, providing a
+                  <p class="card-text" id="cardASText">Official IDE (Integrated Development Environment) for Android, providing a
                     platform
                     for application development and debugging.
                   </p>
@@ -152,7 +176,7 @@
                   alt="XML Logo" />
                 <div class="card-body">
                   <p class="card-title">XML</p>
-                  <p class="card-text">Markup language used to design the user interface of Android applications.
+                  <p class="card-text" id="cardXMLText">Markup language used to design the user interface of Android applications.
                   </p>
                 </div>
               </div>
@@ -163,7 +187,7 @@
                   alt="Android Architecture Logo" />
                 <div class="card-body">
                   <p class="card-title">Android Architecture</p>
-                  <p class="card-text">Recommended patterns and practices for designing Android applications.
+                  <p class="card-text" id="cardAAText">Recommended patterns and practices for designing Android applications.
                   </p>
                 </div>
               </div>
@@ -174,7 +198,7 @@
                   alt="Design Patterns" />
                 <div class="card-body">
                   <p class="card-title">Design Patterns</p>
-                  <p class="card-text">Proven solutions for common problems in software development.
+                  <p class="card-text" id="cardDPText">Proven solutions for common problems in software development.
                   </p>
                 </div>
               </div>
@@ -185,7 +209,7 @@
                   alt="Android API Logo" />
                 <div class="card-body">
                   <p class="card-title">Android API</p>
-                  <p class="card-text">Application programming interface that allows developers to access functions of
+                  <p class="card-text" id="cardAPIText">Application programming interface that allows developers to access functions of
                     the
                     operating system.
                   </p>
@@ -198,7 +222,7 @@
                   alt="Firebase Logo" />
                 <div class="card-body">
                   <p class="card-title">Firebase</p>
-                  <p class="card-text">Google's mobile application development platform that provides tools and services
+                  <p class="card-text" id="cardFirebaseText">Google's mobile application development platform that provides tools and services
                     for developing and enhancing applications.
                   </p>
                 </div>
@@ -210,7 +234,7 @@
                   alt="Git Logo" />
                 <div class="card-body">
                   <p class="card-title">Git</p>
-                  <p class="card-text">Version control system used to manage the source code of applications and
+                  <p class="card-text" id="cardGitText">Version control system used to manage the source code of applications and
                     maintain
                     a record of versions.
                   </p>
@@ -223,7 +247,7 @@
                   alt="Google Play publishing Logo" />
                 <div class="card-body">
                   <p class="card-title">Google Play publishing</p>
-                  <p class="card-text">Registration process and technical and content requirements necessary to publish
+                  <p class="card-text" id="cardGPText">Registration process and technical and content requirements necessary to publish
                     an
                     application on the official Android app store.
                   </p>
@@ -235,9 +259,31 @@
 
         <div class="container text-center" id="cardGlass">
           <div class="simpleLine"></div>
-          <p class="simpleTitle">Academic training</p>
+          <p class="simpleTitle" id="academicTrainingText">Academic training</p>
           <div class="container-academic-line text-center">
             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 g-5">
+              <div class="col">
+                <div class="card" data-aos="fade-up">
+                  <div class="card-body">
+                    <div class="main-timeline">
+                      <div class="timeline0">
+                      </div>
+                      <div class="timeline">
+                        <div class="timeline-content">
+                          <div class="timeline-year">2023</div>
+                          <img src="https://donfriki.000webhostapp.com/img/platzi-logo.png"
+                            class="rounded mx-auto d-block" alt="...">
+                          <p class="title" id="academicPlatziText">Android Application Development</p>
+                          <p class="description" id="academicPlatziText01">
+                            Completed the "Android Application Development Learning Path" certification from Platzi.com.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="col">
                 <div class="card" data-aos="fade-up">
                   <div class="card-body">
@@ -247,8 +293,8 @@
                           <div class="timeline-year">2021</div>
                           <img src="https://donfriki.000webhostapp.com/img/utc-logo.png" class="rounded mx-auto d-block"
                             alt="...">
-                          <p class="title">Computer Systems Engineering</p>
-                          <p class="description">
+                          <p class="title" id="cSEText">Computer Systems Engineering</p>
+                          <p class="description" id="cSEText01">
                             Graduated with a Bachelor's degree in Computer Systems Engineering from the University of
                             Three
                             Cultures (UTC), México.
@@ -260,8 +306,8 @@
                           <div class="timeline-year">2018</div>
                           <img src="https://donfriki.000webhostapp.com/img/dgeti-logo.png"
                             class="rounded mx-auto d-block" alt="...">
-                          <p class="title">Programming Technician</p>
-                          <p class="description">
+                          <p class="title" id="pTText">Programming Technician</p>
+                          <p class="description" id="pTText01">
                             Graduated as a Programming Technician from the Center for Technological and Industrial
                             Services
                             Studies (CETIS), México.
@@ -272,6 +318,9 @@
                   </div>
                 </div>
               </div>
+
+              
+
             </div>
           </div>
         </div>
@@ -283,26 +332,26 @@
     <div class="simpleLine"></div>
     <section class="portfolio-section" id="portfolio-section">
       <div class="container text-center">
-        <p class="simpleTitle">My portfolio.</p>
+        <p class="simpleTitle" id="myPortfolioText">My portfolio.</p>
         <div class="container text-center">
           <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 g-5">
             <div class="col">
               <div class="card">
                 <div class="card-body">
-                  <p class="card-text">
+                  <p class="card-text" id="myPortfolioText01">
                     My web portfolio is a showcase of my experience and skills in developing mobile apps among other
                     platforms. It includes a variety of standout projects, such as a mobile application for
                     managing
                     and backing up files to the cloud, a Minecraft launcher project with mod installation, and a website
                     for sending shopping lists via WhatsApp.
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" id="myPortfolioText02">
                     By utilizing technologies like Kotlin, Java, Visual Basic .NET, HTML, JS, CSS, and JSON, I
                     demonstrate my ability to adapt to different programming languages and technologies. Additionally, I
                     have worked with various architectures such as MVC, MVP, and MVVM, showcasing my knowledge in
                     creating well-structured and scalable software.
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" id="myPortfolioText03">
                     My portfolio also highlights my focus on user experience, showcasing attractive and user-friendly
                     interfaces in my projects.
                   </p>
@@ -315,7 +364,7 @@
 
       <div class="container text-center" id="cardGlass">
         <div class="simpleLine"></div>
-        <p class="simpleTitle">My projects</p>
+        <p class="simpleTitle" id="myProjects">My projects</p>
         <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 g-5">
           <div class="col">
             <div class="card h-100" data-aos="fade-up">
@@ -323,10 +372,10 @@
                 alt="Google Play publishing Logo" />
               <div class="card-body">
                 <p class="card-title">Android</p>
-                <p class="card-text">
+                <p class="card-text" id="myProjects01">
                   Development for Android mobile
                 </p>
-                <a href="#android-projects" class="btn btn-light">Go</a>
+                <a href="#android-projects" class="btn btn-light" id="btnGo">Go</a>
               </div>
             </div>
           </div>
@@ -340,10 +389,10 @@
                 alt="Google Play publishing Logo" />
               <div class="card-body">
                 <p class="card-title">Windows</p>
-                <p class="card-text">
+                <p class="card-text" id="myProjects02">
                   Development for Windows 10/11
                 </p>
-                <a href="#windows-projects" class="btn btn-light">Go</a>
+                <a href="#windows-projects" class="btn btn-light" id="btnGo01">Go</a>
               </div>
             </div>
           </div>
@@ -353,10 +402,10 @@
                 alt="Google Play publishing Logo" />
               <div class="card-body">
                 <p class="card-title">Website</p>
-                <p class="card-text">
+                <p class="card-text" id="myProjects03">
                   Development for web pages
                 </p>
-                <a href="#web-projects" class="btn btn-light">Go</a>
+                <a href="#web-projects" class="btn btn-light" id="btnGo02">Go</a>
               </div>
             </div>
           </div>
@@ -373,19 +422,19 @@
                 alt="Google Play publishing Logo" />
               <div class="card-body">
                 <p class="card-title">Student_folder</p>
-                <p class="card-text">
+                <p class="card-text" id="androidProjectsSF">
                   This is a mobile application for Android 10 devices that allows students to manage and backup
                   files to the cloud.
                 </p>
-                <p class="card-text">
+                <p class="card-text" id="androidProjectsSF01">
                   It was built with Kotlin, Java, and the Google Drive API. It features an attractive user interface
                   in both dark and light mode.
                 </p>
-                <p class="card-text">
+                <p class="card-text" id="androidProjectsSF02">
                   The application is practical and secure, providing an efficient solution for students' file
                   management needs.
                 </p>
-                <a href="#" class="btn btn-light">More information</a>
+                <a href="#" class="btn btn-light" id="btnMoreInfo">More information</a>
               </div>
             </div>
           </div>
@@ -395,15 +444,15 @@
                 alt="Google Play publishing Logo" />
               <div class="card-body">
                 <p class="card-title">Super_coupons</p>
-                <p class="card-text">
+                <p class="card-text" id="androidProjectsSC">
                   "Super_coupons" is an Android 10 mobile application that allows users to view coupons from the
                   website "https://linkmydeals.com/" using ApiService Retrofit.
                 </p>
-                <p class="card-text">
+                <p class="card-text" id="androidProjectsSC01">
                   The project was built using Kotlin and utilizes the MVC, MVP, and MVVM architectures. The user
                   interface is attractive and easy to use.
                 </p>
-                <a href="#" class="btn btn-light">More information</a>
+                <a href="#" class="btn btn-light" id="btnMoreInfo01">More information</a>
               </div>
             </div>
           </div>
@@ -413,16 +462,16 @@
                 alt="Google Play publishing Logo" />
               <div class="card-body">
                 <p class="card-title">random_image</p>
-                <p class="card-text">
+                <p class="card-text" id="androidProjectsRI">
                   In this Android 10 mobile application, users can view random images from the website
                   "https://picsum.photos/" by tapping on the displayed image.
                 </p>
-                <p class="card-text">
+                <p class="card-text" id="androidProjectsRI01">
                   The app is built using Kotlin, Lifecycle, and Androidx technologies and provides a smooth user
                   experience. With an attractive user interface, the app allows users to easily view high-quality
                   images with a simple tap.
                 </p>
-                <a href="#" class="btn btn-light">More information</a>
+                <a href="#" class="btn btn-light" id="btnMoreInfo02">More information</a>
               </div>
             </div>
           </div>
@@ -436,15 +485,15 @@
                 alt="Google Play publishing Logo" />
               <div class="card-body">
                 <p class="card-title">Project_backup</p>
-                <p class="card-text">
+                <p class="card-text" id="windowsProjectsPB">
                   Is a Visual Basic .NET project designed to copy important directories to another
                   location.
                 </p>
-                <p class="card-text">
+                <p class="card-text" id="windowsProjectsPB01">
                   It provides a reliable solution for backing up critical data to ensure its safety in
                   case of file loss or corruption.
                 </p>
-                <a href="#" class="btn btn-light">More information</a>
+                <a href="#" class="btn btn-light" id="btnMoreInfo03">More information</a>
               </div>
             </div>
           </div>
@@ -454,15 +503,15 @@
                 alt="Google Play publishing Logo" />
               <div class="card-body">
                 <p class="card-title">Launch_mod</p>
-                <p class="card-text">
+                <p class="card-text" id="windowsProjectsLM">
                   "Launch_mod" is a Visual Basic .NET project that serves as a launcher for Minecraft and allows for the
                   installation of a mod pack.
                 </p>
-                <p class="card-text">
+                <p class="card-text" id="windowsProjectsLM01">
                   The project features an intuitive interface for easy installation and
                   management of mods, enabling a customized gaming experience in Minecraft.
                 </p>
-                <a href="#" class="btn btn-light">More information</a>
+                <a href="#" class="btn btn-light" id="btnMoreInfo04">More information</a>
               </div>
             </div>
           </div>
@@ -476,15 +525,15 @@
                 alt="Google Play publishing Logo" />
               <div class="card-body">
                 <p class="card-title">Shop_wp</p>
-                <p class="card-text">
+                <p class="card-text" id="websiteProjectsSW">
                   This web project allows users to send their shopping list via WhatsApp messages. Built with HTML, JS,
                   CSS, and JSON, it features an easy-to-use and attractive user interface.
                 <p>
-                <p class="card-text">
+                <p class="card-text" id="websiteProjectsSW01">
                   Users can create their
                   shopping list on the site and send it directly through WhatsApp messages.
                 </p>
-                <a href="#" class="btn btn-light">More information</a>
+                <a href="#" class="btn btn-light" id="btnMoreInfo05">More information</a>
               </div>
             </div>
           </div>
@@ -497,7 +546,7 @@
     <div class="simpleLine"></div>
     <section class="contact-section" id="contact-section">
       <div class="container text-center">
-        <p class="simpleTitle">Contact me.</p>
+        <p class="simpleTitle" id="contactMe">Contact me.</p>
         <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-5">
           <div class="col-contact-section">
             <div class="card h-100">
@@ -505,7 +554,7 @@
                 alt="...">
               <div class="card-body">
                 <p class="card-title">Email</p>
-                <p class="card-text">
+                <p class="card-text" id="contactMeEmail">
                   Need help with mobile app development? Contact me via email to collaborate on your next project.
                 </p>
                 <p class="card-text"><small class="text-muted">
@@ -523,11 +572,11 @@
                 alt="...">
               <div class="card-body">
                 <p class="card-title">LinkedIn</p>
-                <p class="card-text">
+                <p class="card-text" id="contactMeLinkedIn">
                   Connect with me on LinkedIn to see my experience in mobile app development. If you're looking for an
                   Android developer for your next project, let me know via my profile.
                 </p>
-                <a href="https://www.linkedin.com" target="_blank" class="btn btn-light">My
+                <a href="https://www.linkedin.com" target="_blank" class="btn btn-light" id="btnContactMeLinkedIn">My
                   linkedIn</a>
               </div>
             </div>
@@ -538,11 +587,11 @@
                 alt="...">
               <div class="card-body">
                 <p class="card-title">GitHub</p>
-                <p class="card-text">
+                <p class="card-text" id="contactMeGitHub">
                   Check out my GitHub profile to see my mobile app development projects. If you're interested in working
                   together, feel free to contact me through my profile.
                 </p>
-                <a href="https://github.com/elfrikiamv" target="_blank" class="btn btn-light">My github</a>
+                <a href="https://github.com/elfrikiamv" target="_blank" class="btn btn-light" id="btnContactMeGitHub">My github</a>
               </div>
             </div>
           </div>
