@@ -1,8 +1,6 @@
 :root {
   --backgroundColorDark: #1a1319;
   --backgroundColorLight: #ffffff;
-  --backgroundColorDarkTranslucid: #1a1319ee;
-  --backgroundColorLightTranslucid: #ffffffee;
 
   --surface01dp: #121212;
   --surface06dp: #2c2c2c;
@@ -24,16 +22,13 @@ body.dark-theme {
 body.light-theme {
   background-color: var(--backgroundColorLight);
 }
-
 body.light-theme .card {
   background-color: var(--white87);
 }
 body.light-theme .card-title {
-
   color: var(--surface01dp);
 }
 body.light-theme .card-text {
-
   color: var(--surface01dp);
 }
 
@@ -70,11 +65,13 @@ body.light-theme .main-timeline .timeline-content {
 body.light-theme .main-timeline p {
   color: var(--surface01dp);
 }
-
 body.light-theme .main-timeline .timeline-content:before {
   background: var(--surface06dp);
 }
-body.light-theme .main-timeline .timeline:nth-child(4n + 2) .timeline-content:before {
+body.light-theme
+  .main-timeline
+  .timeline:nth-child(4n + 2)
+  .timeline-content:before {
   background: var(--surface06dp);
 }
 /* timeline */
@@ -102,7 +99,6 @@ body.light-theme .welcome-text p {
   margin-top: 2%;
   margin-bottom: 2rem;
   color: var(--surface01dp);
-  
 }
 body.light-theme .welcome-text .btn-primary {
   font-size: 1.2rem;
@@ -118,12 +114,12 @@ body.light-theme .welcome-text .btn-primary:hover {
   background-color: var(--white87);
 }
 /* Welcome Section */
+
 /* light theme  */
 
 /* Set background color of the whole page */
 
 body {
-  
   font-family: "Montserrat", sans-serif;
 }
 /* Set background color of the whole page */
@@ -153,43 +149,80 @@ body {
 }
 /* Animations */
 
-/* fload button language-switche*/
-.language-switcher {
-  position: fixed;
-  bottom: 77%;
-  right: 0px;
-  z-index: 9999;
+/* Switch estilo toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
 }
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--white38);
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--white87);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: var(--surface01dp);
+}
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+/* Switch estilo toggle */
+
+/* button language-switche*/
+
 #language-button {
   background-color: transparent;
   border: none;
-  border-radius: 5px;
-  margin: 1rem;
+  border-radius: 0px;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
   padding: 0rem;
 }
 #language-icon {
-  width: 45px;
+  width: 40px;
 }
-/* fload button language-switche*/
+/* button language-switche*/
 
-/* fload button theme-switche*/
-.theme-switcher {
-  position: fixed;
-  bottom: 70%;
-  right: 0px;
-  z-index: 9999;
-}
+/* button theme-img*/
+
 #theme-button {
   background-color: transparent;
   border: none;
-  border-radius: 5px;
-  margin: 1rem;
+  border-radius: 0px;
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
   padding: 0rem;
 }
 #theme-icon {
-  width: 40px;
+  width: 28px;
 }
-/* fload button theme-switche*/
+/* button theme-img*/
 
 /* fload button up-button*/
 .up-button {
@@ -215,7 +248,6 @@ body {
 .card img {
   height: 82px;
 }
-
 .card {
   background-color: var(--surface01dp);
   border-radius: 10px;
@@ -240,9 +272,8 @@ body {
   line-height: 1.5rem;
   color: var(--white87);
 }
-
-#cardGlass .card  {
-  background-color: var(--background-color);
+#cardGlass .card {
+  background-color: transparent;
   margin-bottom: 0rem;
   border: none;
   border-radius: 10px;
@@ -286,7 +317,6 @@ body {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   color: var(--white87);
-  
 }
 .welcome-text .btn-primary {
   font-size: 1.2rem;
@@ -333,7 +363,7 @@ body {
   color: var(--white87);
   background-color: var(--surface01dp);
 }
-/* About me Section */ 
+/* About me Section */
 
 /* Timeline */
 
@@ -436,11 +466,9 @@ body {
 /* timeline */
 
 /* Portfolio Section */
-
 /* Portfolio Section */
 
 /* contact Section */
-
 /* contact Section */
 
 /* Footer */
