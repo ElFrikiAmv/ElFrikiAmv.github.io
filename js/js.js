@@ -149,6 +149,10 @@ function toggleLanguage() {
 
     //web platform
     document.getElementById("web-projects").textContent = "Website projects";
+    document.getElementById("websiteProjectsMW").textContent =
+      "This project is a custom portfolio website designed using HTML, CSS, and JavaScript. It includes sections such as welcome, skills, projects, and contact.";
+    document.getElementById("websiteProjectsMW01").textContent =
+      "It stands out for its ability to switch between English and Spanish languages, as well as offering the option to switch between dark and light themes.";
     document.getElementById("websiteProjectsSW").textContent =
       "This web project allows users to send their shopping list via WhatsApp messages. Built with HTML, JS, CSS, and JSON, it features an easy-to-use and attractive user interface.";
     document.getElementById("websiteProjectsSW01").textContent =
@@ -286,6 +290,10 @@ function toggleLanguage() {
     //web platform
     document.getElementById("web-projects").textContent =
       "Proyectos de sitios web";
+    document.getElementById("websiteProjectsMW").textContent =
+      "Este proyecto es un sitio web de portafolio personalizado diseñado con HTML, CSS y JavaScript. Incluye secciones como bienvenida, habilidades, proyectos y contacto.";
+    document.getElementById("websiteProjectsMW01").textContent =
+      "Destaca por su capacidad de cambiar entre idioma inglés y español, así como también ofrece la opción de cambiar entre tema oscuro y claro.";
     document.getElementById("websiteProjectsSW").textContent =
       "Este proyecto web permite a los usuarios enviar su lista de compras a través de mensajes de WhatsApp. Construido con HTML, JS, CSS y JSON, cuenta con una interfaz de usuario fácil de usar y atractiva.";
     document.getElementById("websiteProjectsSW01").textContent =
