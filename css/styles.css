@@ -1,0 +1,194 @@
+:root {
+  --backgroundColorDark: #171717;
+  --backgroundColorLight: #ffffff;
+
+  --surface01dp: #121212;
+  --surface06dp: #2c2c2c;
+  --surface12dp: #313131;
+
+  --white87: rgba(255, 255, 255, 0.87);
+  --white60: rgba(255, 255, 255, 0.6);
+  --white38: rgba(255, 255, 255, 0.38);
+}
+
+/* dark theme and font */
+body.dark-theme {
+  background-color: var(--backgroundColorDark);
+  font-family: "Consolas", monospace;
+  color: var(--white87);
+  font-size: medium;
+}
+/* dark theme and font */
+
+/* Switch estilo toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--white38);
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--white87);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: var(--surface01dp);
+}
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+/* Switch estilo toggle */
+
+/* button language-switche*/
+
+#language-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0rem;
+}
+#language-icon {
+  width: 40px;
+}
+/* button language-switche*/
+
+/* button theme-img*/
+
+#theme-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
+  padding: 0rem;
+}
+#theme-icon {
+  width: 28px;
+}
+/* button theme-img*/
+
+/* Navigation Bar */
+.navbar {
+  background-color: transparent;
+  border: none;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white87);
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white60);
+  padding: 0 1rem;
+  transition: color 0.3s ease;
+}
+/* Navigation Bar */
+
+/* simple line */
+.simpleLine {
+  border-top: 1px solid var(--white60);
+}
+/* simple line */
+
+/* Welcome Section */
+.welcome-section {
+  position: relative;
+  height: 100vh;
+  background-image: url(/img/yomero.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-section button, p, img {
+  margin-left: -50%;
+}
+#subText {
+  margin-top: 2%;
+  font-size: larger;
+}
+@media (max-width: 768px) {
+
+  .welcome-section button, p, img {
+    margin-left: 0%;
+  }
+}
+
+/* Welcome Section */
+
+/* Footer */
+
+.footer-section {
+  padding: 3rem 0;
+  background-color: var(--surface01dp);
+  color: var(--white87);
+}
+.footer-section p {
+  margin-bottom: 0;
+}
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.social-icon img {
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.social-icon {
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.social-icon:hover {
+  transform: translateY(-10px);
+}
+.social-icon i {
+  font-size: 1.5rem;
+}
+/* Footer */

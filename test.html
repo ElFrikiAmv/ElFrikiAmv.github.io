@@ -3,105 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expandable Cards</title>
+    <title>Layout de Dos Columnas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
 
         .container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+            gap: 0px; /* Espacio entre las columnas */
+            margin: 0; /* Eliminar margen del contenedor */
         }
 
-        .card {
-            width: 200px;
-            height: 200px;
-            background-color: #3498db;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
+        .column {
+            background: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+            margin: 0; /* Eliminar margen de la columna */
         }
 
-        .expand-button {
-            background-color: #e74c3c;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
+        .column img {
+            display: block;
+            margin: 0 100; /* Centrar la imagen */
         }
 
-        .panels {
-            display: none;
+        .column-right {
+            text-align: right;
+            margin: 0; /* Eliminar margen de la columna */
         }
 
-        .panel {
-            width: 100%;
-            height: 100vh;
-            background-color: #2ecc71;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
+        @media (max-width: 768px) {
+            /* Cambiar a una sola columna en pantallas pequeñas */
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .column-right {
+                text-align: center; /* Centrar contenido en columnas apiladas */
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="card" id="card1">
-            <button class="expand-button" onclick="expandCard('card1')">Expand Card 1</button>
+        <div class="column">
+            <img src="/img/logoElfrikiamvDev.png" alt="Imagen 1">
+            <p>Contenido de la columna izquierda</p>
         </div>
-        <div class="card" id="card2">
-            <button class="expand-button" onclick="expandCard('card2')">Expand Card 2</button>
-        </div>
-        <div class="card" id="card3">
-            <button class="expand-button" onclick="expandCard('card3')">Expand Card 3</button>
-        </div>
-        <div class="card" id="card4">
-            <button class="expand-button" onclick="expandCard('card4')">Expand Card 4</button>
+        <div class="column column-right">
+            <img src="/img/yomero.png" alt="Imagen 2">
+            <p>Contenido de la columna derecha</p>
         </div>
     </div>
-    <div class="panels">
-        <div class="panel" id="panel1">Panel 1</div>
-        <div class="panel" id="panel2">Panel 2</div>
-        <div class="panel" id="panel3">Panel 3</div>
-    </div>
-    <script>
-        function expandCard(cardId) {
-            // Hide all cards
-            const cards = document.querySelectorAll('.card');
-            cards.forEach(card => {
-                card.style.display = 'none';
-            });
-
-            // Show the selected card
-            const selectedCard = document.getElementById(cardId);
-            selectedCard.style.display = 'block';
-
-            // Hide the expand buttons
-            const buttons = document.querySelectorAll('.expand-button');
-            buttons.forEach(button => {
-                button.style.display = 'none';
-            });
-
-            // Show the panels
-            const panels = document.querySelectorAll('.panel');
-            panels.forEach(panel => {
-                panel.style.display = 'block';
-            });
-        }
-    </script>
 </body>
 </html>
+
+
 
 
