@@ -150,6 +150,11 @@ input:checked + .slider:before {
     margin-left: 0%;
   }
 }
+@media (max-width: 576px) {
+  .welcome-section {
+    background-position: center center;
+  }
+}
 /* Welcome Section */
 
 /* About me Section */
@@ -219,8 +224,39 @@ input:checked + .slider:before {
     grid-template-columns: repeat(2, 122px);
     grid-template-rows: repeat(6, 122px);
   }
+  .about-section {
+    position: relative;
+    height: 100%;
+  }
+}
+@media (max-width: 265px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 42px);
+    grid-template-rows: repeat(6, 42px);
+  }
 }
 /* About me Section */
+
+/* Portfolio Section */
+.portfolio-section {
+  position: relative;
+  height: 100vh;
+}
+/* Portfolio Section */
+
+/* Portfolio Section */
+.portfolio-section {
+  position: relative;
+  height: 100vh;
+}
+/* Portfolio Section */
+
+/* contact Section */
+.contact-section {
+  position: relative;
+  height: 100vh;
+}
+/* contact Section */
 
 /* Footer */
 
