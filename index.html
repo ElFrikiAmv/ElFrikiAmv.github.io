@@ -1,142 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image"
+    content="https://donfriki.000webhostapp.com/img/elfrikiamv-V-sBG.png"" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:image" content="https://donfriki.000webhostapp.com/img/elfrikiamv-V-sBG.png"" />
+    <title>elfrikiamv</title>
 
-  <title>elfrikiamv</title>
+    <!-- Add CSS links here -->
+    <link
+      rel=" shortcut icon"
+      href="https://donfriki.000webhostapp.com/img/elfrikiamv-logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <!-- Add CSS links here -->
-  <link rel=" shortcut icon" href="https://donfriki.000webhostapp.com/img/elfrikiamv-logo.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-
-<body class="dark-theme">
-
-  <!-- navigation bar -->
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="http://elfrikiamv.tech">
-          <img id="logo-icon" src="https://donfriki.000webhostapp.com/img/elfrikiamv-logo.ico" alt="Bootstrap"
-            height="40">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#home-section" id="homeTextNav">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-section" id="aboutTextNav">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio-section" id="portfolioTextNav">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-section" id="contactTextNav">Contact me</a>
-            </li>
-            <li class="nav-item">
-              <!-- language switcher -->
-              <div class="language-switcher">
-                <button id="language-button" class="language-button" onclick="toggleLanguage()">
-                  <img id="language-icon" src="https://donfriki.000webhostapp.com/img/flag-mx.png">
-                </button>
-              </div>
-              <!-- language switcher -->
-            </li>
-            <li class="nav-item">
-              <!-- theme switcher -->
-              <div class="theme-switcher">
-                <div id="theme-button" class="theme-button">
-                  <img id="theme-icon" src="https://donfriki.000webhostapp.com/img/light-mode.png">
+  <body class="dark-theme">
+    <!-- navigation bar -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://elfrikiamv.tech">
+            <img
+              id="logo-icon"
+              src="https://donfriki.000webhostapp.com/img/elfrikiamv-logo.ico"
+              alt="Bootstrap"
+              height="40"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home-section" id="homeTextNav"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section" id="aboutTextNav"
+                  >About me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#portfolio-section"
+                  id="portfolioTextNav"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section" id="contactTextNav"
+                  >Contact me</a
+                >
+              </li>
+              <li class="nav-item">
+                <!-- language switcher -->
+                <div class="language-switcher">
+                  <button
+                    id="language-button"
+                    class="language-button"
+                    onclick="toggleLanguage()"
+                  >
+                    <img
+                      id="language-icon"
+                      src="https://donfriki.000webhostapp.com/img/flag-mx.png"
+                    />
+                  </button>
                 </div>
-              </div>
-              <!-- theme switcher -->
-            </li>
-            <li class="nav-item">
-              <!-- Switch estilo toggle -->
-              <label class="switch">
-                <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
-                <span class="slider"></span>
-              </label>
-              <!-- Switch estilo toggle -->
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- navigation bar -->
-
-  <!-- welcome section -->
-  <main>
-    <section class="welcome-section" id="home-section">
-      
-      <div class="container text-center">
-        <div class="row row-cols-1">
-          <div class="col">
-            <img src="/img/logoElfrikiamvDev.png" class="img-fluid" alt="...">
-          </div>
-          <div class="col" id="subText">
-            <p>I only make cool apps for Android devices.</p>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-light">Contact me</button>
+                <!-- language switcher -->
+              </li>
+              <li class="nav-item">
+                <!-- theme switcher -->
+                <div class="theme-switcher">
+                  <div id="theme-button" class="theme-button">
+                    <img
+                      id="theme-icon"
+                      src="https://donfriki.000webhostapp.com/img/light-mode.png"
+                    />
+                  </div>
+                </div>
+                <!-- theme switcher -->
+              </li>
+              <li class="nav-item">
+                <!-- Switch estilo toggle -->
+                <label class="switch">
+                  <input
+                    type="checkbox"
+                    id="theme-toggle"
+                    onclick="toggleTheme()"
+                  />
+                  <span class="slider"></span>
+                </label>
+                <!-- Switch estilo toggle -->
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
+    </header>
+    <!-- navigation bar -->
 
-    </section>
     <!-- welcome section -->
-
-  </main>
-
-
-
-  <!-- footer content -->
-  <div class="simpleLine"></div>
-  <footer class="footer-section">
-    <div class="container text-center">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-5">
-        <div class="col">
-          <p>@elfrikiamv Copyright 2023.</p>
+    <main>
+      <section class="welcome-section" id="home-section">
+        <div class="container text-center">
+          <div class="row row-cols-1">
+            <div class="col">
+              <img
+                src="/img/logoElfrikiamvDev.png"
+                class="img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="col" id="subText">
+              <p>I only make cool apps for Android devices.</p>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-light">Contact me</button>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <ul class="social-icons">
-            <li>
-              <a href="https://github.com/elfrikiamv" target="_blank" class="social-icon">
-                <i class="fab fa-github">
-                  <img src="https://donfriki.000webhostapp.com/img/github-logo.png" class="rounded mx-auto d-block"
-                    alt="...">
-                </i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/elfrikiamv" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin-in">
-                  <img src="https://donfriki.000webhostapp.com/img/linkedIn-logo.png" class="rounded mx-auto d-block"
-                    alt="...">
-                </i>
-              </a>
-            </li>
-          </ul>
+      </section>
+      <!-- welcome section -->
+
+      <!-- About section -->
+      <div class="simpleLine"></div>
+      <section class="about-section" id="about-section">
+        <div class="container text-start">
+          <div class="row row-cols-1">
+            <div class="col">
+              <div class="text-center">
+                <p class="bigSimpleTitle" id="AboutMeText">About me.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-lg-3">
+            <div class="col">
+              <p class="simpleTitle">I just.</p>
+              <p>
+                Hello! I am elfrikiamv, a Mexican Android developer and my first
+                line of code was when I was 13 years old.
+              </p>
+              <p>
+                The name "elfrikiamv" initially emerged as my nickname in the
+                gaming world, but it has since transformed into my personal
+                brand. I identify with that name and use it in my projects and
+                online presence.
+              </p>
+            </div>
+            <div class="col">
+              <p class="simpleTitle">Academic education.</p>
+              <p>
+                Computer Systems Engineering from the University of Three
+                Cultures (UTC), México.
+              </p>
+              <p class="fst-italic">Graduated.</p>
+              <p>
+                Programming Technician from the Center for Technological and
+                Industrial Services Studies (CETIS), México.
+              </p>
+              <p class="fst-italic">Graduated.</p>
+            </div>
+            <div class="col">
+              <p class="simpleTitle">Courses.</p>
+              <p>Android Application Development Learning Path.</p>
+              <p class="fst-italic">Certification from Platzi.com.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row row-cols-1">
+            <div class="col">
+              <p class="simpleTitle">My skills.</p>
+            </div>
+          </div>
+          <div class="row row-cols-1">
+            <div class="col">
+              <div class="skills-container">
+                <div class="card" id="card-1"></div>
+                <div class="card" id="card-2">Card 2</div>
+                <div class="card" id="card-3"></div>
+                <div class="card" id="card-4"></div>
+                <div class="card" id="card-5"></div>
+                <div class="card" id="card-6"></div>
+                <div class="card" id="card-7"></div>
+                <div class="card" id="card-8">Card 8</div>
+                <div class="card" id="card-9">Card 9</div>
+                <div class="card" id="card-10">Card 10</div>
+                <div class="card" id="card-11">Card 11</div>
+                <div class="card" id="card-12">Card 12</div>
+                <div class="card" id="card-13">Card 13</div>
+                <div class="card" id="card-14">Card 14</div>
+                <div class="card" id="card-15">Card 15</div>
+                <div class="card" id="card-16">Card 16</div>
+                <div class="card" id="card-17">Card 17</div>
+                <div class="card" id="card-18"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+    </main>
+
+    <!-- footer content -->
+    <!-- <div class="simpleLine"></div>
+    <footer class="footer-section">
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-5">
+          <div class="col">
+            <p>@elfrikiamv Copyright 2023.</p>
+          </div>
+          <div class="col">
+            <ul class="social-icons">
+              <li>
+                <a
+                  href="https://github.com/elfrikiamv"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-github">
+                    <img
+                      src="https://donfriki.000webhostapp.com/img/github-logo.png"
+                      class="rounded mx-auto d-block"
+                      alt="..."
+                    />
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/elfrikiamv"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-linkedin-in">
+                    <img
+                      src="https://donfriki.000webhostapp.com/img/linkedIn-logo.png"
+                      class="rounded mx-auto d-block"
+                      alt="..."
+                    />
+                  </i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- footer content -->
-  <script src="js/js.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer> -->
+    <!-- footer content -->
+    <script src="js/js.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

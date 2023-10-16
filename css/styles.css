@@ -134,7 +134,9 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
 }
-.welcome-section button, p, img {
+.welcome-section p,
+.welcome-section button,
+.welcome-section img {
   margin-left: -50%;
 }
 #subText {
@@ -142,17 +144,88 @@ input:checked + .slider:before {
   font-size: larger;
 }
 @media (max-width: 768px) {
-
-  .welcome-section button, p, img {
+  .welcome-section p,
+  .welcome-section button,
+  .welcome-section img {
     margin-left: 0%;
   }
 }
-
 /* Welcome Section */
+
+/* About me Section */
+.about-section {
+  position: relative;
+  height: 100vh;
+}
+.bigSimpleTitle {
+  font-size: x-large;
+}
+.simpleTitle {
+  font-size: larger;
+}
+/* card */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(6, 122px);
+  grid-template-rows: repeat(3, 122px);
+  gap: 7px;
+  padding: 7px;
+  justify-content: center;
+}
+
+#card-2,
+#card-8,
+#card-9,
+#card-10,
+#card-11,
+#card-12,
+#card-13,
+#card-14,
+#card-15,
+#card-16,
+#card-17 {
+  background-color: var(--white87);
+  border: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card-1,
+#card-3,
+#card-4,
+#card-5,
+#card-6,
+#card-7,
+#card-18 {
+  background-color: var(--backgroundColorDark);
+  border: 0px;
+}
+
+@media (max-width: 768px) {
+  #card-1,
+  #card-3,
+  #card-4,
+  #card-5,
+  #card-6,
+  #card-7,
+  #card-18 {
+    display: none;
+  }
+  .skills-container {
+    grid-template-columns: repeat(2, 122px);
+    grid-template-rows: repeat(6, 122px);
+  }
+}
+/* About me Section */
 
 /* Footer */
 
 .footer-section {
+  position: relative;
   padding: 3rem 0;
   background-color: var(--surface01dp);
   color: var(--white87);
