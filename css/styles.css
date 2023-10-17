@@ -231,24 +231,24 @@ input:checked + .slider:before {
     display: none;
   }
   .skills-container {
+    grid-template-columns: repeat(3, 122px);
+    grid-template-rows: repeat(4, 122px);
+  }
+  .about-section {
+    position: relative;
+    height: 100%;
+  }
+}
+@media (max-height: 990px) {
+  .about-section {
+    position: relative;
+    height: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .skills-container {
     grid-template-columns: repeat(2, 122px);
     grid-template-rows: repeat(6, 122px);
-  }
-  .about-section {
-    position: relative;
-    height: 100%;
-  }
-}
-@media (max-height: 768px) {
-  .about-section {
-    position: relative;
-    height: 100%;
-  }
-}
-@media (max-width: 265px) {
-  .skills-container {
-    grid-template-columns: repeat(2, 42px);
-    grid-template-rows: repeat(6, 42px);
   }
 }
 /* About me Section */
@@ -354,7 +354,7 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .portfolio-section {
     position: relative;
     height: 100%;
@@ -369,6 +369,49 @@ input:checked + .slider:before {
 .contact-section {
   position: relative;
   height: 100vh;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.redesContact-container {
+  display: flex;
+  align-items: center;
+}
+
+.imgRed {
+  max-width: 82px;
+}
+
+.txtRed {
+  text-align: left;
+  flex: 1;
+  padding: 7px; /* Añade un espacio entre la imagen y el contenido */
+}
+
+.txtRed p {
+  margin-bottom: -3px; /* Ajusta el margen entre el título y el párrafo */
+}
+.txtRed button {
+  margin-bottom: -33px;
+}
+/* #redes-container {
+  margin-bottom: 13%;
+} */
+@media (max-width: 768px) {
+  .contact-section {
+    position: relative;
+    height: 100%;
+    align-items: center;
+  }
+  #colRedesNone {
+    display: none;
+  }
+  .txtRed button {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 25%;
+  }
 }
 /* contact Section */
 
