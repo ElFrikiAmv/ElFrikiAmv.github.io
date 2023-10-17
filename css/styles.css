@@ -161,6 +161,12 @@ input:checked + .slider:before {
     background-position: center center;
   }
 }
+@media (max-height: 500px) {
+  .welcome-section {
+    position: relative;
+    height: 100%;
+  }
+}
 /* Welcome Section */
 
 /* About me Section */
@@ -256,6 +262,12 @@ input:checked + .slider:before {
     grid-template-columns: repeat(2, 122px);
     grid-template-rows: repeat(6, 122px);
   }
+  .about-section {
+    position: relative;
+    height: 100%;
+  }
+}
+@media (max-height: 831px) {
   .about-section {
     position: relative;
     height: 100%;
@@ -366,14 +378,19 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
+/* card */
 @media (max-width: 990px) {
   .portfolio-section {
     position: relative;
     height: 100%;
   }
 }
-
-/* card */
+@media (max-height: 590px) {
+  .portfolio-section {
+    position: relative;
+    height: 100%;
+  }
+}
 
 /* Portfolio Section */
 
@@ -425,6 +442,13 @@ input:checked + .slider:before {
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 25%;
+  }
+}
+@media (max-height: 500px) {
+  .contact-section {
+    position: relative;
+    height: 100%;
+    margin-bottom: 2%;
   }
 }
 /* contact Section */
