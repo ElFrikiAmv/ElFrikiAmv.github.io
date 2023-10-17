@@ -167,6 +167,7 @@ input:checked + .slider:before {
 .about-section {
   position: relative;
   height: 100vh;
+  
   display: grid;
   justify-content: center;
   align-items: center;
@@ -220,7 +221,7 @@ input:checked + .slider:before {
 }
 /* card */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #card-1,
   #card-3,
   #card-4,
@@ -239,16 +240,23 @@ input:checked + .slider:before {
     height: 100%;
   }
 }
-@media (max-height: 990px) {
-  .about-section {
-    position: relative;
-    height: 100%;
+@media (max-width: 576px) {
+  #card-1,
+  #card-3,
+  #card-4,
+  #card-5,
+  #card-6,
+  #card-7,
+  #card-18 {
+    display: none;
   }
-}
-@media (max-width: 390px) {
   .skills-container {
     grid-template-columns: repeat(2, 122px);
     grid-template-rows: repeat(6, 122px);
+  }
+  .about-section {
+    position: relative;
+    height: 100%;
   }
 }
 /* About me Section */
