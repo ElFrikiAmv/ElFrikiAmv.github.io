@@ -9,6 +9,8 @@
   --white87: rgba(255, 255, 255, 0.87);
   --white60: rgba(255, 255, 255, 0.6);
   --white38: rgba(255, 255, 255, 0.38);
+  --glowColor: rgba(255, 255, 255, 0.822);
+  --accentColor: #ff000042;
 }
 
 /* dark theme and font */
@@ -122,6 +124,12 @@ input:checked + .slider:before {
   border-top: 1px solid var(--white60);
 }
 /* simple line */
+
+/* effect glow */
+#glow {
+  text-shadow: 0 0 1vw var(--glowColor);
+}
+/* effect glow */
 
 /* Welcome Section */
 .welcome-section {
@@ -517,8 +525,8 @@ input:checked + .slider:before {
   position: absolute;
   width: 0px;
   opacity: 0.75;
-/*   background-color: rgb(0, 255, 21); */
-  box-shadow: #ff000042 0px 0px 20px 2px;
+  /*   background-color: rgb(0, 255, 21); */
+  box-shadow: var(--accentColor) 0px 0px 20px 2px;
   top: 0;
   left: 0;
   right: 0;
@@ -696,17 +704,6 @@ input:checked + .slider:before {
     top: -100vh;
     opacity: 0;
   }
-}
-
-.header {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  color: white;
-  font-size: 2em;
 }
 
 #head1,
