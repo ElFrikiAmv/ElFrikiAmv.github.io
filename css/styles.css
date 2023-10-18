@@ -9,6 +9,10 @@
   --white87: rgba(255, 255, 255, 0.87);
   --white60: rgba(255, 255, 255, 0.6);
   --white38: rgba(255, 255, 255, 0.38);
+
+  --white: #ffffff;
+  --dark: #000000;
+
   --glowColor: rgba(255, 255, 255, 0.822);
   --accentColor: #ff000042;
 }
@@ -236,7 +240,42 @@ input:checked + .slider:before {
   border: 0px;
 }
 /* card */
-
+/* timeline */
+.academicContainer ul,
+.academicContainer li {
+  list-style: none;
+  padding: 0;
+}
+.academicContainer li {
+  padding-bottom: .1rem;
+  border-left: 1px solid var(--white87);
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+  &:last-child {
+    border: 0px;
+    padding-bottom: 0;
+  }
+  .academicContainer &:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--backgroundColorDark);
+    border: 1px solid var(--backgroundColorDark);
+    box-shadow: 3px 3px 0px var(--white87);
+    box-shadow: 3px 3px 0px var(--white87);
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+  }
+}
+/* timeline */
+#txtIam{
+  padding-bottom: 2%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
 @media (max-width: 992px) {
   #card-1,
   #card-3,
@@ -275,7 +314,7 @@ input:checked + .slider:before {
     height: 100%;
   }
 }
-@media (max-height: 831px) {
+@media (max-height: 922px) {
   .about-section {
     position: relative;
     height: 100%;
@@ -917,3 +956,5 @@ input:checked + .slider:before {
   }
 }
 /* background */
+
+
