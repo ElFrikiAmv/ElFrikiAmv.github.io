@@ -198,56 +198,198 @@ input:checked + .slider:before {
 .simpleTitle {
   font-size: larger;
 }
-/* card */
 
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(6, 122px);
-  grid-template-rows: repeat(3, 122px);
-  gap: 7px;
-  padding: 7px;
+/* cad animated */
+
+.containerSkills {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-#card-2,
-#card-8,
-#card-9,
-#card-10,
-#card-11,
-#card-12,
-#card-13,
-#card-14,
-#card-15,
-#card-16,
-#card-17 {
-  background-color: var(--white87);
-  border: 0px;
+.custom-card {
+  margin: 7px;
+  perspective: 800px;
+  cursor: default;
+
+  &:hover {
+    .card-info {
+      transform: translateY(0);
+    }
+    .card-info p {
+      opacity: 1;
+    }
+    .card-bg,
+    .card {
+      transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: rotateY(0) rotateX(0);
+    }
+  }
+}
+
+.custom-card .card {
+  width: 182px;
+  height: 182px;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
+    inset transparent 0 0 0 6px;
+  transition: transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.custom-card .card-bg {
+  position: absolute;
+  top: -5%;
+  left: 0%;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% auto;
+  transition: transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  pointer-events: none;
 }
 
-#card-1,
-#card-3,
-#card-4,
-#card-5,
-#card-6,
-#card-7,
-#card-18 {
-  background-color: transparent;
-  border: 0px;
+.custom-card .card-info {
+  padding: 7px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  color: var(--white87);
+  /* wea del txt de la card altura */
+  transform: translateY(70%);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  p {
+    opacity: 0;
+    text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+    transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
 }
-/* card */
+
+.custom-card .card-info {
+  padding: 7px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  color: var(--white87);
+  /* wea del txt de la card altura */
+  transform: translateY(71%);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  p {
+    opacity: 0;
+    text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+    transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
+
+.custom-card .card-info h1 {
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+}
+
+/* cad animated */
+
+/* large cad animated */
+.custom-card-large {
+  margin: 7px;
+  perspective: 800px;
+  cursor: default;
+
+  &:hover {
+    .card-info {
+      transform: translateY(0);
+    }
+    .card-info p {
+      opacity: 1;
+    }
+    .card-bg,
+    .card {
+      transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: rotateY(0) rotateX(0);
+    }
+  }
+}
+
+.custom-card-large .card {
+  width: 182px;
+  height: 182px;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
+    inset transparent 0 0 0 6px;
+  transition: transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.custom-card-large .card-bg {
+  position: absolute;
+  top: -5%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% auto;
+  transition: transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  pointer-events: none;
+}
+
+.custom-card-large .card-info {
+  padding: 7px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  color: var(--white87);
+  /* wea del txt de la card altura */
+  transform: translateY(70%);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  p {
+    opacity: 0;
+    text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+    transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
+
+.custom-card-large .card-info {
+  padding: 7px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  color: var(--white87);
+  /* wea del txt de la card altura */
+  transform: translateY(62%);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  p {
+    opacity: 0;
+    text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+    transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
+
+.custom-card-large .card-info h1 {
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+}
+
+/* large cad animated */
+
 /* timeline */
-.academicContainer ul,
-.academicContainer li {
+.skillsContainer .academicContainer ul,
+.skillsContainer .academicContainer li {
   list-style: none;
   padding: 0;
 }
-.academicContainer li {
-  padding-bottom: .1rem;
+.skillsContainer .academicContainer li {
+  padding-bottom: 0.1rem;
   border-left: 1px solid var(--white87);
   position: relative;
   padding-left: 20px;
@@ -256,7 +398,7 @@ input:checked + .slider:before {
     border: 0px;
     padding-bottom: 0;
   }
-  .academicContainer &:before {
+  .skillsContainer .academicContainer &:before {
     content: "";
     width: 15px;
     height: 15px;
@@ -271,55 +413,31 @@ input:checked + .slider:before {
   }
 }
 /* timeline */
-#txtIam{
+.skillsContainer #txtIam {
   padding-bottom: 2%;
   padding-right: 3%;
   padding-left: 3%;
 }
-@media (max-width: 992px) {
-  #card-1,
-  #card-3,
-  #card-4,
-  #card-5,
-  #card-6,
-  #card-7,
-  #card-18 {
-    display: none;
-  }
-  .skills-container {
-    grid-template-columns: repeat(3, 122px);
-    grid-template-rows: repeat(4, 122px);
-  }
+@media (max-width: 1400px) {
   .about-section {
     position: relative;
     height: 100%;
   }
 }
-@media (max-width: 576px) {
-  #card-1,
-  #card-3,
-  #card-4,
-  #card-5,
-  #card-6,
-  #card-7,
-  #card-18 {
-    display: none;
-  }
-  .skills-container {
-    grid-template-columns: repeat(2, 122px);
-    grid-template-rows: repeat(6, 122px);
-  }
+/* @media (max-width: 576px) {
+
   .about-section {
     position: relative;
     height: 100%;
   }
-}
-@media (max-height: 922px) {
+} */
+
+/* @media (max-height: 1440px) {
   .about-section {
     position: relative;
     height: 100%;
   }
-}
+} */
 /* About me Section */
 
 /* Portfolio Section */
@@ -956,5 +1074,3 @@ input:checked + .slider:before {
   }
 }
 /* background */
-
-

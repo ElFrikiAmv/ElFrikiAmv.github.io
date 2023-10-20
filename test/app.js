@@ -1,14 +1,3 @@
-//  Para desplazar la página a la sección de contacto al hacer clic en el botón
-document
-.getElementById("btnWelcomeScrollToContact")
-.addEventListener("click", function () {
-  document
-  .getElementById("contact-section")
-  .scrollIntoView({ behavior: "smooth" });
-});
-;
-
-//container kills
 Vue.config.devtools = true;
 
 Vue.component('card', {
@@ -45,7 +34,6 @@ Vue.component('card', {
     },
     cardStyle() {
       const rX = this.mousePX * 20; // Reducido de 30 para una rotación más suave
-      //wea vertical de inclinacion
       const rY = this.mousePY * -2; // Reducido de 30 para una rotación más suave
       return {
         transform: `rotateY(${rX}deg) rotateX(${rY}deg)`
