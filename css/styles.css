@@ -15,6 +15,7 @@
 
   --glowColor: rgba(255, 255, 255, 0.822);
   --accentColor: #ff000042;
+  --accentColor2:#ff000022;
 
   --text-light: rgba(0, 0, 0, 0.6);
   --spacing-s: 8px;
@@ -710,7 +711,6 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .contact-section .card-grid {
@@ -756,7 +756,7 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 22% auto;
-  opacity: 100%;    
+  opacity: 100%;
   bottom: 0;
   filter: brightness(0.75) saturate(1.2) contrast(0.85);
   position: absolute;
@@ -794,7 +794,6 @@ input:checked + .slider:before {
   word-spacing: 100vw; */
   color: var(--white87);
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  
 }
 /* cads animated */
 @media (max-width: 990px) {
@@ -874,8 +873,8 @@ input:checked + .slider:before {
 
 .light {
   position: absolute;
+  /* height: 100%; */
   width: 0px;
-  opacity: 0.75;
   /*   background-color: rgb(0, 255, 21); */
   box-shadow: var(--accentColor) 0px 0px 20px 2px;
   top: 0;
@@ -885,7 +884,12 @@ input:checked + .slider:before {
   margin: auto;
   z-index: -1; /* Asignamos un valor negativo para que esté detrás de otros elementos */
 }
-
+@media (max-width: 540px) {
+  .light {
+    position: fixed;
+    box-shadow: var(--accentColor2) 0px 0px 20px 2px;
+  }
+}
 .x1,
 .x2,
 .x3,
