@@ -8,7 +8,7 @@ document
 });
 ;
 
-//container kills
+//container skills
 Vue.config.devtools = true;
 
 Vue.component('card', {
