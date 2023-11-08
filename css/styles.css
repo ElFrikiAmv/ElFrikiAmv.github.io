@@ -769,7 +769,7 @@ input:checked + .slider:before {
 }
 
 .contact-section .card:hover .card__background {
-  transform: scale(1.5) translateZ(0);
+  transform: scale(2) translateZ(0);
 }
 
 .contact-section .card-grid:hover > .card:not(:hover) .card__background {
@@ -786,6 +786,25 @@ input:checked + .slider:before {
   /* display: grid; */
   text-align: center;
   align-items: center;
+  order: 1;
+}
+.contact-section .card:hover .infoRedContact {
+  opacity: 100%;
+}
+.infoRedContact {
+  opacity: 0%;
+  color: var(--white87);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  text-align: center;
+  margin-top: 7%;
+  padding: 7%;
+  z-index: 2;
+  max-width: 100%;
+  word-wrap: break-word;
+  transition: opacity 0.5s;
 }
 
 .contact-section .card__heading {
