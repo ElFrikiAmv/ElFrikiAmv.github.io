@@ -418,14 +418,116 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
 }
+/* card animated xd */
+.projects-section .main-box {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* .projects-section .border {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: transparent;
+  border-radius: 7px;
+  transition: border 1s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+} */
+
+/* .projects-section .border:hover {
+  border: 1px solid #fff;
+} */
+
+.projects-section .card {
+  height: 400px;
+  width: 300px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s;
+  overflow: hidden;
+  /* box-shadow: 0 70px 63px -60px #000000; */
+  position: relative;
+
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
+    inset transparent 0 0 0 6px;
+  transition: transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.projects-section .card img {
+  /* background: url("https://donfriki.000webhostapp.com/img/android-logo.png")
+    center center no-repeat;
+  background-size: 100px; */
+  /* position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; */
+  /* position: absolute; */
+  /* padding-left: 22%; */
+  margin-top: 9%;
+  transition: transform 0.5s;
+}
+.projects-section .card:hover img {
+  /* background: url("https://donfriki.000webhostapp.com/img/android-logo.png")
+    center center no-repeat;
+  background-size: 120px; */
+  /* transform: scale(1.5); */
+  opacity: 10%;
+
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding-left: 50%; */
+  /* height: 100%;
+  transition: transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95); */
+}
+
+.projects-section p {
+  color: var(--white87);
+  /* opacity: 0; */
+  padding-top: 1%;
+  transition: opacity 0.5s;
+}
+.projects-section button {
+  margin-top: 0%;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  position: absolute;
+  top: 50%; /* Alinea el botón verticalmente en el centro */
+  left: 50%; /* Alinea el botón horizontalmente en el centro */
+  transform: translate(-50%, -50%); /* Centra el botón correctamente */
+}
+
+.projects-section .card:hover button {
+  opacity: 1;
+
+  /* position: absolute; */
+}
+.projects-section .card:hover p {
+  opacity: 0;
+}
+/* card animated xd */
+
 /* card */
 .projectsAndroid-container {
   display: grid;
-  grid-template-columns: repeat(2, 142px);
-  grid-template-rows: repeat(2, 142px);
-  gap: 7px;
-  padding: 7px;
+  grid-template-columns: repeat(2, 182px);
+  grid-template-rows: repeat(2, 182px);
+  gap: 16px;
+  padding: 16px;
   justify-content: center;
+  margin-bottom: 7%;
 }
 #cardPA-2 {
   background-color: transparent;
@@ -434,7 +536,7 @@ input:checked + .slider:before {
 #cardPA-1,
 #cardPA-3,
 #cardPA-4 {
-  background-color: var(--white87);
+  background-color: transparent;
   border: 0px;
   width: 100%;
   height: 100%;
@@ -444,15 +546,15 @@ input:checked + .slider:before {
 }
 .projectsWindows-container {
   display: grid;
-  grid-template-columns: repeat(2, 142px);
-  grid-template-rows: repeat(2, 142px);
-  gap: 7px;
-  padding: 7px;
+  grid-template-columns: repeat(2, 182px);
+  grid-template-rows: repeat(2, 182px);
+  gap: 16px;
+  padding: 16px;
   justify-content: center;
 }
 #cardPW-2,
 #cardPW-4 {
-  background-color: var(--white87);
+  background-color: transparent;
   border: 0px;
   width: 100%;
   height: 100%;
@@ -476,15 +578,15 @@ input:checked + .slider:before {
 }
 .projectsWebsite-container {
   display: grid;
-  grid-template-columns: repeat(2, 142px);
-  grid-template-rows: repeat(1, 142px);
-  gap: 7px;
-  padding: 7px;
+  grid-template-columns: repeat(2, 182px);
+  grid-template-rows: repeat(1, 182px);
+  gap: 16px;
+  padding: 16px;
   justify-content: center;
 }
 #cardPWs-1,
 #cardPWs-2 {
-  background-color: var(--white87);
+  background-color: transparent;
   border: 0px;
   width: 100%;
   height: 100%;
@@ -494,15 +596,15 @@ input:checked + .slider:before {
 }
 .projectsFigma-container {
   display: grid;
-  grid-template-columns: repeat(2, 142px);
-  grid-template-rows: repeat(1, 142px);
-  gap: 7px;
-  padding: 7px;
+  grid-template-columns: repeat(2, 182px);
+  grid-template-rows: repeat(1, 182px);
+  gap: 16px;
+  padding: 16px;
   justify-content: center;
 }
 #cardPF-1,
 #cardPF-2 {
-  background-color: var(--white87);
+  background-color: transparent;
   border: 0px;
   width: 100%;
   height: 100%;
@@ -510,11 +612,59 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
+
+.title-winProjects {
+  display: none !important;
+}
+
 /* card */
 @media (max-width: 990px) {
   .portfolio-section {
     position: relative;
     height: 100%;
+  }
+}
+@media (max-width: 540px) {
+  .projectsFigma-container {
+    display: grid;
+    grid-template-columns: repeat(1, 182px);
+    grid-template-rows: repeat(2, 182px);
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+  }
+  .projectsWebsite-container {
+    display: grid;
+    grid-template-columns: repeat(1, 182px);
+    grid-template-rows: repeat(2, 182px);
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+  }
+  .projectsWindows-container {
+    display: grid;
+    grid-template-columns: repeat(1, 182px);
+    grid-template-rows: repeat(2, 182px);
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+  }
+  .projectsAndroid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 182px);
+    grid-template-rows: repeat(3, 182px);
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+    margin-bottom: 0%;
+  }
+  #cardPW-1,
+  #cardPW-3,
+  #cardPA-2 {
+    display: none !important;
+  }
+  .title-winProjects {
+    display: block !important;
   }
 }
 @media (max-height: 590px) {
