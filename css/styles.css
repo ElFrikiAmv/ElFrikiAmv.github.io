@@ -15,7 +15,7 @@
 
   --glowColor: rgba(255, 255, 255, 0.822);
   --accentColor: #ff000042;
-  --accentColor2:#ff000022;
+  --accentColor2: #ff000022;
 
   --text-light: rgba(0, 0, 0, 0.6);
   --spacing-s: 8px;
@@ -148,13 +148,19 @@ input:checked + .slider:before {
 .welcome-section {
   position: relative;
   height: 100vh;
-  background-image: url(/img/yomero.png);
+  background-image: url("/img/yomero.png");
   background-repeat: no-repeat;
   background-position: right center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@-moz-document url-prefix() {
+  .welcome-section {
+    background-image: url("/img/yomero.webp");
+  }
+}
+
 .welcome-section p,
 .welcome-section button,
 .welcome-section img {
@@ -797,7 +803,7 @@ input:checked + .slider:before {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   text-align: center;
   margin-top: 7%;
   padding: 7%;
