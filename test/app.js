@@ -1,80 +1,56 @@
-Vue.config.devtools = true;
+function scrollFooter(scrollY, heightFooter)
+{
+    console.log(scrollY);
+    console.log(heightFooter);
 
-Vue.component('card', {
-  template: `
-    <div class="card-wrap"
-      @mousemove="handleMouseMove"
-      @mouseenter="handleMouseEnter"
-      @mouseleave="handleMouseLeave"
-      ref="card">
-      <div class="card"
-        :style="cardStyle">
-        <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
-        <div class="card-info">
-          <slot name="header"></slot>
-          <slot name="content"></slot>
-        </div>
-      </div>
-    </div>`,
-  data() {
-    return {
-      width: 0,
-      height: 0,
-      mouseX: 0,
-      mouseY: 0,
-      mouseLeaveDelay: null
-    };
-  },
-  computed: {
-    mousePX() {
-      return this.mouseX / this.width;
-    },
-    mousePY() {
-      return this.mouseY / this.height;
-    },
-    cardStyle() {
-      const rX = this.mousePX * 20; // Reducido de 30 para una rotación más suave
-      const rY = this.mousePY * -2; // Reducido de 30 para una rotación más suave
-      return {
-        transform: `rotateY(${rX}deg) rotateX(${rY}deg)`
-      };
-    },
-    cardBgTransform() {
-      const tX = this.mousePX * -10; // Reducido de -40 para una transición más suave
-      const tY = this.mousePY * -10; // Reducido de -40 para una transición más suave
-      return {
-        transform: `translateX(${tX}px) translateY(${tY}px)`
-      }
-    },
-    cardBgImage() {
-      return {
-        backgroundImage: `url(${this.dataImage})`
-      }
+    if(scrollY >= heightFooter)
+    {
+        $('footer').css({
+            'bottom' : '0px'
+        });
     }
-  },
-  methods: {
-    handleMouseMove(e) {
-      this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;
-      this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2;
-    },
-    handleMouseEnter() {
-      clearTimeout(this.mouseLeaveDelay);
-    },
-    handleMouseLeave() {
-      this.mouseLeaveDelay = setTimeout(() => {
-        this.mouseX = 0;
-        this.mouseY = 0;
-      }, 1000);
+    else
+    {
+        $('footer').css({
+            'bottom' : '-' + heightFooter + 'px'
+        });
     }
-  },
-  mounted() {
-    // Calcular las dimensiones de la tarjeta en la función montada
-    this.width = this.$refs.card.offsetWidth;
-    this.height = this.$refs.card.offsetHeight;
-  },
-  props: ["dataImage"]
-});
+}
 
-const app = new Vue({
-  el: '#app'
+$(window).load(function(){
+    var windowHeight        = $(window).height(),
+        footerHeight        = $('footer').height(),
+        heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
+
+    // Definindo o tamanho do elemento pra animar
+    $('#scroll-animate, #scroll-animate-main').css({
+        'height' :  heightDocument + 'px'
+    });
+
+    // Definindo o tamanho dos elementos header e conteúdo
+    $('header').css({
+        'height' : windowHeight + 'px',
+        'line-height' : windowHeight + 'px'
+    });
+
+    $('.wrapper-parallax').css({
+        'margin-top' : windowHeight + 'px'
+    });
+
+    scrollFooter(window.scrollY, footerHeight);
+
+    // ao dar rolagem
+    window.onscroll = function(){
+        var scroll = window.scrollY;
+
+        $('#scroll-animate-main').css({
+            'top' : '-' + scroll + 'px'
+        });
+        
+        $('header').css({
+            'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'
+        });
+
+        scrollFooter(scroll, footerHeight);
+    }
 });

@@ -675,7 +675,7 @@ input:checked + .slider:before {
     display: block !important;
   }
 }
-@media (max-height: 590px) {
+@media (max-height: 800px) {
   .portfolio-section {
     position: relative;
     height: 100%;
