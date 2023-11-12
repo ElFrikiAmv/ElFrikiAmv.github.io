@@ -209,7 +209,9 @@ input:checked + .slider:before {
 }
 .bigSimpleTitle {
   font-size: x-large;
+  margin-bottom: 5%;
 }
+#simpleTitle,
 .simpleTitle {
   font-size: larger;
   text-decoration: underline;
@@ -451,7 +453,7 @@ input:checked + .slider:before {
   /* .aboutContainer .col {
     padding: 0 0px;
   } */
-  .aboutContainer #txtIam { 
+  .aboutContainer #txtIam {
     padding-left: 28px;
     padding-right: 28px;
   }
