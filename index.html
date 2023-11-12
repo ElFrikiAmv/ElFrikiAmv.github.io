@@ -21,6 +21,12 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- wea de animacion al bajar aparecen los elementos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </head>
 
   <body class="dark-theme">
@@ -131,7 +137,7 @@
         <div class="light x7"></div>
         <div class="light x8"></div>
         <div class="light x9"></div>
-        <div class="container text-center">
+        <div class="container text-center" data-aos="fade-up">
           <div class="row row-cols-1">
             <div class="col">
               <img
@@ -161,218 +167,174 @@
       <div class="simpleLine"></div>
       <section class="about-section" id="about-section">
         <div class="skillsContainer">
-          <div class="container text-start">
-            <div class="row row-cols-1">
-              <div class="col">
-                <div class="text-center">
-                  <div id="glow">
-                    <p class="bigSimpleTitle" id="AboutMeText">About me.</p>
+          <div data-aos="fade-up">
+            <div class="container text-start">
+              <div class="row row-cols-1">
+                <div class="col">
+                  <div class="text-center">
+                    <div id="glow">
+                      <p class="bigSimpleTitle" id="AboutMeText">About me.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="aboutContainer">
-              <div class="row row-cols-1 row-cols-lg-2">
-                <div class="col" id="txtIam">
-                  <div class="row row-cols-1">
-                    <div class="col" id="txtIJust">
-                      <div class="card h-100">
-                        <p class="simpleTitle">I just.</p>
-                        <p>
-                          Hello, I'm Daniel, a Mexican Android developer. My
-                          first line of code was when I was 13 years old, and
-                          now, "elfrikiamv" is my personal brand that I use in
-                          my projects and online.
-                        </p>
+              <div class="aboutContainer">
+                <div class="row row-cols-1 row-cols-lg-2">
+                  <div class="col" id="txtIam">
+                    <div class="row row-cols-1">
+                      <div class="col" id="txtIJust">
+                        <div class="card h-100">
+                          <p class="simpleTitle">I just.</p>
+                          <p>
+                            Hello, I'm Daniel, a Mexican Android developer. My
+                            first line of code was when I was 13 years old, and
+                            now, "elfrikiamv" is my personal brand that I use in
+                            my projects and online.
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col" id="txtIJust">
-                      <div class="card h-100">
-                        <p class="simpleTitle">Courses.</p>
-                        <div class="academicContainer">
-                          <ul>
-                            <li>
-                              <p>
-                                Android Application Development Learning Path.
-                              </p>
-                              <p class="fst-italic">
-                                Certification from Platzi.com.
-                              </p>
-                            </li>
-                          </ul>
+                      <div class="col" id="txtIJust">
+                        <div class="card h-100">
+                          <p class="simpleTitle">Courses.</p>
+                          <div class="academicContainer">
+                            <ul>
+                              <li>
+                                <p>
+                                  Android Application Development Learning Path.
+                                </p>
+                                <p class="fst-italic">
+                                  Certification from Platzi.com.
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col" id="txtAcademic">
-                  <div class="card h-100">
-                    <p class="simpleTitle">Academic education.</p>
-                    <div class="academicContainer">
-                      <ul>
-                        <li>
-                          <p>
-                            Computer Systems Engineering from the University of
-                            Three Cultures (UTC), México.
-                          </p>
-                          <p class="fst-italic">Graduated.</p>
-                        </li>
-                        <li>
-                          <p>
-                            Programming Technician from the Center for
-                            Technological and Industrial Services Studies
-                            (CETIS), México.
-                          </p>
-                          <p class="fst-italic">Graduated.</p>
-                        </li>
-                      </ul>
+                  <div class="col" id="txtAcademic">
+                    <div class="card h-100">
+                      <p class="simpleTitle">Academic education.</p>
+                      <div class="academicContainer">
+                        <ul>
+                          <li>
+                            <p>
+                              Computer Systems Engineering from the University
+                              of Three Cultures (UTC), México.
+                            </p>
+                            <p class="fst-italic">Graduated.</p>
+                          </li>
+                          <li>
+                            <p>
+                              Programming Technician from the Center for
+                              Technological and Industrial Services Studies
+                              (CETIS), México.
+                            </p>
+                            <p class="fst-italic">Graduated.</p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- <div class="row row-cols-1" id="txtIam">
-              <div class="col">
-                <p class="simpleTitle">I just.</p>
-                <p>
-                  Hello, I'm Daniel, a Mexican Android developer. My first line
-                  of code was when I was 13 years old, and now, "elfrikiamv" is
-                  my personal brand that I use in my projects and online.
-                </p>
-              </div>
-            </div>
-
-            <div class="row row-cols-1 row-cols-lg-2">
-              <div class="col">
-                <p class="simpleTitle">Academic education.</p>
-                <div class="academicContainer">
-                  <ul>
-                    <li>
-                      <p>
-                        Computer Systems Engineering from the University of
-                        Three Cultures (UTC), México.
-                      </p>
-                      <p class="fst-italic">Graduated.</p>
-                    </li>
-                    <li>
-                      <p>
-                        Programming Technician from the Center for Technological
-                        and Industrial Services Studies (CETIS), México.
-                      </p>
-                      <p class="fst-italic">Graduated.</p>
-                    </li>
-                  </ul>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <p class="simpleTitle">My skills.</p>
                 </div>
               </div>
-              <div class="col">
-                <p class="simpleTitle">Courses.</p>
-                <div class="academicContainer">
-                  <ul>
-                    <li>
-                      <p>Android Application Development Learning Path.</p>
-                      <p class="fst-italic">Certification from Platzi.com.</p>
-                    </li>
-                  </ul>
-                </div>
+              <div id="app" class="containerSkills">
+                <card
+                  class="custom-card"
+                  data-image="https://donfriki.000webhostapp.com/img/kotlin-logo.png"
+                >
+                  <h1 slot="header">Kotlin</h1>
+                  <p slot="content">Main for Android app development.</p>
+                </card>
+                <card
+                  class="custom-card"
+                  data-image="https://donfriki.000webhostapp.com/img/java-logo.png"
+                >
+                  <h1 slot="header">Java</h1>
+                  <p slot="content">Used in Android app development.</p>
+                </card>
+                <card
+                  class="custom-card-large"
+                  data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
+                >
+                  <h1 slot="header">Android Studio</h1>
+                  <p slot="content">IDE for Android app development.</p>
+                </card>
+                <card
+                  class="custom-card-large"
+                  data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
+                >
+                  <h1 slot="header">Android Jetpack</h1>
+                  <p slot="content">Toolkit for Android apps.</p>
+                </card>
+
+                <card
+                  class="custom-card"
+                  data-image="https://donfriki.000webhostapp.com/img/xml-logo.png"
+                >
+                  <h1 slot="header">XML</h1>
+                  <p slot="content">Markup for Android app interfaces.</p>
+                </card>
+                <card
+                  class="custom-card-large"
+                  data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
+                >
+                  <h1 slot="header">Material Design</h1>
+                  <p slot="content">Google's app design guide.</p>
+                </card>
+                <card
+                  class="custom-card-large"
+                  data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
+                >
+                  <h1 slot="header">Android Architecture</h1>
+                  <p slot="content">Android design patterns.</p>
+                </card>
+                <card
+                  class="custom-card-large"
+                  data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
+                >
+                  <h1 slot="header">Design Patterns</h1>
+                  <p slot="content">Solutions for software problems.</p>
+                </card>
+                <card
+                  class="custom-card"
+                  data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
+                >
+                  <h1 slot="header">Android API</h1>
+                  <p slot="content">Interface for system access.</p>
+                </card>
+
+                <card
+                  class="custom-card"
+                  data-image="https://donfriki.000webhostapp.com/img/firebase.png"
+                >
+                  <h1 slot="header">Firebase</h1>
+                  <p slot="content">Google's mobile app platform.</p>
+                </card>
+                <card
+                  class="custom-card"
+                  data-image="https://donfriki.000webhostapp.com/img/git-logo.png"
+                >
+                  <h1 slot="header">Git</h1>
+                  <p slot="content">Track code changes, collaborate.</p>
+                </card>
+                <card
+                  class="custom-card-large"
+                  data-image="https://donfriki.000webhostapp.com/img/google-play-logo.png"
+                >
+                  <h1 slot="header">Google Play publishing</h1>
+                  <p slot="content">Manage apps on Play.</p>
+                </card>
               </div>
-            </div> -->
-          </div>
-
-          <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                <p class="simpleTitle">My skills.</p>
-              </div>
-            </div>
-            <div id="app" class="containerSkills">
-              <card
-                class="custom-card"
-                data-image="https://donfriki.000webhostapp.com/img/kotlin-logo.png"
-              >
-                <h1 slot="header">Kotlin</h1>
-                <p slot="content">Main for Android app development.</p>
-              </card>
-              <card
-                class="custom-card"
-                data-image="https://donfriki.000webhostapp.com/img/java-logo.png"
-              >
-                <h1 slot="header">Java</h1>
-                <p slot="content">Used in Android app development.</p>
-              </card>
-              <card
-                class="custom-card-large"
-                data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
-              >
-                <h1 slot="header">Android Studio</h1>
-                <p slot="content">IDE for Android app development.</p>
-              </card>
-              <card
-                class="custom-card-large"
-                data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
-              >
-                <h1 slot="header">Android Jetpack</h1>
-                <p slot="content">Toolkit for Android apps.</p>
-              </card>
-
-              <card
-                class="custom-card"
-                data-image="https://donfriki.000webhostapp.com/img/xml-logo.png"
-              >
-                <h1 slot="header">XML</h1>
-                <p slot="content">Markup for Android app interfaces.</p>
-              </card>
-              <card
-                class="custom-card-large"
-                data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
-              >
-                <h1 slot="header">Material Design</h1>
-                <p slot="content">Google's app design guide.</p>
-              </card>
-              <card
-                class="custom-card-large"
-                data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
-              >
-                <h1 slot="header">Android Architecture</h1>
-                <p slot="content">Android design patterns.</p>
-              </card>
-              <card
-                class="custom-card-large"
-                data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
-              >
-                <h1 slot="header">Design Patterns</h1>
-                <p slot="content">Solutions for software problems.</p>
-              </card>
-              <card
-                class="custom-card"
-                data-image="https://donfriki.000webhostapp.com/img/android-logo.png"
-              >
-                <h1 slot="header">Android API</h1>
-                <p slot="content">Interface for system access.</p>
-              </card>
-
-              <card
-                class="custom-card"
-                data-image="https://donfriki.000webhostapp.com/img/firebase.png"
-              >
-                <h1 slot="header">Firebase</h1>
-                <p slot="content">Google's mobile app platform.</p>
-              </card>
-              <card
-                class="custom-card"
-                data-image="https://donfriki.000webhostapp.com/img/git-logo.png"
-              >
-                <h1 slot="header">Git</h1>
-                <p slot="content">Track code changes, collaborate.</p>
-              </card>
-              <card
-                class="custom-card-large"
-                data-image="https://donfriki.000webhostapp.com/img/google-play-logo.png"
-              >
-                <h1 slot="header">Google Play publishing</h1>
-                <p slot="content">Manage apps on Play.</p>
-              </card>
             </div>
           </div>
         </div>
@@ -383,158 +345,162 @@
       <!-- portfolio section -->
       <div class="simpleLine"></div>
       <section class="portfolio-section" id="portfolio-section">
-        <div class="container text-start">
-          <div class="row row-cols-1">
-            <div class="col">
-              <div class="text-center">
-                <div id="glow">
-                  <p class="bigSimpleTitle" id="myProjects">My projects.</p>
+        <div data-aos="fade-up">
+          <div class="container text-start">
+            <div class="row row-cols-1">
+              <div class="col">
+                <div class="text-center">
+                  <div id="glow">
+                    <p class="bigSimpleTitle" id="myProjects">My projects.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="container text-center">
-          <div class="projects-section">
-            <div class="row row-cols-1 row-cols-lg-2">
-              <div class="col">
-                <div class="container text-center">
-                  <div class="row row-cols-1">
-                    <div class="col">
-                      <p>Android projects.</p>
+          <div class="container text-center">
+            <div class="projects-section">
+              <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">
+                  <div class="container text-center">
+                    <div class="row row-cols-1">
+                      <div class="col">
+                        <p>Android projects.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="projectsAndroid-container">
-                        <div class="card" id="cardPA-1">
-                          <img
-                            src="https://donfriki.000webhostapp.com/img/android-logo.png"
-                          />
-                          <p>Student_folder.</p>
-                          <button type="button" class="btn btn-outline-light">
-                            More info.
-                          </button>
-                        </div>
-                        <div class="card2" id="cardPA-2"></div>
-                        <div class="card" id="cardPA-3">
-                          <img
-                            src="https://donfriki.000webhostapp.com/img/android-logo.png"
-                          />
-                          <p>Super_coupons.</p>
-                          <button type="button" class="btn btn-outline-light">
-                            More info.
-                          </button>
-                        </div>
-                        <div class="card" id="cardPA-4">
-                          <img
-                            src="https://donfriki.000webhostapp.com/img/android-logo.png"
-                          />
-                          <p>random_image.</p>
-                          <button type="button" class="btn btn-outline-light">
-                            More info.
-                          </button>
+                    <div class="row">
+                      <div class="col">
+                        <div class="projectsAndroid-container">
+                          <div class="card" id="cardPA-1">
+                            <img
+                              src="https://donfriki.000webhostapp.com/img/android-logo.png"
+                            />
+                            <p>Student_folder.</p>
+                            <button type="button" class="btn btn-outline-light">
+                              More info.
+                            </button>
+                          </div>
+                          <div class="card2" id="cardPA-2"></div>
+                          <div class="card" id="cardPA-3">
+                            <img
+                              src="https://donfriki.000webhostapp.com/img/android-logo.png"
+                            />
+                            <p>Super_coupons.</p>
+                            <button type="button" class="btn btn-outline-light">
+                              More info.
+                            </button>
+                          </div>
+                          <div class="card" id="cardPA-4">
+                            <img
+                              src="https://donfriki.000webhostapp.com/img/android-logo.png"
+                            />
+                            <p>random_image.</p>
+                            <button type="button" class="btn btn-outline-light">
+                              More info.
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="container text-center">
-                  <div class="row row-cols-1">
-                    <div class="col">
-                      <p class="title-winProjects">Windows projects.</p>
+                <div class="col">
+                  <div class="container text-center">
+                    <div class="row row-cols-1">
+                      <div class="col">
+                        <p class="title-winProjects">Windows projects.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="projectsWindows-container">
-                        <div class="card2" id="cardPW-1">Windows projects.</div>
-                        <div class="card" id="cardPW-2">
-                          <img
-                            src="https://donfriki.000webhostapp.com/img/windows-logo.png"
-                          />
-                          <p>Launch_mod.</p>
-                          <button type="button" class="btn btn-outline-light">
-                            More info.
-                          </button>
-                        </div>
-                        <div class="card2" id="cardPW-3"></div>
-                        <div class="card" id="cardPW-4">
-                          <img
-                            src="https://donfriki.000webhostapp.com/img/windows-logo.png"
-                          />
-                          <p>Project_backup.</p>
-                          <button type="button" class="btn btn-outline-light">
-                            More info.
-                          </button>
+                    <div class="row">
+                      <div class="col">
+                        <div class="projectsWindows-container">
+                          <div class="card2" id="cardPW-1">
+                            Windows projects.
+                          </div>
+                          <div class="card" id="cardPW-2">
+                            <img
+                              src="https://donfriki.000webhostapp.com/img/windows-logo.png"
+                            />
+                            <p>Launch_mod.</p>
+                            <button type="button" class="btn btn-outline-light">
+                              More info.
+                            </button>
+                          </div>
+                          <div class="card2" id="cardPW-3"></div>
+                          <div class="card" id="cardPW-4">
+                            <img
+                              src="https://donfriki.000webhostapp.com/img/windows-logo.png"
+                            />
+                            <p>Project_backup.</p>
+                            <button type="button" class="btn btn-outline-light">
+                              More info.
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="container text-center">
-                  <div class="row row-cols-1">
-                    <div class="col">
-                      <p>Website projects.</p>
+                <div class="col">
+                  <div class="container text-center">
+                    <div class="row row-cols-1">
+                      <div class="col">
+                        <p>Website projects.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="projectsWebsite-container">
-                        <div class="card" id="cardPWs-1">
-                          <img
-                            src="https://donfriki.000webhostapp.com/img/web-logo.png"
-                          />
-                          <p>elfrikiamv.tech.</p>
-                          <button type="button" class="btn btn-outline-light">
-                            More info.
-                          </button>
-                        </div>
-                        <div class="card" id="cardPWs-2">
-                          <img
-                            src="https://donfriki.000webhostapp.com/img/web-logo.png"
-                          />
-                          <p>Shop_wp.</p>
-                          <button type="button" class="btn btn-outline-light">
-                            More info.
-                          </button>
+                    <div class="row">
+                      <div class="col">
+                        <div class="projectsWebsite-container">
+                          <div class="card" id="cardPWs-1">
+                            <img
+                              src="https://donfriki.000webhostapp.com/img/web-logo.png"
+                            />
+                            <p>elfrikiamv.tech.</p>
+                            <button type="button" class="btn btn-outline-light">
+                              More info.
+                            </button>
+                          </div>
+                          <div class="card" id="cardPWs-2">
+                            <img
+                              src="https://donfriki.000webhostapp.com/img/web-logo.png"
+                            />
+                            <p>Shop_wp.</p>
+                            <button type="button" class="btn btn-outline-light">
+                              More info.
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="container text-center">
-                  <div class="row row-cols-1">
-                    <div class="col">
-                      <p>Figma projects.</p>
+                <div class="col">
+                  <div class="container text-center">
+                    <div class="row row-cols-1">
+                      <div class="col">
+                        <p>Figma projects.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="projectsFigma-container">
-                        <div class="card" id="cardPF-1">
-                          <img
-                            src="https://donfriki.000webhostapp.com/img/web-logo.png"
-                          />
-                          <p>elfrikiamv.tech.</p>
-                          <button type="button" class="btn btn-outline-light">
-                            More info.
-                          </button>
-                        </div>
-                        <div class="card" id="cardPF-2">
-                          <img
-                            src="https://donfriki.000webhostapp.com/img/web-logo.png"
-                          />
-                          <p>Student_folder.</p>
-                          <button type="button" class="btn btn-outline-light">
-                            More info.
-                          </button>
+                    <div class="row">
+                      <div class="col">
+                        <div class="projectsFigma-container">
+                          <div class="card" id="cardPF-1">
+                            <img
+                              src="https://donfriki.000webhostapp.com/img/web-logo.png"
+                            />
+                            <p>elfrikiamv.tech.</p>
+                            <button type="button" class="btn btn-outline-light">
+                              More info.
+                            </button>
+                          </div>
+                          <div class="card" id="cardPF-2">
+                            <img
+                              src="https://donfriki.000webhostapp.com/img/web-logo.png"
+                            />
+                            <p>Student_folder.</p>
+                            <button type="button" class="btn btn-outline-light">
+                              More info.
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -559,147 +525,63 @@
         <div class="light x7"></div>
         <div class="light x8"></div>
         <div class="light x9"></div>
-        <div class="container text-center">
-          <div id="glow">
-            <p class="bigSimpleTitle" id="contactMe">Contact me.</p>
+        <div data-aos="fade-up">
+          <div class="container text-center">
+            <div id="glow">
+              <p class="bigSimpleTitle" id="contactMe">Contact me.</p>
+            </div>
           </div>
-        </div>
 
-        <section class="hero-section">
-          <div class="card-grid">
-            <a class="card">
-              <p class="infoRedContact">linkedin.com/in/elfrikiamv</p>
-              <div
-                class="card__background"
-                style="
-                  background-image: url(https://donfriki.000webhostapp.com/img/linkedIn-logo.png);
-                "
-              ></div>
-              <div class="card__content">
-                <p class="card__heading">LinkedIn.</p>
-                <button type="button" class="btn btn-outline-light">
-                  Contact me
-                </button>
-              </div>
-            </a>
-            <a class="card">
-              <p class="infoRedContact">github.com/elfrikiamv</p>
-              <div
-                class="card__background"
-                style="
-                  background-image: url(https://donfriki.000webhostapp.com/img/github-logo.png);
-                "
-              ></div>
-              <div class="card__content">
-                <p class="card__heading">Github.</p>
-                <button type="button" class="btn btn-outline-light">
-                  Contact me
-                </button>
-              </div>
-            </a>
-            <a class="card">
-              <p class="infoRedContact">contacto.elfrikiamv@gmail.com</p>
-              <div
-                class="card__background"
-                style="
-                  background-image: url(https://donfriki.000webhostapp.com/img/email-logo.png);
-                "
-              ></div>
-              <div class="card__content">
-                <p class="card__heading">Gmail.</p>
-                <button type="button" class="btn btn-outline-light">
-                  Contact me
-                </button>
-              </div>
-            </a>
-            <!-- <a class="card">
-              <div
-                class="card__background"
-                id="cardBGFigma"
-                style="background-image: url(/img/old/figma-logo.png)"
-              ></div>
-              <div class="card__content">
-                
-                <h3 class="card__heading">Interface design in Figma.</h3>
-              </div>
-            </a> -->
-          </div>
-        </section>
-
-        <!-- <div class="container text-center" id="redes-container">
-          <div class="row">
-            <div class="col-2" id="colRedesNone"></div>
-            <div class="col">
-              <div class="redesContact-container">
-                <img
-                  class="imgRed"
-                  src="/img/old/github-logo.png"
-                  alt="Imagen"
-                />
-                <div class="txtRed">
-                  <p>LinkedIn</p>
-                  <p>
-                    Connect with me on LinkedIn to see my experience in mobile
-                    app development. If you're looking for an Android developer
-                    for your next project, let me know via my profile.
-                  </p>
-                  <button type="button" class="btn btn-light">
+          <section class="hero-section">
+            <div class="card-grid">
+              <a class="card">
+                <p class="infoRedContact">linkedin.com/in/elfrikiamv</p>
+                <div
+                  class="card__background"
+                  style="
+                    background-image: url(https://donfriki.000webhostapp.com/img/linkedIn-logo.png);
+                  "
+                ></div>
+                <div class="card__content">
+                  <p class="card__heading">LinkedIn.</p>
+                  <button type="button" class="btn btn-outline-light">
                     Contact me
                   </button>
                 </div>
-              </div>
+              </a>
+              <a class="card">
+                <p class="infoRedContact">github.com/elfrikiamv</p>
+                <div
+                  class="card__background"
+                  style="
+                    background-image: url(https://donfriki.000webhostapp.com/img/github-logo.png);
+                  "
+                ></div>
+                <div class="card__content">
+                  <p class="card__heading">Github.</p>
+                  <button type="button" class="btn btn-outline-light">
+                    Contact me
+                  </button>
+                </div>
+              </a>
+              <a class="card">
+                <p class="infoRedContact">contacto.elfrikiamv@gmail.com</p>
+                <div
+                  class="card__background"
+                  style="
+                    background-image: url(https://donfriki.000webhostapp.com/img/email-logo.png);
+                  "
+                ></div>
+                <div class="card__content">
+                  <p class="card__heading">Gmail.</p>
+                  <button type="button" class="btn btn-outline-light">
+                    Contact me
+                  </button>
+                </div>
+              </a>
             </div>
-          </div>
+          </section>
         </div>
-        <div class="container text-center" id="redes-container">
-          <div class="row">
-            <div class="col-4" id="colRedesNone"></div>
-            <div class="col">
-              <div class="redesContact-container">
-                <img
-                  class="imgRed"
-                  src="/img/old/github-logo.png"
-                  alt="Imagen"
-                />
-                <div class="txtRed">
-                  <p>GitHub</p>
-                  <p>
-                    Check out my GitHub profile to see my mobile app development
-                    projects. If you're interested in working together, feel
-                    free to contact me through my profile.
-                  </p>
-                  <button type="button" class="btn btn-light">
-                    Contact me
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              <div class="redesContact-container">
-                <img
-                  class="imgRed"
-                  src="/img/old/github-logo.png"
-                  alt="Imagen"
-                />
-                <div class="txtRed">
-                  <p>Email</p>
-                  <p>
-                    Need help with mobile app development? Contact me via email
-                    to collaborate on your next project.
-                  </p>
-                  <button type="button" class="btn btn-light">
-                    Contact me
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-2" id="colRedesNone"></div>
-          </div>
-        </div> -->
       </section>
       <!-- contact section -->
     </main>

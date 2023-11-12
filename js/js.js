@@ -7,7 +7,13 @@ document
   .scrollIntoView({ behavior: "smooth" });
 });
 ;
-
+//animacion al bajar aparecen los elementos
+document.addEventListener("DOMContentLoaded", function() {
+  AOS.init({
+      duration: 1500, // Duración de la animación en milisegundos
+      once: false, // La animación solo se activa una vez
+  });
+});
 //container skills
 Vue.config.devtools = true;
 
