@@ -1,23 +1,22 @@
 //  Para desplazar la página a la sección de contacto al hacer clic en el botón
 document
-.getElementById("btnWelcomeScrollToContact")
-.addEventListener("click", function () {
-  document
-  .getElementById("contact-section")
-  .scrollIntoView({ behavior: "smooth" });
-});
-;
+  .getElementById("btnWelcomeScrollToContact")
+  .addEventListener("click", function () {
+    document
+      .getElementById("contact-section")
+      .scrollIntoView({ behavior: "smooth" });
+  });
 //animacion al bajar aparecen los elementos
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   AOS.init({
-      duration: 1500, // Duración de la animación en milisegundos
-      once: false, // La animación solo se activa una vez
+    duration: 1500, // Duración de la animación en milisegundos
+    once: false, // La animación solo se activa una vez
   });
 });
 //container skills
 Vue.config.devtools = true;
 
-Vue.component('card', {
+Vue.component("card", {
   template: `
     <div class="card-wrap"
       @mousemove="handleMouseMove"
@@ -39,7 +38,7 @@ Vue.component('card', {
       height: 0,
       mouseX: 0,
       mouseY: 0,
-      mouseLeaveDelay: null
+      mouseLeaveDelay: null,
     };
   },
   computed: {
@@ -54,21 +53,21 @@ Vue.component('card', {
       //wea vertical de inclinacion
       const rY = this.mousePY * -2; // Reducido de 30 para una rotación más suave
       return {
-        transform: `rotateY(${rX}deg) rotateX(${rY}deg)`
+        transform: `rotateY(${rX}deg) rotateX(${rY}deg)`,
       };
     },
     cardBgTransform() {
       const tX = this.mousePX * -10; // Reducido de -40 para una transición más suave
       const tY = this.mousePY * -10; // Reducido de -40 para una transición más suave
       return {
-        transform: `translateX(${tX}px) translateY(${tY}px)`
-      }
+        transform: `translateX(${tX}px) translateY(${tY}px)`,
+      };
     },
     cardBgImage() {
       return {
-        backgroundImage: `url(${this.dataImage})`
-      }
-    }
+        backgroundImage: `url(${this.dataImage})`,
+      };
+    },
   },
   methods: {
     handleMouseMove(e) {
@@ -83,16 +82,16 @@ Vue.component('card', {
         this.mouseX = 0;
         this.mouseY = 0;
       }, 1000);
-    }
+    },
   },
   mounted() {
     // Calcular las dimensiones de la tarjeta en la función montada
     this.width = this.$refs.card.offsetWidth;
     this.height = this.$refs.card.offsetHeight;
   },
-  props: ["dataImage"]
+  props: ["dataImage"],
 });
 
 const app = new Vue({
-  el: '#app'
+  el: "#app",
 });
