@@ -214,7 +214,31 @@ input:checked + .slider:before {
   font-size: larger;
   text-decoration: underline;
 }
-
+.aboutContainer .card {
+  background-color: transparent !important;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
+    inset transparent 0 0 0 6px;
+  padding: 1% 3%;
+  color: var(--white87);
+  display: grid;
+  align-items: center;
+}
+.aboutContainer .col {
+  padding: 0 9.5px;
+}
+.aboutContainer #txtIam {
+  /* padding-bottom: 16px; */
+  /* padding-left: 6%; */
+  padding-left: 82px;
+}
+.aboutContainer #txtAcademic {
+  padding-right: 80px;
+  margin-bottom: 21px;
+}
+.aboutContainer #txtIJust {
+  margin-bottom: 21px;
+}
 /* cad animated */
 
 .containerSkills {
@@ -395,16 +419,50 @@ input:checked + .slider:before {
   }
 }
 /* timeline */
-.skillsContainer #txtIam {
-  padding-bottom: 2%;
-  padding-right: 3%;
-  padding-left: 3%;
-}
+
+/* #aboutEducation {
+  padding-left: 5%;
+} */
 @media (max-width: 1400px) {
   .about-section {
     position: relative;
     height: 100%;
   }
+}
+@media (max-width: 991px) {
+  .aboutContainer .col {
+    padding: 0 0px;
+  }
+  .aboutContainer #txtIam {
+    /* padding-bottom: 16px; */
+    /* padding-left: 6%; */
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .aboutContainer #txtAcademic {
+    padding-right: 0px;
+    margin-bottom: 22px;
+  }
+  .aboutContainer #txtIJust {
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 575px) {
+  /* .aboutContainer .col {
+    padding: 0 0px;
+  } */
+  .aboutContainer #txtIam { 
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .aboutContainer #txtAcademic {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 22px;
+  }
+  /* .aboutContainer #txtIJust {
+    margin-bottom: 22px;
+  } */
 }
 /* @media (max-width: 576px) {
 
@@ -414,12 +472,12 @@ input:checked + .slider:before {
   }
 } */
 
-/* @media (max-height: 1440px) {
+@media (max-height: 820px) {
   .about-section {
     position: relative;
     height: 100%;
   }
-} */
+}
 /* About me Section */
 
 /* Portfolio Section */
