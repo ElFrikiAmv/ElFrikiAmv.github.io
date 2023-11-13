@@ -13,7 +13,7 @@
   --white: #ffffff;
   --dark: #000000;
 
-  --glowColor: rgba(255, 255, 255, 0.822);
+  --glowColor: rgba(255, 255, 255, 0.782);
   --accentColor: #ff000042;
   --accentColor2: #ff000022;
 
@@ -144,6 +144,7 @@ input:checked + .slider:before {
 
 #glow {
   text-shadow: 0 0 1vw var(--glowColor);
+  /* text-shadow: var(--accentColor) 0 10px 10px; */
 }
 /* effect glow */
 
@@ -209,8 +210,11 @@ input:checked + .slider:before {
 }
 #simpleTitle,
 .simpleTitle {
+  position: relative;
   font-size: larger;
   color: var(--white87);
+  text-shadow: var(--accentColor) 0 10px 10px;
+  z-index: 1;
 }
 .aboutContainer .fst-italic {
   color: var(--white60);
