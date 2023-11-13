@@ -201,6 +201,7 @@ input:checked + .slider:before {
   display: grid;
   justify-content: center;
   align-items: center;
+  padding: 13px 0;
 }
 .bigSimpleTitle {
   font-size: x-large;
@@ -452,7 +453,7 @@ input:checked + .slider:before {
     margin-bottom: 22px;
   }
 }
-@media (max-height: 820px) {
+@media (max-height: 917px) {
   .about-section {
     position: relative;
     height: 100%;
@@ -468,6 +469,7 @@ input:checked + .slider:before {
   display: grid;
   justify-content: center;
   align-items: center;
+  padding: 13px 0;
 }
 
 /* card animated xd */
@@ -673,7 +675,7 @@ input:checked + .slider:before {
     display: block !important;
   }
 }
-@media (max-height: 800px) {
+@media (max-height: 900px) {
   .portfolio-section {
     position: relative;
     height: 100%;
@@ -688,6 +690,7 @@ input:checked + .slider:before {
   height: 100vh;
   display: grid;
   align-items: center;
+  padding: 13px 0;
 }
 
 /* cads animated */
@@ -790,7 +793,7 @@ input:checked + .slider:before {
     height: 100%;
   }
 }
-@media (max-height: 590px) {
+@media (max-height: 913px) {
   .contact-section {
     position: relative;
     height: 100%;
