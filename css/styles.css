@@ -230,17 +230,71 @@ input:checked + .slider:before {
   display: grid;
   align-items: center;
 }
+.cardSimpleTitleSkills .titleMySkills {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  transition: opacity 0.8s, visibility 0.8s, height 0.8s;
+}
+.cardSimpleTitleSkills .otherSkills img {
+  margin: 0;
+  width: 42px;
+  height: auto;
+}
+.cardSimpleTitleSkills .titleMySkills p,
+.cardSimpleTitleSkills .otherSkills p {
+  margin: 0;
+}
+.cardSimpleTitleSkills .otherSkills {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.8s, visibility 0.8s, height 0.8s;
+}
+.cardSimpleTitleSkills {
+  background-color: transparent !important;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
+    inset transparent 0 0 0 6px;
+  transition: transform 0.3s ease-in-out;
+  padding: 1% 0;
+  margin: 0 53px;
+  color: var(--white87);
+  display: grid;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.cardSimpleTitleSkills:hover {
+  transform: scale(1.02);
+  &:hover {
+    .titleMySkills {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      overflow: hidden;
+    }
+    .otherSkills {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+    }
+  }
+}
 .aboutContainer .card:hover {
-  transform: scale(1.02); /* Hacemos un pequeño zoom al 110% del tamaño original */
+  transform: scale(1.02);
 }
 .aboutContainer .col {
-  padding: 0 9.5px;
+  padding: 0 10px;
 }
 .aboutContainer #txtIam {
-  padding-left: 82px;
+  padding-left: 66px;
 }
 .aboutContainer #txtAcademic {
-  padding-right: 80px;
+  padding-right: 64px;
   margin-bottom: 21px;
 }
 .aboutContainer #txtIJust {
@@ -254,7 +308,7 @@ input:checked + .slider:before {
   justify-content: center;
 }
 .custom-card {
-  margin: 7px;
+  margin: 10px;
   perspective: 800px;
   cursor: default;
 
@@ -321,7 +375,7 @@ input:checked + .slider:before {
 /* large cad animated */
 
 .custom-card-large {
-  margin: 7px;
+  margin: 10px;
   perspective: 800px;
   cursor: default;
 
