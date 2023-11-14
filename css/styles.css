@@ -153,7 +153,7 @@ input:checked + .slider:before {
 .welcome-section {
   position: relative;
   height: 100vh;
-  background-image: url("/img/yomero.png");
+  background-image: url("/img/use/yomero.png");
   background-repeat: no-repeat;
   background-position: right center;
   display: flex;
@@ -162,7 +162,7 @@ input:checked + .slider:before {
 }
 @-moz-document url-prefix() {
   .welcome-section {
-    background-image: url("/img/yomero.webp");
+    background-image: url("/img/use/yomero.webp");
   }
 }
 .welcome-section p,
