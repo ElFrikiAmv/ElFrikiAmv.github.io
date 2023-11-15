@@ -238,8 +238,8 @@ input:checked + .slider:before {
 }
 .cardSimpleTitleSkills .otherSkills img {
   margin: 0;
-  width: 42px;
-  height: auto;
+  height: 28px;
+  width: auto;
 }
 .cardSimpleTitleSkills .titleMySkills p,
 .cardSimpleTitleSkills .otherSkills p {
