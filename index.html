@@ -15,6 +15,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/theme.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,7 +33,7 @@
   <body class="dark-theme">
     <!-- navigation bar -->
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="http://elfrikiamv.tech">
             <img
@@ -57,12 +58,12 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#home-section" id="homeTextNav"
-                  >Home</a
+                  ><p>Home</p></a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about-section" id="aboutTextNav"
-                  >About me</a
+                  ><p>About me</p></a
                 >
               </li>
               <li class="nav-item">
@@ -70,12 +71,12 @@
                   class="nav-link"
                   href="#portfolio-section"
                   id="portfolioTextNav"
-                  >Portfolio</a
+                  ><p>Portfolio</p></a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact-section" id="contactTextNav"
-                  >Contact me</a
+                  ><p>Contact me</p></a
                 >
               </li>
               <li class="nav-item">
@@ -94,13 +95,13 @@
                 </div>
                 <!-- language switcher -->
               </li>
-              <li class="nav-item">
+              <li class="nav-item"><!--  -->
                 <!-- theme switcher -->
                 <div class="theme-switcher">
                   <div id="theme-button" class="theme-button">
                     <img
                       id="theme-icon"
-                      src="https://i.postimg.cc/13K9PMQV/light-mode.webp"
+                      src="https://i.postimg.cc/mZS6SD8v/night-mode.webp"
                     />
                   </div>
                 </div>
@@ -141,6 +142,7 @@
           <div class="row row-cols-1">
             <div class="col">
               <img
+                id="logoName-icon"
                 src="https://i.postimg.cc/G9nhN4SK/logo-Elfrikiamv-Dev.png"
                 class="img-fluid"
                 alt="..."
@@ -321,6 +323,20 @@
                               </div>
                             </div>
                           </div>
+                          <div class="col-md-auto">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-auto">
+                                  <p>Linux.</p>
+                                </div>
+                                <div class="col-md-auto">
+                                  <img
+                                    src="https://i.postimg.cc/JnC8TNNW/terminal-logo.webp"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -459,7 +475,10 @@
                               More info.
                             </button>
                             <div class="txtAboutProject">
-                              <p>Manage and backup your files with Student_folder.</p>
+                              <p>
+                                Manage and backup your files with
+                                Student_folder.
+                              </p>
                             </div>
                           </div>
                           <div class="card2" id="cardPA-2"></div>
@@ -472,7 +491,9 @@
                               More info.
                             </button>
                             <div class="txtAboutProject">
-                              <p>Discover amazing coupons with Super_coupons.</p>
+                              <p>
+                                Discover amazing coupons with Super_coupons.
+                              </p>
                             </div>
                           </div>
                           <div class="card" id="cardPA-4">
@@ -516,7 +537,10 @@
                               More info.
                             </button>
                             <div class="txtAboutProject">
-                              <p>Improve your minecraft experience with Launch_mod.</p>
+                              <p>
+                                Improve your minecraft experience with
+                                Launch_mod.
+                              </p>
                             </div>
                           </div>
                           <div class="card2" id="cardPW-3"></div>
@@ -556,7 +580,10 @@
                               More info.
                             </button>
                             <div class="txtAboutProject">
-                              <p>Personal portfolio website, showcase your skills.</p>
+                              <p>
+                                Personal portfolio website, showcase your
+                                skills.
+                              </p>
                             </div>
                           </div>
                           <div class="card" id="cardPWs-2">
@@ -568,7 +595,10 @@
                               More info.
                             </button>
                             <div class="txtAboutProject">
-                              <p>Send your shopping list via WhatsApp with Shop_wp.</p>
+                              <p>
+                                Send your shopping list via WhatsApp with
+                                Shop_wp.
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -607,7 +637,9 @@
                               More info.
                             </button>
                             <div class="txtAboutProject">
-                              <p>Interface design for Student_folder in Figma.</p>
+                              <p>
+                                Interface design for Student_folder in Figma.
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -743,6 +775,7 @@
     <!-- footer content -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <script src="/js/js.js"></script>
+    <script src="/js/theme.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

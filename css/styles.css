@@ -26,15 +26,6 @@
   --width-container: 1200px;
 }
 
-/* dark theme and font */
-body.dark-theme {
-  background-color: var(--backgroundColorDark);
-  font-family: "Consolas", monospace;
-  color: var(--white87);
-  font-size: medium;
-}
-/* dark theme and font */
-
 /* Switch estilo toggle */
 .switch {
   position: relative;
@@ -116,20 +107,19 @@ input:checked + .slider:before {
   background-color: transparent;
   border: none;
 }
+.navbar p {
+  color: var(--white60);
+  margin: 0;
+  padding: 0;
+}
+.navbar p:hover {
+  color: var(--white87);
+}
 .navbar-collapse {
   justify-content: flex-end;
 }
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--white87);
-}
-.nav-link {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--white60);
-  padding: 0 1rem;
-  transition: color 0.3s ease;
+.theme-switcher img {
+  opacity: 82%;
 }
 /* Navigation Bar */
 

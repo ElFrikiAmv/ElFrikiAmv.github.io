@@ -1,0 +1,120 @@
+:root {
+  --backgroundColorDark: #171717;
+  --backgroundColorLight: #ffffff;
+
+  --surface01dp: #121212;
+  --surface06dp: #2c2c2c;
+  --surface12dp: #313131;
+
+  --white87: rgba(255, 255, 255, 0.87);
+  --white60: rgba(255, 255, 255, 0.6);
+  --white38: rgba(255, 255, 255, 0.38);
+
+  --white: #ffffff;
+  --dark: #000000;
+
+  --glowColor: rgba(255, 255, 255, 0.782);
+  --glowColorLight: rgba(0, 0, 0, 0.782);
+}
+
+/* dark theme and font */
+body.dark-theme {
+  background-color: var(--backgroundColorDark);
+  font-family: "Consolas", monospace;
+  color: var(--white87);
+  font-size: medium;
+}
+/* dark theme and font */
+
+/* light theme  */
+
+body.light-theme {
+  background-color: var(--backgroundColorLight);
+  font-family: "Consolas", monospace;
+  color: var(--surface01dp);
+  font-size: medium;
+}
+body.light-theme .navbar p {
+  color: var(--surface06dp);
+  margin: 0;
+  padding: 0;
+}
+body.light-theme button {
+  --bs-btn-border-color: var(--surface01dp);
+  --bs-btn-hover-bg: var(--surface01dp);
+  --bs-btn-hover-border-color: var(--surface01dp);
+  --bs-btn-color: var(--surface01dp);
+  --bs-btn-hover-color: var(--white87);
+}
+body.light-theme #simpleTitle,
+body.light-theme .simpleTitle {
+  color: var(--surface01dp);
+  text-shadow: var(--surface06dp) 0 10px 10px;
+}
+body.light-theme .aboutContainer .fst-italic {
+  color: var(--surface06dp);
+}
+body.light-theme .aboutContainer .card {
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+    inset var(--surface01dp) 0 0 0 1px, inset transparent 0 0 0 6px;
+  color: var(--surface01dp);
+}
+body.light-theme .cardSimpleTitleSkills {
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+    inset var(--surface01dp) 0 0 0 1px, inset transparent 0 0 0 6px;
+  color: var(--surface01dp);
+}
+
+body.light-theme .skillsContainer .academicContainer li {
+  border-left: 1px solid var(--surface01dp);
+  &:last-child {
+    border: 0px;
+    padding-bottom: 0;
+  }
+  .skillsContainer .academicContainer &:before {
+    background: var(--backgroundColorLight);
+    border: 1px solid var(--backgroundColorDark);
+    box-shadow: 3px 3px 0px var(--surface01dp);
+    box-shadow: 3px 3px 0px var(--surface01dp);
+  }
+}
+body.light-theme .welcome-section {
+  background-image: none;
+}
+body.light-theme .welcome-section p,
+body.light-theme .welcome-section button,
+body.light-theme .welcome-section img {
+  margin-left: 0%;
+}
+body.light-theme .light {
+  box-shadow: var(--surface01dp) 0px 0px 20px 2px;
+}
+@media (max-width: 540px) {
+  body.light-theme .light {
+    box-shadow: var(--surface12dp) 0px 0px 20px 2px;
+  }
+}
+body.light-theme .projects-section .card,
+body.light-theme .custom-card-large .card,
+body.light-theme .custom-card .card {
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+    inset var(--surface01dp) 0 0 0 1px, inset transparent 0 0 0 6px;
+}
+body.light-theme .simpleLine {
+  border-top: 1px solid var(--surface06dp);
+}
+body.light-theme #glow {
+  text-shadow: 0 0 1vw var(--glowColorLight);
+}
+body.light-theme .contact-section .card {
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+    inset var(--surface01dp) 0 0 0 1px, inset transparent 0 0 0 6px;
+}
+body.light-theme .navbar p:hover,
+body.light-theme .custom-card .card-info,
+body.light-theme .custom-card-large .card-info,
+body.light-theme .projects-section .card p,
+body.light-theme .contact-section .card p {
+  color: var(--surface01dp);
+}
+/* light theme  */
