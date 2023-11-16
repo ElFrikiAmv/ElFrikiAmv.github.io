@@ -576,12 +576,23 @@ input:checked + .slider:before {
   margin: 0;
   transition: opacity 0.5s;
 }
+.projects-section .card .txtAboutProject p {
+  opacity: 0;
+  transition: opacity 0.5s;
+  padding: 0px 5px;
+  padding-bottom: 13px;
+}
+.projects-section .card:hover .txtAboutProject p {
+  opacity: 1;
+}
 .projects-section button {
   margin-top: 0%;
   opacity: 0;
   transition: opacity 0.5s;
   position: absolute;
-  top: 50%; /* Alinea el botón verticalmente en el centro */
+  white-space: nowrap;
+  padding: 13px 50px;
+  top: 30%; /* Alinea el botón verticalmente en el centro */
   left: 50%; /* Alinea el botón horizontalmente en el centro */
   transform: translate(-50%, -50%); /* Centra el botón correctamente */
 }
