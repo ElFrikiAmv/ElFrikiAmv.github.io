@@ -21,7 +21,7 @@ function toggleTheme() {
     themeIcon.src = "https://i.postimg.cc/XqxHNHrj/light-mode.webp";
     logoNameIcon.src =
       "https://i.postimg.cc/66rz6Lyc/logo-Elfrikiamv-Dev-Light.webp";
-    logoIcon.src = "/img/use/elfrikiamv-logo-light.ico";
+    logoIcon.src = "https://elfrikiamv.com/img/use/elfrikiamv-logo-light.ico";
     /* arrowUpIcon.src = "https://donfriki.000webhostapp.com/img/up-light.png";
       
        */
@@ -33,7 +33,7 @@ function toggleTheme() {
     currentTheme = "dark";
     themeIcon.src = "https://i.postimg.cc/mZS6SD8v/night-mode.webp";
     logoNameIcon.src = "https://i.postimg.cc/0jsfdrH7/logo-Elfrikiamv-Dev.webp";
-    logoIcon.src = "/img/use/elfrikiamv-logo.ico";
+    logoIcon.src = "https://elfrikiamv.com/img/use/elfrikiamv-logo.ico";
     /* arrowUpIcon.src = "https://donfriki.000webhostapp.com/img/up-night.png";
       ;
        */

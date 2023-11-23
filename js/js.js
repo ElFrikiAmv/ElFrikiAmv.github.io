@@ -1,3 +1,11 @@
+//tooltip
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
+
 //  Para desplazar la página a la sección de contacto al hacer clic en el botón
 document
   .getElementById("btnWelcomeScrollToContact")
@@ -107,36 +115,30 @@ function gitHubSuperCoupons() {
 function gitHubRandomImage() {
   window.open("https://github.com/elfrikiamv/random_image", "_blank");
 }
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+function gitHubLaunchMod() {
+  window.open("https://github.com/elfrikiamv/launch_mod", "_blank");
 }
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+function gitHubProjectBackup() {
+  window.open("https://github.com/elfrikiamv/project_backup", "_blank");
 }
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+function gitHubElfrikiamvWeb() {
+  window.open("https://github.com/elfrikiamv/elfrikiamv.github.io", "_blank");
 }
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+function gitHubShopWp() {
+  window.open("https://github.com/elfrikiamv/shop_wp", "_blank");
 }
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+function gitHubStudentFolderFigma() {
+  window.open("https://github.com/elfrikiamv/", "_blank");
 }
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+function gitHubElfrikiamvFigma() {
+  window.open("https://github.com/elfrikiamv/", "_blank");
 }
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+function LinkedInGo() {
+  window.open("https://www.linkedin.com/in/elfrikiamv", "_blank");
 }
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+function GithubGo() {
+  window.open("https://github.com/elfrikiamv", "_blank");
 }
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
-}
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
-}
-function gitHubStudentFolder() {
-  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+function GmailGo() {
+  window.open("https://github.com/elfrikiamv", "_blank");
 }
