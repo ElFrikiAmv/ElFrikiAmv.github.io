@@ -95,3 +95,48 @@ Vue.component("card", {
 const app = new Vue({
   el: "#app",
 });
+
+//buttons
+
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubSuperCoupons() {
+  window.open("https://github.com/elfrikiamv/super_coupons", "_blank");
+}
+function gitHubRandomImage() {
+  window.open("https://github.com/elfrikiamv/random_image", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}
+function gitHubStudentFolder() {
+  window.open("https://github.com/elfrikiamv/student_folder", "_blank");
+}

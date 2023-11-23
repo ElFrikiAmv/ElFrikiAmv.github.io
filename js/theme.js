@@ -20,7 +20,7 @@ function toggleTheme() {
     currentTheme = "light";
     themeIcon.src = "https://i.postimg.cc/XqxHNHrj/light-mode.webp";
     logoNameIcon.src =
-      "https://i.postimg.cc/T20Rcv7N/logo-Elfrikiamv-Dev-Light.png";
+      "https://i.postimg.cc/66rz6Lyc/logo-Elfrikiamv-Dev-Light.webp";
     logoIcon.src = "/img/use/elfrikiamv-logo-light.ico";
     /* arrowUpIcon.src = "https://donfriki.000webhostapp.com/img/up-light.png";
       
@@ -32,7 +32,7 @@ function toggleTheme() {
     //update content
     currentTheme = "dark";
     themeIcon.src = "https://i.postimg.cc/mZS6SD8v/night-mode.webp";
-    logoNameIcon.src = "https://i.postimg.cc/G9nhN4SK/logo-Elfrikiamv-Dev.png";
+    logoNameIcon.src = "https://i.postimg.cc/0jsfdrH7/logo-Elfrikiamv-Dev.webp";
     logoIcon.src = "/img/use/elfrikiamv-logo.ico";
     /* arrowUpIcon.src = "https://donfriki.000webhostapp.com/img/up-night.png";
       ;

@@ -14,8 +14,13 @@
   --dark: #000000;
 
   --glowColor: rgba(255, 255, 255, 0.782);
-  --accentColor: #ff000042;
-  --accentColor2: #ff000022;
+  --glowColorLight: rgba(0, 0, 0, 0.782);
+  --accentColor: #61191dcb;
+  --accentColor2: #61191D;
+
+  --accentColorText: #fff;
+  --accentColorTextOpacity: #d32f2fb2;
+  /* --accentColorText: #61191D; */
 
   --text-light: rgba(0, 0, 0, 0.6);
   --spacing-s: 8px;
@@ -34,7 +39,7 @@
   height: 20px;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 0.2rem;
+  margin-top: 0;
 }
 .switch input {
   opacity: 0;
@@ -76,13 +81,15 @@ input:checked + .slider:before {
 #language-button {
   background-color: transparent;
   border: none;
-  border-radius: 0px;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
-  padding: 0rem;
+  /* border-radius: 0px;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+  padding: 0rem; */
 }
-#language-icon {
-  width: 40px;
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* button language-switche*/
 
@@ -113,7 +120,7 @@ input:checked + .slider:before {
   padding: 0;
 }
 .navbar p:hover {
-  color: var(--white87);
+  color: var(--accentColorText);
 }
 .navbar-collapse {
   justify-content: flex-end;
@@ -202,8 +209,8 @@ input:checked + .slider:before {
 .simpleTitle {
   position: relative;
   font-size: larger;
-  color: var(--white87);
-  text-shadow: var(--accentColor) 0 10px 10px;
+  color: var(--accentColorText);
+  text-shadow: var(--accentColor) 0 3px 3px;
   z-index: 1;
 }
 .aboutContainer .fst-italic {
@@ -276,6 +283,8 @@ input:checked + .slider:before {
 }
 .aboutContainer .card:hover {
   transform: scale(1.02);
+  /* box-shadow: var(--ac) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
+    inset transparent 0 0 0 6px; */
 }
 .aboutContainer .col {
   padding: 0 10px;
@@ -358,7 +367,8 @@ input:checked + .slider:before {
 .custom-card .card-info h1 {
   font-size: 22px;
   font-weight: 700;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+  color: var(--accentColorText);
+  text-shadow: var(--accentColor) 0 3px 3px;
 }
 /* cad animated */
 
@@ -425,7 +435,9 @@ input:checked + .slider:before {
 .custom-card-large .card-info h1 {
   font-size: 22px;
   font-weight: 700;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+  color: var(--accentColorText);
+  text-shadow: var(--accentColor) 0 3px 3px;
+  /* text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px; */
 }
 /* large cad animated */
 

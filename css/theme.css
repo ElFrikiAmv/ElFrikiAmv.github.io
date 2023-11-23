@@ -1,22 +1,3 @@
-:root {
-  --backgroundColorDark: #171717;
-  --backgroundColorLight: #ffffff;
-
-  --surface01dp: #121212;
-  --surface06dp: #2c2c2c;
-  --surface12dp: #313131;
-
-  --white87: rgba(255, 255, 255, 0.87);
-  --white60: rgba(255, 255, 255, 0.6);
-  --white38: rgba(255, 255, 255, 0.38);
-
-  --white: #ffffff;
-  --dark: #000000;
-
-  --glowColor: rgba(255, 255, 255, 0.782);
-  --glowColorLight: rgba(0, 0, 0, 0.782);
-}
-
 /* dark theme and font */
 body.dark-theme {
   background-color: var(--backgroundColorDark);
@@ -54,17 +35,12 @@ body.light-theme .simpleTitle {
 body.light-theme .aboutContainer .fst-italic {
   color: var(--surface06dp);
 }
-body.light-theme .aboutContainer .card {
-  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
-    inset var(--surface01dp) 0 0 0 1px, inset transparent 0 0 0 6px;
-  color: var(--surface01dp);
-}
+body.light-theme .aboutContainer .card,
 body.light-theme .cardSimpleTitleSkills {
   box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
     inset var(--surface01dp) 0 0 0 1px, inset transparent 0 0 0 6px;
   color: var(--surface01dp);
 }
-
 body.light-theme .skillsContainer .academicContainer li {
   border-left: 1px solid var(--surface01dp);
   &:last-child {

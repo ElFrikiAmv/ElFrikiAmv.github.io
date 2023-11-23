@@ -1,86 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Tooltip</title>
   <style>
     body {
-      background-color: #1a1319;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
     }
 
-    .glitch-text {
-      font-size: 2rem;
-      color: #fff;
+    .image-container {
       position: relative;
+      display: inline-block;
     }
 
-    .glitch-text::before,
-    .glitch-text::after {
-      content: attr(data-text);
+    .tooltip {
+      opacity: 0;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      transition: opacity 0.3s;
     }
 
-    .glitch-text::before {
-      animation: glitch1 1s infinite linear alternate-reverse;
-    }
-
-    .glitch-text::after {
-      animation: glitch2 1s infinite linear alternate-reverse;
-    }
-
-    @keyframes glitch1 {
-      0% {
-        transform: translate(0);
-      }
-      25% {
-        transform: translate(-5px, 5px);
-      }
-      50% {
-        transform: translate(5px, -5px);
-      }
-      75% {
-        transform: translate(-5px, 5px);
-      }
-      100% {
-        transform: translate(0);
-      }
-    }
-
-    @keyframes glitch2 {
-      0% {
-        transform: translate(0);
-      }
-      25% {
-        transform: translate(5px, -5px);
-      }
-      50% {
-        transform: translate(-5px, 5px);
-      }
-      75% {
-        transform: translate(5px, -5px);
-      }
-      100% {
-        transform: translate(0);
-      }
+    .image-container:hover .tooltip {
+      opacity: 1;
     }
   </style>
-  <title>Glitch Text</title>
 </head>
-
 <body>
-  <div class="glitch-text" data-text="Glitch Text">Glitch Text</div>
+
+<div class="image-container">
+  <img src="tu-imagen.jpg" alt="Descripción de la imagen">
+  <div class="tooltip">
+    <p>Texto del tooltip</p>
+  </div>
+</div>
+
 </body>
-
 </html>
-
-
-
