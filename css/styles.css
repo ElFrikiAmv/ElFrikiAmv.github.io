@@ -40,6 +40,7 @@
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 0;
+  margin-bottom: 3px;
 }
 .switch input {
   opacity: 0;
@@ -95,25 +96,55 @@ input:checked + .slider:before {
   background-color: transparent;
   border: none;
   border-radius: 0px;
-  margin-left: 1rem;
-  margin-bottom: 0.2rem;
-  padding: 0rem;
 }
 #theme-icon {
-  width: 28px;
+  width: 24px;
+  margin-left: 9px;
+  margin-bottom: 3px;
 }
+@media (max-width: 992px) {
+  #theme-icon {
+    margin-left: 0;
+    margin-bottom: 3px;
+  }
+  .navbar {
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.2);
+  }
+} 
+
 /* button theme-img*/
 
 /* Navigation Bar */
-
 .navbar {
-  background-color: transparent;
+  background: rgba(0, 0, 0, 0.1);
   border: none;
+  transition: background-color 0.5s ease-in-out;
+}
+.navbar:hover {
+  backdrop-filter: blur(3px);
+}
+#navbarItem {
+  padding: 0;
+}
+.navbar p::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: var(--accentColorText);
+  transform: scale(0,1);
+  transform-origin: center;
+  transition: transform .25s;
+  
+}
+.navbar p:hover::after {
+  transform: scale(1,1);
 }
 .navbar p {
   color: var(--white60);
   margin: 0;
   padding: 0;
+  transition: color 0.3s ease-in-out;
 }
 .navbar p:hover {
   color: var(--accentColorText);
@@ -122,7 +153,17 @@ input:checked + .slider:before {
   justify-content: flex-end;
 }
 .theme-switcher img {
-  opacity: 82%;
+  opacity: 0.8;
+}
+/* Agregar transición al cambio de tema */
+#theme-toggle:checked + .slider {
+  background-color: var(--accentColor);
+}
+#theme-toggle:checked + .slider:before {
+  transform: translateX(18px);
+}
+.slider {
+  transition: background-color 0.3s ease-in-out;
 }
 /* Navigation Bar */
 
