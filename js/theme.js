@@ -1,6 +1,3 @@
-// Declare and initialize the currentLanguage variable
-var currentLanguage = "en";
-
 // Declare and initialize the currentTheme variable
 var currentTheme = "dark";
 
@@ -11,19 +8,22 @@ function toggleTheme() {
   var themeIcon = document.getElementById("theme-icon");
   var logoNameIcon = document.getElementById("logoName-icon");
   var logoIcon = document.getElementById("logo-icon");
-  var navbar = document.querySelector('.navbar');
+  var navbar = document.querySelector(".navbar");
   /* var arrowUpIcon = document.getElementById("up-icon");
    */
 
   // Toggle the current theme
   if (currentTheme === "dark") {
+    if (currentLanguage === "en") {
+      logoNameIcon.src = "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-dark-en.webp";
+    } else {
+      logoNameIcon.src = "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-dark-es.webp";
+    }
     //update content
     currentTheme = "light";
     themeIcon.src = "https://i.postimg.cc/XqxHNHrj/light-mode.webp";
-    logoNameIcon.src =
-      "https://i.postimg.cc/66rz6Lyc/logo-Elfrikiamv-Dev-Light.webp";
     logoIcon.src = "https://elfrikiamv.com/img/use/elfrikiamv-logo-light.ico";
-    navbar.setAttribute('data-bs-theme', 'light');
+    navbar.setAttribute("data-bs-theme", "light");
     /* arrowUpIcon.src = "https://donfriki.000webhostapp.com/img/up-light.png";
       
        */
@@ -31,12 +31,16 @@ function toggleTheme() {
     body.classList.toggle("light-theme");
     body.classList.toggle("dark-theme");
   } else {
+    if (currentLanguage === "es") {
+      logoNameIcon.src = "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-light-es.webp";
+    } else {
+      logoNameIcon.src = "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-light-en.webp";
+    }
     //update content
     currentTheme = "dark";
     themeIcon.src = "https://i.postimg.cc/mZS6SD8v/night-mode.webp";
-    logoNameIcon.src = "https://i.postimg.cc/0jsfdrH7/logo-Elfrikiamv-Dev.webp";
     logoIcon.src = "https://elfrikiamv.com/img/use/elfrikiamv-logo.ico";
-    navbar.setAttribute('data-bs-theme', 'dark')
+    navbar.setAttribute("data-bs-theme", "dark");
     /* arrowUpIcon.src = "https://donfriki.000webhostapp.com/img/up-night.png";
       ;
        */

@@ -9,7 +9,11 @@ function toggleLanguage() {
   // Toggle the current language
   if (currentLanguage === "en") {
     currentLanguage = "es";
-    logoNameIcon.src = "https://i.postimg.cc/0jsfdrH7/logo-Elfrikiamv-Dev.webp";
+    if (currentTheme == "dark") {
+      logoNameIcon.src = "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-light-es.webp";
+    }else {
+      logoNameIcon.src = "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-dark-es.webp";
+    }
 
     // Actualizar contenido en español
     document.getElementById("homeTextNav").textContent = "Inicio";
@@ -119,7 +123,11 @@ function toggleLanguage() {
     document.getElementById("btnContactMeTxt").textContent = "Contáctame";
   } else {
     currentLanguage = "en";
-    logoNameIcon.src = "https://i.postimg.cc/0jsfdrH7/logo-Elfrikiamv-Dev.webp";
+    if (currentTheme == "light") {
+      logoNameIcon.src = "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-dark-en.webp";
+    }else {
+      logoNameIcon.src = "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-light-en.webp";
+    }
 
     // Actualizar contenido en inglés
     document.getElementById("homeTextNav").textContent = "Home";

@@ -111,7 +111,7 @@ input:checked + .slider:before {
     backdrop-filter: blur(3px);
     background: rgba(0, 0, 0, 0.2);
   }
-} 
+}
 
 /* button theme-img*/
 
@@ -132,13 +132,12 @@ input:checked + .slider:before {
   display: block;
   height: 3px;
   background-color: var(--accentColorText);
-  transform: scale(0,1);
+  transform: scale(0, 1);
   transform-origin: center;
-  transition: transform .25s;
-  
+  transition: transform 0.25s;
 }
 .navbar p:hover::after {
-  transform: scale(1,1);
+  transform: scale(1, 1);
 }
 .navbar p {
   color: var(--white60);
