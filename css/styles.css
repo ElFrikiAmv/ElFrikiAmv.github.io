@@ -112,7 +112,6 @@ input:checked + .slider:before {
     background: rgba(0, 0, 0, 0.2);
   }
 }
-
 /* button theme-img*/
 
 /* Navigation Bar */
@@ -193,7 +192,6 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-
   animation: fadeIn 1s ease-in-out;
 }
 @keyframes fadeIn {
@@ -204,11 +202,6 @@ input:checked + .slider:before {
     opacity: 1;
   }
 }
-/* @-moz-document url-prefix() {
-  .welcome-section {
-    background-image: url("/img/use/yomero.webp");
-  }
-} */
 .welcome-section p,
 .welcome-section button,
 .welcome-section img {
@@ -335,11 +328,8 @@ input:checked + .slider:before {
   opacity: 0;
   visibility: hidden;
   height: 0;
-  /* overflow: hidden; */
   overflow: visible !important;
   transition: opacity 0.8s, height 0.8s;
-  /* transition: opacity 0.8s, visibility 0.8s, height 0.8s; */
-
   position: relative;
   z-index: 0;
 }
