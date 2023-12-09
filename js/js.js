@@ -57,7 +57,7 @@ Vue.component("card", {
       return this.mouseY / this.height;
     },
     cardStyle() {
-      const rX = this.mousePX * 13; // Reducido de 30 para una rotación más suave
+      const rX = this.mousePX * 10; // Reducido de 30 para una rotación más suave
       //wea vertical de inclinacion
       const rY = this.mousePY * -1; // Reducido de 30 para una rotación más suave
       return {
@@ -65,8 +65,8 @@ Vue.component("card", {
       };
     },
     cardBgTransform() {
-      const tX = this.mousePX * -10; // Reducido de -40 para una transición más suave
-      const tY = this.mousePY * -10; // Reducido de -40 para una transición más suave
+      const tX = this.mousePX * -13; // Reducido de -40 para una transición más suave
+      const tY = this.mousePY * -5; // Reducido de -40 para una transición más suave
       return {
         transform: `translateX(${tX}px) translateY(${tY}px)`,
       };
@@ -114,6 +114,12 @@ function gitHubSuperCoupons() {
 }
 function gitHubRandomImage() {
   window.open("https://github.com/elfrikiamv/random_image", "_blank");
+}
+function gitHubSimpleNote() {
+  window.open("https://github.com/elfrikiamv/simple_note", "_blank");
+}
+function gitHubSimpleMic() {
+  window.open("https://github.com/elfrikiamv/simple_mic", "_blank");
 }
 function gitHubLaunchMod() {
   window.open("https://github.com/elfrikiamv/launch_mod", "_blank");

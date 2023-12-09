@@ -271,6 +271,9 @@ input:checked + .slider:before {
   text-shadow: var(--accentColor) 0 3px 3px;
   z-index: 1;
 }
+.aboutContainer {
+  margin-top: 1%;
+}
 .aboutContainer .fst-italic {
   color: var(--white60);
 }
@@ -307,7 +310,7 @@ input:checked + .slider:before {
   transition: opacity 0.8s, visibility 0.8s, height 0.8s;
 }
 .cardSimpleTitleSkills .otherSkills img:hover {
-  transform: scale(1.4);
+  transform: scale(1.1);
   position: relative;
   z-index: 1;
 }
@@ -315,7 +318,7 @@ input:checked + .slider:before {
   margin: 0;
   height: 28px;
   width: auto;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 .cardSimpleTitleSkills .titleMySkills p,
 .cardSimpleTitleSkills .otherSkills p {
@@ -688,20 +691,22 @@ input:checked + .slider:before {
 
 .projectsAndroid-container {
   display: grid;
-  grid-template-columns: repeat(2, 182px);
+  grid-template-columns: repeat(3, 182px);
   grid-template-rows: repeat(2, 182px);
   gap: 16px;
   padding: 16px;
   justify-content: center;
   margin-bottom: 7%;
 }
-#cardPA-2 {
+#cardPA-3 {
   background-color: transparent;
   border: 0px;
 }
 #cardPA-1,
-#cardPA-3,
-#cardPA-4 {
+#cardPA-2,
+#cardPA-4,
+#cardPA-5,
+#cardPA-6 {
   background-color: transparent;
   border: 0px;
   width: 100%;
@@ -816,7 +821,7 @@ input:checked + .slider:before {
   .projectsAndroid-container {
     display: grid;
     grid-template-columns: repeat(1, 182px);
-    grid-template-rows: repeat(3, 182px);
+    grid-template-rows: repeat(5, 182px);
     gap: 16px;
     padding: 16px;
     justify-content: center;
@@ -824,7 +829,7 @@ input:checked + .slider:before {
   }
   #cardPW-1,
   #cardPW-3,
-  #cardPA-2 {
+  #cardPA-3 {
     display: none !important;
   }
   .title-winProjects {

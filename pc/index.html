@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel=" shortcut icon"
+      href="https://elfrikiamv.com/img/use/elfrikiamv-logo.ico"
+      type="image/x-icon"
+    />
+    <title>Under Maintenance</title>
+    <style>
+      body {
+        background-color: #121212; /* Fondo en modo oscuro */
+        color: #ffffff; /* Texto en blanco */
+        font-family: "Arial", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #maintext {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #glow-text {
+        font-size: 36px;
+        color: #ffffff; /* Texto en blanco */
+        position: relative;
+        animation: glow 1.5s ease-in-out infinite;
+      }
+
+      @keyframes glow {
+        0%,
+        100% {
+          text-shadow: 0 0 10px #8e44ad, 0 0 20px #8e44ad, 0 0 30px #8e44ad;
+        }
+        50% {
+          text-shadow: 0 0 20px #8e44ad, 0 0 30px #8e44ad, 0 0 40px #8e44ad;
+        }
+      }
+
+      #elfrikiamv {
+        font-size: 18px;
+        overflow: hidden;
+        border-right: 0.15em solid #ffffff; /* Efecto de escribir */
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.15em;
+        margin-bottom: 7%;
+        animation: typing 2s steps(40) infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 7.5em;
+        }
+      }
+
+      #goback-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #8e44ad; /* Morado */
+        color: #ffffff; /* Texto en blanco */
+        border: none;
+        cursor: pointer;
+      }
+
+      #goback-btn:hover {
+        background-color: #6c3483; /* Morado más oscuro al pasar el mouse */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="maintext">
+      <p id="glow-text">Under Maintenance</p>
+      <p id="elfrikiamv">@elfrikiamv</p>
+      <a href="https://elfrikiamv.com/" id="goback-btn">Go back</a>
+    </div>
+  </body>
+</html>
