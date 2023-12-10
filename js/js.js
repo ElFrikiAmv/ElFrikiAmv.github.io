@@ -109,6 +109,9 @@ const app = new Vue({
 function gitHubStudentFolder() {
   window.open("https://github.com/elfrikiamv/student_folder", "_blank");
 }
+function gitHubSuperPointSale() {
+  window.open("https://github.com/elfrikiamv/super_pointSale", "_blank");
+}
 function gitHubSuperCoupons() {
   window.open("https://github.com/elfrikiamv/super_coupons", "_blank");
 }
@@ -133,11 +136,17 @@ function gitHubElfrikiamvWeb() {
 function gitHubShopWp() {
   window.open("https://github.com/elfrikiamv/shop_wp", "_blank");
 }
-function gitHubStudentFolderFigma() {
-  window.open("https://github.com/elfrikiamv/", "_blank");
-}
 function gitHubElfrikiamvFigma() {
-  window.open("https://github.com/elfrikiamv/", "_blank");
+  window.open(
+    "https://www.figma.com/file/fBtLXtJn8l194UhCD2ognI/elfrikiamv.tech?type=design&node-id=143%3A94&mode=design&t=joqUA7fXX6oTDwfr-1",
+    "_blank"
+  );
+}
+function gitHubStudentFolderFigma() {
+  window.open(
+    "https://www.figma.com/file/5KXPNiBtSTAFFUDXVLLOAv/student_folder?type=design&node-id=0%3A1&mode=design&t=lGqLDHJyfm88WY6e-1",
+    "_blank"
+  );
 }
 function LinkedInGo() {
   window.open("https://www.linkedin.com/in/elfrikiamv", "_blank");

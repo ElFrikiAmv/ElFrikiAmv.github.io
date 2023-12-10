@@ -698,12 +698,13 @@ input:checked + .slider:before {
   justify-content: center;
   margin-bottom: 7%;
 }
-#cardPA-3 {
+/* #cardPA-3 {
   background-color: transparent;
   border: 0px;
-}
+} */
 #cardPA-1,
 #cardPA-2,
+#cardPA-3,
 #cardPA-4,
 #cardPA-5,
 #cardPA-6 {
@@ -828,8 +829,7 @@ input:checked + .slider:before {
     margin-bottom: 0%;
   }
   #cardPW-1,
-  #cardPW-3,
-  #cardPA-3 {
+  #cardPW-3 {
     display: none !important;
   }
   .title-winProjects {
