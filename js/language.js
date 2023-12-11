@@ -29,8 +29,8 @@ function toggleLanguage() {
     // Bienvenida
     document.getElementById("WelcomeText").textContent =
       "Creo apps geniales para Android.";
-    document.getElementById("btnWelcomeScrollToContact").textContent =
-      "Contactar";
+    /* document.getElementById("btnWelcomeScrollToContact").textContent =
+      "Contactar"; */
     document.getElementById("AboutMeText").textContent = "Sobre mí.";
     document.getElementById("AboutMeText00").textContent =
       "Hola, soy Daniel, un desarrollador de Android.";
@@ -95,6 +95,13 @@ function toggleLanguage() {
     document.getElementById("studentFolderTxt").textContent =
       "Administra y respalda archivos con Student_folder.";
 
+    document.getElementById("pointSaleTxt").textContent =
+      "Utiliza tu smartphone como punto de venta.";
+    document.getElementById("simpleNoteTxt").textContent =
+      "Tu aplicación de notas favorita con simple_note.";
+    document.getElementById("simpleMicTxt").textContent =
+      "Interfaz de control de micrófono UX/IX en Jetpack Compose.";
+
     document.getElementById("superCouponsTxt").textContent =
       "Descubre cupones con Super_coupons.";
 
@@ -145,8 +152,8 @@ function toggleLanguage() {
     //welcome
     document.getElementById("WelcomeText").textContent =
       "I only make cool apps for Android devices.";
-    document.getElementById("btnWelcomeScrollToContact").textContent =
-      "Get in touch";
+    /* document.getElementById("btnWelcomeScrollToContact").textContent =
+      "Get in touch"; */
     document.getElementById("AboutMeText").textContent = "About me.";
     document.getElementById("AboutMeText00").textContent = "I just.";
     document.getElementById("AboutMeText01").textContent =
@@ -209,6 +216,13 @@ function toggleLanguage() {
     document.getElementById("studentFolderTxt").textContent =
       "Manage and backup your files with Student_folder.";
 
+    document.getElementById("pointSaleTxt").textContent =
+      "Use your smartphone as a point of sale with pointSale.";
+    document.getElementById("simpleNoteTxt").textContent =
+      "Your favorite notes app with simple_note.";
+    document.getElementById("simpleMicTxt").textContent =
+      "Microphone control interface UX/IX in Jetpack Compose.";
+
     document.getElementById("superCouponsTxt").textContent =
       "Discover amazing coupons with Super_coupons.";
 
@@ -219,7 +233,7 @@ function toggleLanguage() {
     document.getElementById("windowsProjectsTxt").textContent =
       "Windows projects.";
     document.getElementById("launchModTxt").textContent =
-      "Improve your minecraft experience with Launch_mod.";
+      "Improve your MC experience with Launch_mod.";
     document.getElementById("projectBackupTxt").textContent =
       "Safeguard your data with Project_backup.";
     document.getElementById("webTxt").textContent = "Website projects.";

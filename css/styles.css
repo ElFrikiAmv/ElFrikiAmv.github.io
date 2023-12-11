@@ -202,6 +202,7 @@ input:checked + .slider:before {
     opacity: 1;
   }
 }
+
 .welcome-section p,
 .welcome-section button,
 .welcome-section img {
@@ -822,7 +823,7 @@ input:checked + .slider:before {
   .projectsAndroid-container {
     display: grid;
     grid-template-columns: repeat(1, 182px);
-    grid-template-rows: repeat(5, 182px);
+    grid-template-rows: repeat(6, 182px);
     gap: 16px;
     padding: 16px;
     justify-content: center;
@@ -1019,12 +1020,18 @@ input:checked + .slider:before {
   margin: auto;
   z-index: -1; /* Asignamos un valor negativo para que esté detrás de otros elementos */
 }
-@media (max-width: 540px) {
+
+@media (max-width: 768px) {
+  .light {
+    display: none;
+  }
+}
+/* @media (max-width: 540px) {
   .light {
     position: fixed;
     box-shadow: var(--accentColor2) 0px 0px 20px 2px;
   }
-}
+} */
 .x1,
 .x2,
 .x3,
