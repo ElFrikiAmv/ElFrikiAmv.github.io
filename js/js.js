@@ -21,7 +21,30 @@ document.addEventListener("DOMContentLoaded", function () {
     once: false, // La animación solo se activa una vez
   });
 });
+//cv
+function downloadCV() {
 
+  // Crear un elemento <a> en el DOM
+  var link = document.createElement("a");
+
+  // Establecer el atributo href con la ruta del archivo PDF
+  link.href = "https://elfrikiamv.com/docs/elfrikiamv-cv.pdf";
+
+  // Establecer el atributo download con el nombre que deseas para el archivo
+  link.download = "elfrikiamv-cv.pdf";
+
+  // Abrir el enlace en una nueva ventana/tabla (esto debería forzar la descarga)
+  link.target = "_blank";
+
+  // Agregar el enlace al final del cuerpo del documento
+  document.body.appendChild(link);
+
+  // Simular un clic en el enlace para iniciar la descarga
+  link.click();
+
+  // Eliminar el enlace del documento después de la descarga
+  document.body.removeChild(link);
+}
 //container skills
 Vue.config.devtools = true;
 
