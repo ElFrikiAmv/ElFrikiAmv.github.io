@@ -184,7 +184,7 @@ input:checked + .slider:before {
 .welcome-section {
   position: relative;
   height: 100vh;
-  background-image: url("https://elfrikiamv.com/img/use/yomero.jpg");
+  background-image: url("https://elfrikiamv.com/media/img/yomero-OP.jpg");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: auto 100%;
@@ -236,10 +236,10 @@ input:checked + .slider:before {
     margin-left: 0%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 569px) {
   .welcome-section {
+    background-image: url("https://elfrikiamv.com/media/img/yomero-bg-OP.jpg");
     background-position: center center;
-    opacity: 100%;
   }
 }
 @media (max-height: 500px) {
@@ -560,7 +560,16 @@ input:checked + .slider:before {
   }
 }
 /* timeline */
-
+@media (max-width: 622px) {
+  .custom-card .card {
+    width: 300px;
+    height: 182px;
+  }
+  .custom-card-large .card {
+    width: 300px;
+    height: 182px;
+  }
+}
 @media (max-width: 1400px) {
   .about-section {
     position: relative;
@@ -795,10 +804,10 @@ input:checked + .slider:before {
     height: 100%;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 622px) {
   .projectsFigma-container {
     display: grid;
-    grid-template-columns: repeat(1, 182px);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(2, 182px);
     gap: 16px;
     padding: 16px;
@@ -806,7 +815,7 @@ input:checked + .slider:before {
   }
   .projectsWebsite-container {
     display: grid;
-    grid-template-columns: repeat(1, 182px);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(2, 182px);
     gap: 16px;
     padding: 16px;
@@ -814,7 +823,7 @@ input:checked + .slider:before {
   }
   .projectsWindows-container {
     display: grid;
-    grid-template-columns: repeat(1, 182px);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(2, 182px);
     gap: 16px;
     padding: 16px;
@@ -822,7 +831,7 @@ input:checked + .slider:before {
   }
   .projectsAndroid-container {
     display: grid;
-    grid-template-columns: repeat(1, 182px);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(6, 182px);
     gap: 16px;
     padding: 16px;
