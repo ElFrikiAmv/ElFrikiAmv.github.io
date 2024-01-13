@@ -418,7 +418,7 @@ input:checked + .slider:before {
 }
 .custom-card .card {
   width: 182px;
-  height: 182px;
+  height: 152px;
   background-color: transparent;
   overflow: hidden;
   border-radius: 7px;
@@ -486,7 +486,7 @@ input:checked + .slider:before {
 }
 .custom-card-large .card {
   width: 182px;
-  height: 182px;
+  height: 152px;
   background-color: transparent;
   overflow: hidden;
   border-radius: 7px;

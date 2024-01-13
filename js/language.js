@@ -19,7 +19,7 @@ function toggleLanguage() {
 
     // Actualizar contenido en español
     document.getElementById("homeTextNav").textContent = "Inicio";
-    document.getElementById("aboutTextNav").textContent = "Acerca";
+    document.getElementById("aboutTextNav").textContent = "Sobre mí";
     document.getElementById("portfolioTextNav").textContent = "Portafolio";
     document.getElementById("contactTextNav").textContent = "Contacto";
 
@@ -32,66 +32,122 @@ function toggleLanguage() {
     /* document.getElementById("btnWelcomeScrollToContact").textContent =
       "Contactar"; */
     document.getElementById("AboutMeText").textContent = "Sobre mí.";
-    document.getElementById("AboutMeText00").textContent =
-      "Hola, soy Daniel, un desarrollador de Android.";
+    document.getElementById("AboutMeText00").textContent = "Yo mero, un desarrollador Android mexicano.";
     document.getElementById("AboutMeText01").textContent =
-      "Mi primera línea de código fue a los 13 años. elfrikiamv es mi marca para proyectos en línea.";
+      "Hola, soy Daniel. Mi primera línea de código fue cuando tenía 13 años, y ahora, elfrikiamv es mi marca personal que utilizo en mis proyectos y en línea.";
 
     // Académico
     document.getElementById("coursesTxT").textContent = "Cursos.";
     document.getElementById("androidPathTxt").textContent =
-      "Desarrollo de Aplicaciones Android.";
+      "Ruta de aprendizaje para el desarrollo de aplicaciones Android.";
     document.getElementById("androidPathTxt00").textContent =
-      "Certificación Platzi.com.";
-    document.getElementById("AcademicTxt").textContent = "Educación.";
+      "Certificación de Platzi.com.";
+    document.getElementById("AcademicTxt").textContent = "Educación académica.";
     document.getElementById("utcTxt").textContent =
-      "Ingeniería en Sistemas Computacionales, UTC, México.";
-    document.getElementById("graduatedTxt").textContent = "Graduado.";
+      "Ingeniería en Sistemas Computacionales por la Universidad Tres Culturas (UTC), México.";
+    var graduatedTxt = document.querySelectorAll("#graduatedTxt");
+    graduatedTxt.forEach(function (element) {
+      element.textContent = "Graduado.";
+    });
     document.getElementById("cetisTxT").textContent =
-      "Técnico en Programación, CETIS, México.";
+      "Técnico en Programación por la Dirección General de Educación Tecnológica Industrial (DGETI), México.";
 
     // Habilidades
-    document.getElementById("mySkillsText").textContent = "Habilidades.";
+    document.getElementById("mySkillsText").textContent = "Mis habilidades.";
     document.getElementById("otherSkillsTxt").textContent =
       "Otras habilidades:";
     document.getElementById("designTxt").textContent = "Diseño.";
-    document.getElementById("kotlinTxt").textContent =
-      "Desarrollo principal de apps Android.";
-    document.getElementById("javaTxt").textContent =
-      "Uso en desarrollo de apps Android.";
-    document.getElementById("androidSTxt").textContent =
-      "IDE para desarrollo Android.";
-    document.getElementById("androidJetpackTxt").textContent =
-      "Herramientas para apps Android.";
-    document.getElementById("xmlTxt").textContent =
-      "Marcado para interfaces Android.";
-    document.getElementById("materialDesignTxt").textContent =
-      "Guía de diseño de Google.";
-    document.getElementById("androidArchitectureTxt").textContent =
-      "Arquitectura Android.";
-    document.getElementById("androidArchitectureTxt00").textContent =
-      "Patrones de diseño Android.";
-    document.getElementById("designPatternsTxt").textContent =
-      "Patrones de diseño";
-    document.getElementById("designPatternsTxt00").textContent =
-      "Soluciones a problemas de software.";
-    document.getElementById("androidApiTxt").textContent =
-      "Interfaz para acceso al sistema.";
-    document.getElementById("firebaseTxt").textContent =
-      "Plataforma móvil de Google.";
-    document.getElementById("gitTxt").textContent =
-      "Seguimiento de cambios y colaboración.";
-    document.getElementById("googlePlayTxt").textContent =
-      "Publicación en Google Play";
-    document.getElementById("googlePlayTxt00").textContent =
-      "Gestión de apps en Play.";
+
+    var kotlinTxt = document.querySelectorAll("#kotlinTxt");
+    kotlinTxt.forEach(function (element) {
+      element.textContent = "Principal lenguaje en apps Android.";
+    });
+
+    var javaTxt = document.querySelectorAll("#javaTxt");
+    javaTxt.forEach(function (element) {
+      element.textContent = "Uso en desarrollo de apps Android.";
+    });
+
+    var androidSTxt = document.querySelectorAll("#androidSTxt");
+    androidSTxt.forEach(function (element) {
+      element.textContent = "IDE para desarrollar apps.";
+    });
+
+    var androidJetpackTxt = document.querySelectorAll("#androidJetpackTxt");
+    androidJetpackTxt.forEach(function (element) {
+      element.textContent = "Herramientas para apps Android.";
+    });
+
+    var xmlTxt = document.querySelectorAll("#xmlTxt");
+    xmlTxt.forEach(function (element) {
+      element.textContent = "Marcado para interfaces.";
+    });
+
+    var materialDesignTxt = document.querySelectorAll("#materialDesignTxt");
+    materialDesignTxt.forEach(function (element) {
+      element.textContent = "Guía de diseño de Google.";
+    });
+
+    var androidArchitectureTxt = document.querySelectorAll(
+      "#androidArchitectureTxt"
+    );
+    androidArchitectureTxt.forEach(function (element) {
+      element.textContent = "Arquitectura Android";
+    });
+
+    var androidArchitectureTxt00 = document.querySelectorAll(
+      "#androidArchitectureTxt00"
+    );
+    androidArchitectureTxt00.forEach(function (element) {
+      element.textContent = "Patrones de diseño Android.";
+    });
+
+    var designPatternsTxt = document.querySelectorAll("#designPatternsTxt");
+    designPatternsTxt.forEach(function (element) {
+      element.textContent = "Patrones de diseño";
+    });
+
+    var designPatternsTxt00 = document.querySelectorAll("#designPatternsTxt00");
+    designPatternsTxt00.forEach(function (element) {
+      element.textContent = "Resolver problemas de software.";
+    });
+
+    var androidApiTxt = document.querySelectorAll("#androidApiTxt");
+    androidApiTxt.forEach(function (element) {
+      element.textContent = "Interfaz para acceso al sistema.";
+    });
+
+    var firebaseTxt = document.querySelectorAll("#firebaseTxt");
+    firebaseTxt.forEach(function (element) {
+      element.textContent = "Plataforma móvil de Google.";
+    });
+
+    var gitTxt = document.querySelectorAll("#gitTxt");
+    gitTxt.forEach(function (element) {
+      element.textContent = "Seguimiento de cambios.";
+    });
+
+    var googlePlayTxt = document.querySelectorAll("#googlePlayTxt");
+    googlePlayTxt.forEach(function (element) {
+      element.textContent = "Publicación en tienda.";
+    });
+
+    var googlePlayTxt00 = document.querySelectorAll("#googlePlayTxt00");
+    googlePlayTxt00.forEach(function (element) {
+      element.textContent = "Gestión de apps en Play.";
+    });
 
     // Portafolio
-    document.getElementById("myProjects").textContent = "Proyectos.";
+    document.getElementById("myProjects").textContent = "Mis proyectos.";
     document.getElementById("androidProjectsTxt").textContent =
       "Proyectos Android.";
 
-    document.getElementById("btnMoreInfoTxt").textContent = "Más Info.";
+    var btnMoreInfo = document.querySelectorAll("#btnMoreInfoTxt");
+
+    btnMoreInfo.forEach(function (element) {
+      element.textContent = "Saber más.";
+    });
+
     document.getElementById("studentFolderTxt").textContent =
       "Administra y respalda archivos con Student_folder.";
 
@@ -112,14 +168,14 @@ function toggleLanguage() {
     document.getElementById("windowsProjectsTxt").textContent =
       "Proyectos Windows.";
     document.getElementById("launchModTxt").textContent =
-      "Mejora tu experiencia en Minecraft con Launch_mod.";
+      "Mejora tu experiencia en Minecraft.";
     document.getElementById("projectBackupTxt").textContent =
       "Salvaguarda tus datos con Project_backup.";
     document.getElementById("webTxt").textContent = "Proyectos web.";
     document.getElementById("elfrikiamvWebTxt").textContent =
-      "Portafolio personal, muestra tus habilidades.";
+      "Portafolio personal, muestra mis habilidades.";
     document.getElementById("shopWpTxt").textContent =
-      "Envía tu lista de compras por WhatsApp con Shop_wp.";
+      "Envía tu lista de compras por WhatsApp.";
     document.getElementById("figmaProjectsTxt").textContent =
       "Proyectos en Figma.";
     document.getElementById("elfrikiamvFigmaTxt").textContent =
@@ -129,7 +185,13 @@ function toggleLanguage() {
 
     // Contáctame
     document.getElementById("contactMe").textContent = "Contacto.";
-    document.getElementById("btnContactMeTxt").textContent = "Contáctame";
+
+    //document.getElementById("btnContactMeTxt").textContent = "Contáctame";
+    var btnContactMe = document.querySelectorAll("#btnContactMeTxt");
+
+    btnContactMe.forEach(function (element) {
+      element.textContent = "Contáctame.";
+    });
   } else {
     currentLanguage = "en";
     if (currentTheme == "light") {
@@ -168,51 +230,109 @@ function toggleLanguage() {
     document.getElementById("AcademicTxt").textContent = "Academic education.";
     document.getElementById("utcTxt").textContent =
       "Computer Systems Engineering from the University of Three Cultures (UTC), México.";
-    document.getElementById("graduatedTxt").textContent = "Graduated.";
+    var graduatedTxt = document.querySelectorAll("#graduatedTxt");
+    graduatedTxt.forEach(function (element) {
+      element.textContent = "Graduated.";
+    });
     document.getElementById("cetisTxT").textContent =
-      "Programming Technician from the Center for Technological and Industrial Services Studies (CETIS), México.";
+      "Programming Technician from the General Directorate of Industrial Technological Education (DGETI), México.";
 
     //skills
     document.getElementById("mySkillsText").textContent = "My skills.";
     document.getElementById("otherSkillsTxt").textContent = "My other skills:";
     document.getElementById("designTxt").textContent = "Design.";
-    document.getElementById("kotlinTxt").textContent =
-      "Main for Android app development.";
-    document.getElementById("javaTxt").textContent =
-      "Used in Android app development.";
-    document.getElementById("androidSTxt").textContent =
-      "IDE for Android app development.";
-    document.getElementById("androidJetpackTxt").textContent =
-      "Toolkit for Android apps.";
-    document.getElementById("xmlTxt").textContent =
-      "Markup for Android app interfaces.";
-    document.getElementById("materialDesignTxt").textContent =
-      "Google's app design guide.";
-    document.getElementById("androidArchitectureTxt").textContent =
-      "Android Architecture.";
-    document.getElementById("androidArchitectureTxt00").textContent =
-      "Android design patterns.";
-    document.getElementById("designPatternsTxt").textContent =
-      "Design Patterns";
-    document.getElementById("designPatternsTxt00").textContent =
-      "Solutions for software problems.";
-    document.getElementById("androidApiTxt").textContent =
-      "Interface for system access.";
-    document.getElementById("firebaseTxt").textContent =
-      "Google's mobile app platform.";
-    document.getElementById("gitTxt").textContent =
-      "Track code changes and collaborate.";
-    document.getElementById("googlePlayTxt").textContent =
-      "Google Play publishing";
-    document.getElementById("googlePlayTxt00").textContent =
-      "Manage apps on Play.";
+
+    var kotlinTxt = document.querySelectorAll("#kotlinTxt");
+    kotlinTxt.forEach(function (element) {
+      element.textContent = "Main for Android app development.";
+    });
+
+    var javaTxt = document.querySelectorAll("#javaTxt");
+    javaTxt.forEach(function (element) {
+      element.textContent = "Used in Android app development.";
+    });
+
+    var androidSTxt = document.querySelectorAll("#androidSTxt");
+    androidSTxt.forEach(function (element) {
+      element.textContent = "IDE for Android app development";
+    });
+
+    var androidJetpackTxt = document.querySelectorAll("#androidJetpackTxt");
+    androidJetpackTxt.forEach(function (element) {
+      element.textContent = "Toolkit for Android apps.";
+    });
+
+    var xmlTxt = document.querySelectorAll("#xmlTxt");
+    xmlTxt.forEach(function (element) {
+      element.textContent = "Markup for Android app interfaces.";
+    });
+
+    var materialDesignTxt = document.querySelectorAll("#materialDesignTxt");
+    materialDesignTxt.forEach(function (element) {
+      element.textContent = "Google's app design guide.";
+    });
+
+    var androidArchitectureTxt = document.querySelectorAll(
+      "#androidArchitectureTxt"
+    );
+    androidArchitectureTxt.forEach(function (element) {
+      element.textContent = "Android Architecture";
+    });
+
+    var androidArchitectureTxt00 = document.querySelectorAll(
+      "#androidArchitectureTxt00"
+    );
+    androidArchitectureTxt00.forEach(function (element) {
+      element.textContent = "Android design patterns.";
+    });
+
+    var designPatternsTxt = document.querySelectorAll("#designPatternsTxt");
+    designPatternsTxt.forEach(function (element) {
+      element.textContent = "Design Patterns";
+    });
+
+    var designPatternsTxt00 = document.querySelectorAll("#designPatternsTxt00");
+    designPatternsTxt00.forEach(function (element) {
+      element.textContent = "Solutions for software problems.";
+    });
+
+    var androidApiTxt = document.querySelectorAll("#androidApiTxt");
+    androidApiTxt.forEach(function (element) {
+      element.textContent = "Interface for system access.";
+    });
+
+    var firebaseTxt = document.querySelectorAll("#firebaseTxt");
+    firebaseTxt.forEach(function (element) {
+      element.textContent = "Google's mobile app platform.";
+    });
+
+    var gitTxt = document.querySelectorAll("#gitTxt");
+    gitTxt.forEach(function (element) {
+      element.textContent = "Track code changes and collaborate.";
+    });
+
+    var googlePlayTxt = document.querySelectorAll("#googlePlayTxt");
+    googlePlayTxt.forEach(function (element) {
+      element.textContent = "Google Play publishing";
+    });
+
+    var googlePlayTxt00 = document.querySelectorAll("#googlePlayTxt00");
+    googlePlayTxt00.forEach(function (element) {
+      element.textContent = "Manage apps on Play.";
+    });
 
     //portfolio
     document.getElementById("myProjects").textContent = "My projects.";
     document.getElementById("androidProjectsTxt").textContent =
       "Android projects.";
 
-    document.getElementById("btnMoreInfoTxt").textContent = "More info.";
+    //document.getElementById("btnMoreInfoTxt").textContent = "More info.";
+    var btnMoreInfo = document.querySelectorAll("#btnMoreInfoTxt");
+
+    btnMoreInfo.forEach(function (element) {
+      element.textContent = "More info.";
+    });
+
     document.getElementById("studentFolderTxt").textContent =
       "Manage and backup your files with Student_folder.";
 
@@ -249,6 +369,11 @@ function toggleLanguage() {
 
     //contact me
     document.getElementById("contactMe").textContent = "Contact me.";
-    document.getElementById("btnContactMeTxt").textContent = "Contact me";
+    //document.getElementById("btnContactMeTxt").textContent = "Contact me";
+    var btnContactMe = document.querySelectorAll("#btnContactMeTxt");
+
+    btnContactMe.forEach(function (element) {
+      element.textContent = "Contact me.";
+    });
   }
 }
