@@ -993,16 +993,16 @@ input:checked + .slider:before {
 .contact-section .card:before {
   content: "";
   display: block;
-  padding-bottom: 150%;
+  padding-bottom: 100%;
   width: 100%;
 }
 .contact-section .card__background {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 22% auto;
+  background-size: auto 128px;
   opacity: 100%;
   bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  /* filter: brightness(0.75) saturate(1.2) contrast(0.85); */
   position: absolute;
   left: 0;
   right: 0;
@@ -1012,7 +1012,7 @@ input:checked + .slider:before {
   transition: filter 200ms linear, transform 182ms linear;
 }
 .contact-section .card:hover .card__background {
-  transform: scale(2) translateZ(0);
+  transform: scale(1) translateZ(0);
 }
 .contact-section .card-grid:hover > .card:not(:hover) .card__background {
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);

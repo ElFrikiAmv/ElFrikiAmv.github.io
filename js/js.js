@@ -187,6 +187,34 @@ function LinkedInGo() {
 function GithubGo() {
   window.open("https://github.com/elfrikiamv", "_blank");
 }
-function GmailGo() {
+/* function GmailGo() {
   window.open("https://github.com/elfrikiamv", "_blank");
+} */
+
+// Function to copy text to clipboard
+function copyToClipboard(text) {
+  // Create a text input element
+  var input = document.createElement("textarea");
+  // Set the value of the element to the provided text
+  input.value = text;
+  // Append the element to the DOM
+  document.body.appendChild(input);
+  // Select the text of the element
+  input.select();
+  // Copy the text to the clipboard
+  document.execCommand("copy");
+  // Remove the element from the DOM
+  document.body.removeChild(input);
+}
+
+// Call this function when the button is clicked
+function GmailGo() {
+  // Text you want to copy (in this case, an example email)
+  var email = "contact@elfrikiamv.com";
+
+  // Call the function to copy to clipboard
+  copyToClipboard(email);
+
+  // Optional: Show a success message
+  alert("Email copied to clipboard: " + email);
 }
