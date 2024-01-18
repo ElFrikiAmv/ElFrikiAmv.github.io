@@ -11,10 +11,10 @@ function toggleLanguage() {
     currentLanguage = "es";
     if (currentTheme == "dark") {
       logoNameIcon.src =
-        "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-light-es.webp";
+        "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-es.webp";
     } else {
       logoNameIcon.src =
-        "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-dark-es.webp";
+        "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-dark-es.webp";
     }
 
     // Actualizar contenido en español
@@ -197,10 +197,10 @@ function toggleLanguage() {
     currentLanguage = "en";
     if (currentTheme == "light") {
       logoNameIcon.src =
-        "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-dark-en.webp";
+        "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-dark-en.webp";
     } else {
       logoNameIcon.src =
-        "https://elfrikiamv.com/img/use/logo-elfrikiamv-dev-light-en.webp";
+        "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-en.webp";
     }
 
     // Actualizar contenido en inglés
