@@ -7,10 +7,8 @@ function toggleTheme() {
   var body = document.body;
   var themeIcon = document.getElementById("theme-icon");
   var logoNameIcon = document.getElementById("logoName-icon");
-  var logoIcon = document.getElementById("logo-icon");
+  var logoIcon = document.querySelectorAll(".logo-icon");
   var navbar = document.querySelector(".navbar");
-  /* var arrowUpIcon = document.getElementById("up-icon");
-   */
 
   // Toggle the current theme
   if (currentTheme === "dark") {
@@ -24,11 +22,13 @@ function toggleTheme() {
     //update content
     currentTheme = "light";
     themeIcon.src = "https://i.postimg.cc/XqxHNHrj/light-mode.webp";
-    logoIcon.src = "https://elfrikiamv.com/img/use/elfrikiamv-logo-light.ico";
+
+    logoIcon.forEach(function (element) {
+      element.src =
+        "https://elfrikiamv.com/media/img/elfrikiamv-logo-light.webp";
+    });
+
     navbar.setAttribute("data-bs-theme", "light");
-    /* arrowUpIcon.src = "https://donfriki.000webhostapp.com/img/up-light.png";
-      
-       */
 
     body.classList.toggle("light-theme");
     body.classList.toggle("dark-theme");
@@ -43,11 +43,12 @@ function toggleTheme() {
     //update content
     currentTheme = "dark";
     themeIcon.src = "https://i.postimg.cc/mZS6SD8v/night-mode.webp";
-    logoIcon.src = "https://elfrikiamv.com/img/use/elfrikiamv-logo.ico";
+
+    logoIcon.forEach(function (element) {
+      element.src = "https://elfrikiamv.com/media/img/elfrikiamv-logo.webp";
+    });
+
     navbar.setAttribute("data-bs-theme", "dark");
-    /* arrowUpIcon.src = "https://donfriki.000webhostapp.com/img/up-night.png";
-      ;
-       */
 
     body.classList.toggle("light-theme");
     body.classList.toggle("dark-theme");

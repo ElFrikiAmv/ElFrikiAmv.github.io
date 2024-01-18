@@ -32,7 +32,8 @@ function toggleLanguage() {
     /* document.getElementById("btnWelcomeScrollToContact").textContent =
       "Contactar"; */
     document.getElementById("AboutMeText").textContent = "Sobre mí.";
-    document.getElementById("AboutMeText00").textContent = "Yo mero, un desarrollador Android mexicano.";
+    document.getElementById("AboutMeText00").textContent =
+      "Yo mero, un desarrollador Android mexicano.";
     document.getElementById("AboutMeText01").textContent =
       "Hola, soy Daniel. Mi primera línea de código fue cuando tenía 13 años, y ahora, elfrikiamv es mi marca personal que utilizo en mis proyectos y en línea.";
 
