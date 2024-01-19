@@ -22,8 +22,8 @@ body.light-theme .navbar p {
 }
 body.light-theme button {
   --bs-btn-border-color: var(--surface01dp);
-  --bs-btn-hover-bg: var(--surface01dp);
-  --bs-btn-hover-border-color: var(--surface01dp);
+  --bs-btn-hover-bg: var(--accentColor);
+  --bs-btn-hover-border-color: var(--white87);
   --bs-btn-color: var(--surface01dp);
   --bs-btn-hover-color: var(--white87);
 }
@@ -120,4 +120,8 @@ body.light-theme .aboutContainer .card:hover {
   box-shadow: var(--accentColor) 0 0px 22px 0,
     inset var(--surface01dp) 0 0 0 1px, inset transparent 0 0 0 6px;
 }
+
+/* body.light-theme .welcome-section .fa-linkedin-square:before {
+  color: var(--accentColor);
+} */
 /* light theme  */

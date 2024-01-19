@@ -29,8 +29,6 @@ function toggleLanguage() {
     // Bienvenida
     document.getElementById("WelcomeText").textContent =
       "Creo apps geniales para Android.";
-    /* document.getElementById("btnWelcomeScrollToContact").textContent =
-      "Contactar"; */
     document.getElementById("AboutMeText").textContent = "Sobre mí.";
     document.getElementById("AboutMeText00").textContent =
       "Yo mero, un desarrollador Android mexicano.";
@@ -215,8 +213,6 @@ function toggleLanguage() {
     //welcome
     document.getElementById("WelcomeText").textContent =
       "I only make cool apps for Android devices.";
-    /* document.getElementById("btnWelcomeScrollToContact").textContent =
-      "Get in touch"; */
     document.getElementById("AboutMeText").textContent = "About me.";
     document.getElementById("AboutMeText00").textContent = "I just.";
     document.getElementById("AboutMeText01").textContent =

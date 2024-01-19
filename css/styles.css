@@ -16,10 +16,10 @@
   --glowColor: rgba(255, 255, 255, 0.782);
   --glowColorLight: rgba(0, 0, 0, 0.782);
   --accentColor: #61191dcb;
-  --accentColor2: #61191d;
+/*   --accentColor2: #61191d; */
 
   --accentColorText: #fff;
-  --accentColorTextOpacity: #d32f2fb2;
+/*   --accentColorTextOpacity: #d32f2fb2; */
   /* --accentColorText: #61191D; */
 
   --text-light: rgba(0, 0, 0, 0.6);
@@ -77,6 +77,16 @@ input:checked + .slider:before {
 }
 /* Switch estilo toggle */
 
+/* btn */
+body.dark-theme button {
+  --bs-btn-border-color: var(--white87);
+  --bs-btn-hover-bg: var(--accentColor);
+  --bs-btn-hover-border-color: var(--white87);
+  --bs-btn-color: var(--white87);
+  --bs-btn-hover-color: var(--white87);
+}
+/* btn */
+
 /* button language-switche*/
 
 #language-button {
@@ -130,7 +140,7 @@ input:checked + .slider:before {
   content: "";
   display: block;
   height: 3px;
-  background-color: var(--accentColorText);
+  background-color: var(--accentColor);
   transform: scale(0, 1);
   transform-origin: center;
   transition: transform 0.25s;
@@ -217,7 +227,7 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
 }
-.welcome-section #btnWelcomeScrollToContact {
+.welcome-section #btnDownloadCV {
   margin-right: 12px;
 }
 .welcome-section #welcomeContactIcon {
@@ -993,14 +1003,14 @@ input:checked + .slider:before {
 .contact-section .card:before {
   content: "";
   display: block;
-  padding-bottom: 100%;
+  padding-bottom: 113%;
   width: 100%;
 }
 .contact-section .card__background {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto 128px;
-  opacity: 100%;
+  opacity: 82%;
   bottom: 0;
   /* filter: brightness(0.75) saturate(1.2) contrast(0.85); */
   position: absolute;
@@ -1013,6 +1023,7 @@ input:checked + .slider:before {
 }
 .contact-section .card:hover .card__background {
   transform: scale(1) translateZ(0);
+  opacity: 100%;
 }
 .contact-section .card-grid:hover > .card:not(:hover) .card__background {
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
@@ -1125,12 +1136,7 @@ input:checked + .slider:before {
     display: none;
   }
 }
-/* @media (max-width: 540px) {
-  .light {
-    position: fixed;
-    box-shadow: var(--accentColor2) 0px 0px 20px 2px;
-  }
-} */
+
 .x1,
 .x2,
 .x3,
