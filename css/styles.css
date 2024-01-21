@@ -16,10 +16,10 @@
   --glowColor: rgba(255, 255, 255, 0.782);
   --glowColorLight: rgba(0, 0, 0, 0.782);
   --accentColor: #61191dcb;
-/*   --accentColor2: #61191d; */
+  /*   --accentColor2: #61191d; */
 
-  --accentColorText: #fff;
-/*   --accentColorTextOpacity: #d32f2fb2; */
+  --accentColorText: rgba(255, 255, 255, 0.87);
+  /*   --accentColorTextOpacity: #d32f2fb2; */
   /* --accentColorText: #61191D; */
 
   --text-light: rgba(0, 0, 0, 0.6);
@@ -461,15 +461,16 @@ body.dark-theme button {
 
   p {
     opacity: 0;
-    text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+    /* text-shadow: rgba(0, 0, 0, 1) 0 2px 3px; */
     transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
+.containerSkillsMobile h1,
 .custom-card .card-info h1 {
-  font-size: 22px;
+  font-size: large;
   font-weight: 700;
   color: var(--accentColorText);
-  text-shadow: var(--accentColor) 0 3px 3px;
+  text-shadow: var(--surface12dp) 0 0px 3px;
 }
 /* cad animated */
 
@@ -524,20 +525,20 @@ body.dark-theme button {
   bottom: 0;
   color: var(--white87);
   /* wea del txt de la card altura */
-  transform: translateY(52%);
+  transform: translateY(55%);
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   p {
     opacity: 0;
-    text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+    /* text-shadow: rgba(0, 0, 0, 1) 0 2px 3px; */
     transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
 .custom-card-large .card-info h1 {
-  font-size: 22px;
+  font-size: large;
   font-weight: 700;
   color: var(--accentColorText);
-  text-shadow: var(--accentColor) 0 3px 3px;
+  text-shadow: var(--surface12dp) 0 0px 3px;
 }
 /* large cad animated */
 
@@ -614,8 +615,8 @@ body.dark-theme button {
   .cardSimpleTitleSkills {
     background-color: transparent !important;
     border-radius: 7px;
-    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
-      inset transparent 0 0 0 6px;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+      inset var(--white87) 0 0 0 1px, inset transparent 0 0 0 6px;
     transition: transform 0.3s ease-in-out;
     padding: 1% 0;
     margin: 0 -1.5%;
@@ -629,8 +630,8 @@ body.dark-theme button {
   .cardSimpleTitleSkills {
     background-color: transparent !important;
     border-radius: 7px;
-    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
-      inset transparent 0 0 0 6px;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+      inset var(--white87) 0 0 0 1px, inset transparent 0 0 0 6px;
     transition: transform 0.3s ease-in-out;
     padding: 1% 0;
     margin: 0 -2%;
@@ -644,8 +645,8 @@ body.dark-theme button {
   .cardSimpleTitleSkills {
     background-color: transparent !important;
     border-radius: 7px;
-    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
-      inset transparent 0 0 0 6px;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+      inset var(--white87) 0 0 0 1px, inset transparent 0 0 0 6px;
     transition: transform 0.3s ease-in-out;
     padding: 1% 0;
     margin: 0 1%;

@@ -93,11 +93,12 @@ body.light-theme .projects-section .card p,
 body.light-theme .contact-section .card p {
   color: var(--surface01dp);
 }
+body.light-theme .containerSkillsMobile h1,
 body.light-theme .containerSkills h1 {
   color: var(--surface06dp);
-  font-size: 22px;
+  font-size: large;
   font-weight: 700;
-  text-shadow: var(--accentColor) 0 3px 3px;
+  text-shadow: var(--white87) 0 0px 3px;
 }
 body.light-theme .navbar p::after {
   content: "";

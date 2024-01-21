@@ -101,14 +101,9 @@ function toggleLanguage() {
       element.textContent = "Patrones de diseño Android.";
     });
 
-    var designPatternsTxt = document.querySelectorAll("#designPatternsTxt");
-    designPatternsTxt.forEach(function (element) {
-      element.textContent = "Patrones de diseño";
-    });
-
-    var designPatternsTxt00 = document.querySelectorAll("#designPatternsTxt00");
-    designPatternsTxt00.forEach(function (element) {
-      element.textContent = "Resolver problemas de software.";
+    var figmaTxt = document.querySelectorAll("#figmaTxt");
+    figmaTxt.forEach(function (element) {
+      element.textContent = "Herramienta de diseño de interfaces.";
     });
 
     var androidApiTxt = document.querySelectorAll("#androidApiTxt");
@@ -283,14 +278,9 @@ function toggleLanguage() {
       element.textContent = "Android design patterns.";
     });
 
-    var designPatternsTxt = document.querySelectorAll("#designPatternsTxt");
-    designPatternsTxt.forEach(function (element) {
-      element.textContent = "Design Patterns";
-    });
-
-    var designPatternsTxt00 = document.querySelectorAll("#designPatternsTxt00");
-    designPatternsTxt00.forEach(function (element) {
-      element.textContent = "Solutions for software problems.";
+    var figmaTxt = document.querySelectorAll("#figmaTxt");
+    figmaTxt.forEach(function (element) {
+      element.textContent = "Interface design tool.";
     });
 
     var androidApiTxt = document.querySelectorAll("#androidApiTxt");
