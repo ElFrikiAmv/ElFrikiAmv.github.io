@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Tooltip con Bootstrap 5</title>
-    
-    <!-- Estilos personalizados para el tooltip -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mobile Navbar Card</title>
     <style>
-        .custom-tooltip {
-            --bs-tooltip-bg: red;  /* Cambia el color para verificar si se aplica */
-            --bs-tooltip-color: yellow;  /* Cambia el color para verificar si se aplica */
-            --bs-animation: true;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      /* Your page styles go here */
+
+      .mobile-navbar-card {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .mobile-navbar-card p {
+        margin: 0;
+        padding: 10px;
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Content of your page -->
 
-<!-- Contenedor con tooltip utilizando Bootstrap 5 -->
-<div class="tooltip-container">
-    <img
-        data-bs-toggle="tooltip"
-        data-bs-placement="bottom"
-        data-bs-custom-class="custom-tooltip"
-        data-bs-title="Photoshop."
-        src="https://i.postimg.cc/SsH4VvW3/photoshop-logo.webp"
-    />
-</div>
-
-<!-- Scripts de Bootstrap y Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-<!-- Inicialización del tooltip -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        tooltipTriggerList.map(function (tooltipTriggerEl) {
-            new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-    });
-</script>
-
-</body>
+    <!-- Mobile Navbar Card -->
+    <div class="mobile-navbar-card">
+      <p>Home</p>
+      <p>About</p>
+      <p>Portfolio</p>
+      <p>Contact</p>
+    </div>
+  </body>
 </html>

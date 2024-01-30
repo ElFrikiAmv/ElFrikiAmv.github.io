@@ -210,3 +210,24 @@ function GmailGo() {
   // Optional: Show a success message
   alert("Email copied to clipboard: " + email);
 }
+
+// Call this function when the button home navbar is clicked
+function goToHome() {
+  const homeSection = document.getElementById('home-section');
+  homeSection.scrollIntoView({ behavior: 'smooth' });
+}
+// Call this function when the button portfolio navbar is clicked
+function goToPortfolio() {
+  const homeSection = document.getElementById('portfolio-section');
+  homeSection.scrollIntoView({ behavior: 'smooth' });
+}
+// Call this function when the button about me navbar is clicked
+function goToAboutMe() {
+  const homeSection = document.getElementById('about-section');
+  homeSection.scrollIntoView({ behavior: 'smooth' });
+}
+// Call this function when the button contact navbar is clicked
+function goToContactMe() {
+  const homeSection = document.getElementById('contact-section');
+  homeSection.scrollIntoView({ behavior: 'smooth' });
+}
