@@ -213,21 +213,48 @@ function GmailGo() {
 
 // Call this function when the button home navbar is clicked
 function goToHome() {
-  const homeSection = document.getElementById('home-section');
-  homeSection.scrollIntoView({ behavior: 'smooth' });
+  const homeSection = document.getElementById("home-section");
+  homeSection.scrollIntoView({ behavior: "smooth" });
 }
 // Call this function when the button portfolio navbar is clicked
 function goToPortfolio() {
-  const homeSection = document.getElementById('portfolio-section');
-  homeSection.scrollIntoView({ behavior: 'smooth' });
+  const homeSection = document.getElementById("portfolio-section");
+  homeSection.scrollIntoView({ behavior: "smooth" });
 }
 // Call this function when the button about me navbar is clicked
 function goToAboutMe() {
-  const homeSection = document.getElementById('about-section');
-  homeSection.scrollIntoView({ behavior: 'smooth' });
+  const homeSection = document.getElementById("about-section");
+  homeSection.scrollIntoView({ behavior: "smooth" });
 }
 // Call this function when the button contact navbar is clicked
 function goToContactMe() {
-  const homeSection = document.getElementById('contact-section');
-  homeSection.scrollIntoView({ behavior: 'smooth' });
+  const homeSection = document.getElementById("contact-section");
+  homeSection.scrollIntoView({ behavior: "smooth" });
 }
+
+//scroll navbar opacity
+/* document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+  let isScrolling = false;
+
+  function handleScroll() {
+    if (window.scrollY > 0) {
+      navbar.style.opacity = 0.7; // Cambia este valor según sea necesario
+    } else {
+      navbar.style.opacity = 1;
+    }
+  }
+
+  function debouncedScroll() {
+    if (!isScrolling) {
+      handleScroll();
+      isScrolling = true;
+
+      setTimeout(function () {
+        isScrolling = false;
+      }, 200); // Ajusta el tiempo de espera según sea necesario
+    }
+  }
+
+  window.addEventListener("scroll", debouncedScroll);
+}); */

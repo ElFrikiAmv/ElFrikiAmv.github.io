@@ -2,21 +2,39 @@
   --backgroundColorDark: #171717;
   --backgroundColorLight: #ffffff;
 
-  --surface01dp: #121212;
+  /* --surface01dp: #121212;
   --surface06dp: #2c2c2c;
   --surface12dp: #313131;
 
+  --white87: #DEFFFFFF;
+  --white60: #99FFFFFF;
+  --white38: #61FFFFFF;
+   */
+
+  /* <!--color dark--> */
+  
   --white87: rgba(255, 255, 255, 0.87);
   --white60: rgba(255, 255, 255, 0.6);
   --white38: rgba(255, 255, 255, 0.38);
+
+  --surface00dp: #121212;
+  --surface01dp: #1D1D1D;
+  --surface02dp: #212121;
+  --surface03dp: #242424;
+  --surface04dp: #272727;
+  --surface06dp: #2C2C2C;
+  --surface08dp: #2D2D2D;
+  --surface12dp: #313131;
+  --surface16dp: #353535;
+  --surface24dp: #373737;
 
   --white: #ffffff;
   --dark: #000000;
 
   --glowColor: rgba(255, 255, 255, 0.782);
   --glowColorLight: rgba(0, 0, 0, 0.782);
-  --accentColor: #61191dcb;
-  /*   --accentColor2: #61191d; */
+  /* --accentColor: #61191dcb; */
+    --accentColor: #61191d;
 
   --accentColorText: rgba(255, 255, 255, 0.87);
   /*   --accentColorTextOpacity: #d32f2fb2; */
@@ -854,23 +872,20 @@ body.dark-theme button {
 
 .projectsAndroid-container {
   display: grid;
-  grid-template-columns: repeat(3, 182px);
+  grid-template-columns: repeat(2, 182px);
   grid-template-rows: repeat(2, 182px);
   gap: 16px;
   padding: 16px;
   justify-content: center;
   margin-bottom: 7%;
 }
-/* #cardPA-3 {
+#cardPA-2 {
   background-color: transparent;
   border: 0px;
-} */
+}
 #cardPA-1,
-#cardPA-2,
 #cardPA-3,
-#cardPA-4,
-#cardPA-5,
-#cardPA-6 {
+#cardPA-4 {
   background-color: transparent;
   border: 0px;
   width: 100%;
@@ -989,12 +1004,13 @@ body.dark-theme button {
   .projectsAndroid-container {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(6, 142px);
+    grid-template-rows: repeat(3, 142px);
     gap: 16px;
     padding: 0;
     justify-content: center;
     margin-bottom: 0%;
   }
+  #cardPA-2,
   #cardPW-1,
   #cardPW-3 {
     display: none !important;
@@ -1146,7 +1162,7 @@ body.dark-theme button {
 .footer-section {
   position: relative;
   padding: 3rem 0;
-  background-color: var(--surface01dp);
+  background-color: var(--surface00dp);
   color: var(--white87);
 }
 .footer-section p {

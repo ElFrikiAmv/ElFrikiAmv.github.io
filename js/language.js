@@ -147,16 +147,8 @@ function toggleLanguage() {
 
     document.getElementById("pointSaleTxt").textContent =
       "Utiliza tu smartphone como punto de venta.";
-    document.getElementById("simpleNoteTxt").textContent =
-      "Tu aplicación de notas favorita con simple_note.";
-    document.getElementById("simpleMicTxt").textContent =
-      "Interfaz de control de micrófono UX/IX en Jetpack Compose.";
-
     document.getElementById("superCouponsTxt").textContent =
       "Descubre cupones con Super_coupons.";
-
-    document.getElementById("randomImageTxt").textContent =
-      "Descubre imágenes con Random_image.";
     document.getElementsByClassName("title-winProjects").textContent =
       "Proyectos Windows.";
     document.getElementById("windowsProjectsTxt").textContent =
@@ -325,16 +317,8 @@ function toggleLanguage() {
 
     document.getElementById("pointSaleTxt").textContent =
       "Use your smartphone as a point of sale with pointSale.";
-    document.getElementById("simpleNoteTxt").textContent =
-      "Your favorite notes app with simple_note.";
-    document.getElementById("simpleMicTxt").textContent =
-      "Microphone control interface UX/IX in Jetpack Compose.";
-
     document.getElementById("superCouponsTxt").textContent =
       "Discover amazing coupons with Super_coupons.";
-
-    document.getElementById("randomImageTxt").textContent =
-      "Discover random images with Random_image.";
     document.getElementsByClassName("title-winProjects").textContent =
       "Windows projects.";
     document.getElementById("windowsProjectsTxt").textContent =
