@@ -1060,75 +1060,78 @@
         <div class="light x9"></div>
         <div data-aos="fade-up">
           <div class="container text-center">
-            <div id="glow">
-              <p class="bigSimpleTitle" id="contactMe">Contact me.</p>
+            <div class="row row-cols-1">
+              <div class="col">
+                <div id="glow">
+                  <p class="bigSimpleTitle" id="contactMe">Contact me.</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <section class="hero-section">
-            <div class="card-grid">
-              <a class="card">
-                <p class="infoRedContact">linkedin.com/in/elfrikiamv</p>
-                <div
-                  class="card__background"
-                  style="
-                    background-image: url(https://elfrikiamv.com/media/img/linkedin-logo.webp);
-                  "
-                ></div>
-                <div class="card__content">
-                  <p class="card__heading">LinkedIn.</p>
-                  <button
-                    type="button"
-                    class="btn btn-outline-light"
-                    id="btnContactMeTxt"
-                    onclick="LinkedInGo()"
-                  >
-                    Contact me.
-                  </button>
+          <div class="container text-center">
+            <div class="contactCards">
+              <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                  <div class="card h-100" id="cardLinkedIn">
+                    <div class="card-content">
+                      <h1>LinkedIn</h1>
+                    </div>
+                    <img class="background-image mx-auto""
+                    src="https://elfrikiamv.com/media/img/linkedin-logo.webp"
+                    alt="linkedin-logo" />
+                    <p class="infoRedContact">linkedin.com/in/elfrikiamv</p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      id="btnContactMeTxt"
+                      onclick="LinkedInGo()"
+                    >
+                      Contact me.
+                    </button>
+                  </div>
                 </div>
-              </a>
-              <a class="card">
-                <p class="infoRedContact">github.com/elfrikiamv</p>
-                <div
-                  class="card__background"
-                  style="
-                    background-image: url(https://elfrikiamv.com/media/img/github-logo.webp);
-                  "
-                ></div>
-                <div class="card__content">
-                  <p class="card__heading">Github.</p>
-                  <button
-                    type="button"
-                    class="btn btn-outline-light"
-                    id="btnContactMeTxt"
-                    onclick="GithubGo()"
-                  >
-                    Contact me.
-                  </button>
+                <div class="col" id="colCardGithub">
+                  <div class="card h-100" id="cardGithub">
+                    <div class="card-content">
+                      <h1>Github</h1>
+                    </div>
+                    <img class="background-image mx-auto""
+                    src="https://elfrikiamv.com/media/img/github-logo.webp"
+                    alt="github-logo" />
+                    <p class="infoRedContact">github.com/elfrikiamv</p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      id="btnContactMeTxt"
+                      onclick="GithubGo()"
+                    >
+                      Contact me.
+                    </button>
+                  </div>
                 </div>
-              </a>
-              <a class="card">
-                <p class="infoRedContact">contact@elfrikiamv.com</p>
-                <div
-                  class="card__background"
-                  style="
-                    background-image: url(https://elfrikiamv.com/media/img/gmail-logo.webp);
-                  "
-                ></div>
-                <div class="card__content">
-                  <p class="card__heading">Gmail.</p>
-                  <button
-                    type="button"
-                    class="btn btn-outline-light"
-                    id="btnContactMeTxt"
-                    onclick="GmailGo()"
-                  >
-                    Contact me.
-                  </button>
+                <div class="col">
+                  <div class="card h-100" id="cardEmail">
+                    <div class="card-content">
+                      <h1>Email</h1>
+                    </div>
+                    <img class="background-image mx-auto""
+                    src="https://elfrikiamv.com/media/img/gmail-logo.webp"
+                    alt="gmail-logo" />
+                    <p class="infoRedContact">contact@elfrikiamv.com</p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      id="btnContactMeTxt"
+                      onclick="GmailGo()"
+                    >
+                      Contact me.
+                    </button>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>
-          </section>
+          </div>
         </div>
       </section>
       <!-- contact section -->
