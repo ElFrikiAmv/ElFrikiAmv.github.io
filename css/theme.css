@@ -23,7 +23,7 @@ body.light-theme .navbar p {
 body.light-theme button {
   --bs-btn-border-color: var(--surface01dp);
   --bs-btn-hover-bg: var(--accentColor);
-  --bs-btn-hover-border-color: var(--white87);
+  --bs-btn-hover-border-color: var(--surface01dp);
   --bs-btn-color: var(--surface01dp);
   --bs-btn-hover-color: var(--white87);
 }
@@ -90,6 +90,7 @@ body.light-theme .navbar p:hover,
 body.light-theme .custom-card .card-info,
 body.light-theme .custom-card-large .card-info,
 body.light-theme .projects-section .card p,
+body.light-theme .contact-section .card h1,
 body.light-theme .contact-section .card p {
   color: var(--surface01dp);
 }

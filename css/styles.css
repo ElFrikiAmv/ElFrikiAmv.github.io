@@ -1077,7 +1077,7 @@ body.dark-theme button {
   font-size: large;
   font-weight: 700;
   color: var(--accentColorText);
-  text-shadow: var(--surface12dp) 0 0px 3px;
+  /* text-shadow: var(--surface12dp) 0 0px 3px; */
 }
 .contactCards .col {
   padding: 0;
