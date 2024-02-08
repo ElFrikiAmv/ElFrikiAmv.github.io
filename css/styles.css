@@ -206,33 +206,16 @@ body.dark-theme button {
   left: 0;
   width: 100%;
   background-color: var(--surface01dp);
-  /* color: #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; */
-  /* height: 60px; */
-  /* box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); */
   box-shadow: var(--accentColor) 0 0px 13px 0, inset transparent 0 0 0 6px;
   z-index: 1000;
 }
 .mobile-navbar-card .col {
   margin: 12px 0;
-  /* margin-top: 12px;
-  margin-bottom: 16px; */
-  /* padding: 10px 0; */
-  /* cursor: pointer; */
 }
-
 .mobile-navbar-card i {
   font-size: 24px;
   cursor: pointer;
 }
-/* .mobile-navbar-card p {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-} */
-
 .mobile-navbar-card .col {
   padding: 0;
 }
@@ -529,7 +512,6 @@ body.dark-theme button {
 
   p {
     opacity: 0;
-    /* text-shadow: rgba(0, 0, 0, 1) 0 2px 3px; */
     transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
@@ -598,7 +580,6 @@ body.dark-theme button {
 
   p {
     opacity: 0;
-    /* text-shadow: rgba(0, 0, 0, 1) 0 2px 3px; */
     transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
@@ -754,8 +735,6 @@ body.dark-theme button {
     padding-right: 12px;
   }
   .aboutContainer #txtAcademic {
-    /* padding-right: 0px;
-    margin-bottom: 22px; */
     padding: 0;
   }
   .aboutContainer #txtIJust {
@@ -1069,46 +1048,41 @@ body.dark-theme button {
   opacity: 100%;
 }
 .contact-section .card .infoRedContact {
+  margin: 3% 0;
   opacity: 0;
   transition: opacity 0.4s;
 }
 .contactCards h1 {
-  margin-top: 3%;
+  margin: 3% 0;
   font-size: large;
   font-weight: 700;
   color: var(--accentColorText);
-  /* text-shadow: var(--surface12dp) 0 0px 3px; */
+}
+.contactCards {
+  padding: 0 54px;
 }
 .contactCards .col {
-  padding: 0;
-}
-#cardEmail {
-  margin-right: 66px;
-}
-#cardLinkedIn {
-  margin-left: 66px;
-}
-#cardGithub {
-  margin: 0 22px;
+  padding: 0 11px;
 }
 @media (max-width: 991px) {
-  #cardGithub,
-  #cardLinkedIn,
-  #cardEmail {
-    margin: 0;
+  .contactCards {
+    padding: 0;
   }
-  #colCardGithub {
-    margin: 22px 0;
+  .contactCards .col {
+    padding: 11px 0;
+  }
+}
+@media (max-width: 575px) {
+  .contactCards .col {
+    padding: 11px 16px;
+  }
+  .contactCards .background-image {
+    height: 100px;
+    width: 100px;
+    transition: filter 200ms linear, transform 182ms linear;
   }
 }
 
-@media (max-width: 575px) {
-  #cardGithub,
-  #cardLinkedIn,
-  #cardEmail {
-    margin: 0 16px;
-  }
-}
 /* cads animated */
 @media (max-width: 991px) {
   .contact-section {

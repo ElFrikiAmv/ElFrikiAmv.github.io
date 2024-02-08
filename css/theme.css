@@ -62,14 +62,6 @@ body.light-theme .welcome-section button,
 body.light-theme .welcome-section img {
   margin-left: 0%;
 }
-/* body.light-theme .light {
-  box-shadow: var(--accentColor) 0px 0px 20px 2px;
-}
-@media (max-width: 540px) {
-  body.light-theme .light {
-    box-shadow: var(--accentColor) 0px 0px 20px 2px;
-  }
-} */
 body.light-theme .projects-section .card,
 body.light-theme .custom-card-large .card,
 body.light-theme .custom-card .card {
@@ -123,7 +115,4 @@ body.light-theme .aboutContainer .card:hover {
     inset var(--surface01dp) 0 0 0 1px, inset transparent 0 0 0 6px;
 }
 
-/* body.light-theme .welcome-section .fa-linkedin-square:before {
-  color: var(--accentColor);
-} */
 /* light theme  */
