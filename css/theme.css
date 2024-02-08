@@ -115,4 +115,36 @@ body.light-theme .aboutContainer .card:hover {
     inset var(--surface01dp) 0 0 0 1px, inset transparent 0 0 0 6px;
 }
 
+body.light-theme .mobile-navbar-card {
+  background-color: var(--white87);
+}
+
 /* light theme  */
+
+/* A dark theme is a low-light UI that displays mostly dark surfaces. */
+
+@media (max-width: 991px) {
+  body.dark-theme .cardSimpleTitleSkills:hover,
+  body.dark-theme .card:hover {
+    box-shadow: 0px 0px 7px 1px var(--accentColor),
+      inset var(--white87) 0 0 0 1px, inset transparent 0 0 0 6px !important;
+  }
+  body.dark-theme .cardSimpleTitleSkills,
+  body.dark-theme .card {
+    background-color: var(--surface01dp) !important;
+    box-shadow: 0px 0px 7px 1px var(--surface00dp) !important;
+  }
+}
+@media (max-width: 991px) {
+  body.light-theme .cardSimpleTitleSkills,
+  body.light-theme .card {
+    background-color: var(--white87) !important;
+    box-shadow: 0px 0px 7px 1px var(--surface00dp) !important;
+  }
+  body.light-theme .cardSimpleTitleSkills:hover,
+  body.light-theme .card:hover {
+    box-shadow: 0px 0px 7px 1px var(--accentColor) !important;
+  }
+}
+
+/* A dark theme is a low-light UI that displays mostly dark surfaces. */

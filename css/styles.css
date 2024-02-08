@@ -18,13 +18,13 @@
   --white38: rgba(255, 255, 255, 0.38);
 
   --surface00dp: #121212;
-  --surface01dp: #1d1d1d;
+  --surface01dp: #1E1E1E;
   --surface02dp: #212121;
   --surface03dp: #242424;
   --surface04dp: #272727;
   --surface06dp: #2c2c2c;
   --surface08dp: #2d2d2d;
-  --surface12dp: #313131;
+  --surface12dp: #323232;
   --surface16dp: #353535;
   --surface24dp: #373737;
 
@@ -205,8 +205,8 @@ body.dark-theme button {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--surface01dp);
-  box-shadow: var(--accentColor) 0 0px 13px 0, inset transparent 0 0 0 6px;
+  background-color: var(--surface08dp);
+  box-shadow: 0px 0px 7px 8px var(--surface00dp);
   z-index: 1000;
 }
 .mobile-navbar-card .col {
@@ -598,7 +598,9 @@ body.dark-theme button {
 .containerSkillsMobile .col {
   margin-bottom: 22px;
 }
-
+.containerSkillsMobile p {
+  color: var(--white87);
+}
 .containerSkillsMobile .card {
   position: relative;
 }
@@ -612,6 +614,7 @@ body.dark-theme button {
   object-fit: contain;
   padding: 3%;
   opacity: 50%;
+  /* filter: saturate(50%); */
 }
 
 .containerSkillsMobile .card-content {
@@ -1043,7 +1046,9 @@ body.dark-theme button {
 .contactCards .card:not(:hover) .background-image {
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(3px);
 }
-
+.contactCards .card button {
+  margin: 0 13% 5% 13%;
+}
 .contact-section .card:hover .infoRedContact {
   opacity: 100%;
 }
