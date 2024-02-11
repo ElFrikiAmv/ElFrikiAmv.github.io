@@ -5,7 +5,7 @@ var currentTheme = "dark";
 function toggleTheme() {
   // Get the theme button element
   var body = document.body;
-  var themeIcon = document.getElementById("theme-icon");
+  var themeIcon = document.querySelectorAll(".theme-icon");
   var logoNameIcon = document.getElementById("logoName-icon");
   var logoIcon = document.querySelectorAll(".logo-icon");
   var navbar = document.querySelector(".navbar");
@@ -21,7 +21,12 @@ function toggleTheme() {
     }
     //update content
     currentTheme = "light";
-    themeIcon.src = "https://elfrikiamv.com/media/img/light-mode.webp";
+    /* themeIcon.src = "https://elfrikiamv.com/media/img/light-mode.webp"; */
+    themeIcon.forEach(function (element) {
+      element.src =
+        "https://elfrikiamv.com/media/img/light-mode.webp";
+    });
+    
 
     logoIcon.forEach(function (element) {
       element.src =
@@ -42,7 +47,11 @@ function toggleTheme() {
     }
     //update content
     currentTheme = "dark";
-    themeIcon.src = "https://elfrikiamv.com/media/img/night-mode.webp";
+    /* themeIcon.src = "https://elfrikiamv.com/media/img/night-mode.webp"; */
+    themeIcon.forEach(function (element) {
+      element.src =
+        "https://elfrikiamv.com/media/img/night-mode.webp";
+    });
 
     logoIcon.forEach(function (element) {
       element.src = "https://elfrikiamv.com/media/img/elfrikiamv-logo.webp";

@@ -18,7 +18,7 @@
   --white38: rgba(255, 255, 255, 0.38);
 
   --surface00dp: #121212;
-  --surface01dp: #1E1E1E;
+  --surface01dp: #1e1e1e;
   --surface02dp: #212121;
   --surface03dp: #242424;
   --surface04dp: #272727;
@@ -125,13 +125,13 @@ body.dark-theme button {
   border: none;
   border-radius: 0px;
 }
-#theme-icon {
+.theme-icon {
   width: 24px;
   margin-left: 9px;
   margin-bottom: 3px;
 }
 @media (max-width: 992px) {
-  #theme-icon {
+  .theme-icon {
     margin-left: 0;
     margin-bottom: 3px;
   }
@@ -225,6 +225,66 @@ body.dark-theme button {
   }
 }
 /* Mobile Navbar Card */
+
+/* toolbar */
+
+.fixed-toolbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--surface04dp);
+  z-index: 1000;
+  box-shadow: 0 0 7px 4px var(--surface00dp);
+}
+.fixed-toolbar p {
+  padding-top: 8px;
+  margin: 0;
+}
+.fixed-toolbar #btnSettings {
+  font-size: 24px;
+  padding: 0 16px;
+}
+.fixed-toolbar #btnBack {
+  font-size: 24px;
+  padding: 2px 16px;
+}
+#dotcom {
+  padding: 0 7px;
+}
+.fixed-toolbar .fa {
+  padding: 0;
+}
+.fixed-toolbar button {
+  --bs-btn-border-color: transparent !important;
+  --bs-btn-hover-bg: transparent !important;
+  --bs-btn-bg: transparent !important;
+  --bs-btn-hover-border-color: transparent !important;
+}
+
+.fixed-toolbar .dropdown-menu {
+  background: var(--surface16dp) !important;
+  min-width: 0 !important;
+  box-shadow: 0 0 7px 4px var(--surface00dp);
+}
+.fixed-toolbar .dropdown-menu p {
+  color: var(--white87);
+  font-size: medium !important;
+}
+.fixed-toolbar .dropdown-menu button,
+.fixed-toolbar .dropdown-menu p,
+.fixed-toolbar .dropdown-menu img {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media (max-width: 991px) {
+  .fixed-toolbar {
+    display: block;
+  }
+}
+
+/* toolbar */
 
 /* simple line */
 

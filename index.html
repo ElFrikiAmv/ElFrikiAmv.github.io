@@ -124,18 +124,17 @@
                     class="language-button"
                     onclick="toggleLanguage()"
                   >
-                    <p id="language-txt">ES</p>
+                    <p class="language-txt">ES</p>
                   </button>
                 </div>
                 <!-- language switcher -->
               </li>
               <li class="nav-item">
-                <!--  -->
                 <!-- theme switcher -->
                 <div class="theme-switcher">
                   <div id="theme-button" class="theme-button">
                     <img
-                      id="theme-icon"
+                      class="theme-icon"
                       src="https://elfrikiamv.com/media/img/night-mode.webp"
                       alt="logo-night-mode"
                     />
@@ -161,6 +160,72 @@
       </nav>
     </header>
     <!-- navigation bar -->
+
+    <!-- toolbar -->
+    <div class="fixed-toolbar">
+      <div class="container text-start">
+        <div class="row row-cols-3">
+          <div class="col-auto" id="btnBack" onclick="toBack()">
+            <div class="fa fa-angle-left"></div>
+          </div>
+          <div class="col-auto" id="dotcom">
+            <p>elfrikiamv.com</p>
+          </div>
+          <div
+            class="col-auto ms-auto"
+            id="btnSettings"
+            onclick="btnSettings()"
+          >
+            <!-- <div class="fa fa-cog"></div> -->
+            <div class="dropdown">
+              <button
+                class="fa fa-cog btn btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" onclick="toggleLanguage()">
+                    <div class="row justify-content-center">
+                      <div class="col-auto">
+                        <!-- language switcher -->
+                        <div class="language-switcher">
+                          <button id="language-button" class="language-button">
+                            <p class="language-txt">ES</p>
+                          </button>
+                        </div>
+                        <!-- language switcher -->
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" onclick="toggleTheme()">
+                    <div class="row justify-content-center">
+                      <div class="col-auto">
+                        <!-- theme switcher -->
+                        <div class="theme-switcher">
+                          <div id="theme-button" class="theme-button">
+                            <img
+                              class="theme-icon"
+                              src="https://elfrikiamv.com/media/img/night-mode.webp"
+                              alt="logo-night-mode"
+                            />
+                          </div>
+                        </div>
+                        <!-- theme switcher -->
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- toolbar -->
 
     <!-- Mobile Navbar Card -->
     <div class="mobile-navbar-card" id="navbar">

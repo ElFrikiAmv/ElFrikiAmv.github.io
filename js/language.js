@@ -24,7 +24,10 @@ function toggleLanguage() {
     document.getElementById("contactTextNav").textContent = "Contacto";
 
     // Botón de idioma
-    document.getElementById("language-txt").textContent = "EN";
+    var language = document.querySelectorAll(".language-txt");
+    language.forEach(function (element) {
+      element.textContent = "EN";
+    });
 
     // Bienvenida
     document.getElementById("WelcomeText").textContent =
@@ -195,7 +198,10 @@ function toggleLanguage() {
     document.getElementById("contactTextNav").textContent = "Contact me";
 
     //button language
-    document.getElementById("language-txt").textContent = "ES";
+    var language = document.querySelectorAll(".language-txt");
+    language.forEach(function (element) {
+      element.textContent = "ES";
+    });
 
     //welcome
     document.getElementById("WelcomeText").textContent =

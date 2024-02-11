@@ -83,6 +83,7 @@ body.light-theme .custom-card .card-info,
 body.light-theme .custom-card-large .card-info,
 body.light-theme .projects-section .card p,
 body.light-theme .contact-section .card h1,
+body.light-theme .containerSkillsMobile p,
 body.light-theme .contact-section .card p {
   color: var(--surface01dp);
 }
@@ -134,8 +135,6 @@ body.light-theme .mobile-navbar-card {
     background-color: var(--surface01dp) !important;
     box-shadow: 0px 0px 7px 1px var(--surface00dp) !important;
   }
-}
-@media (max-width: 991px) {
   body.light-theme .cardSimpleTitleSkills,
   body.light-theme .card {
     background-color: var(--white87) !important;
@@ -145,6 +144,19 @@ body.light-theme .mobile-navbar-card {
   body.light-theme .card:hover {
     box-shadow: 0px 0px 7px 1px var(--accentColor) !important;
   }
+  body.light-theme .fixed-toolbar {
+    background-color: var(--white87) !important;
+  }
 }
 
 /* A dark theme is a low-light UI that displays mostly dark surfaces. */
+
+/* toolbar settings*/
+body.light-theme .fixed-toolbar .dropdown-menu {
+  background: var(--white87) !important;
+  min-width: 0 !important; /* Ancho mínimo del menú */
+}
+body.light-theme .fixed-toolbar p {
+  color: var(--surface01dp) !important;
+}
+/* toolbar settings*/
