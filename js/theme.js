@@ -23,10 +23,8 @@ function toggleTheme() {
     currentTheme = "light";
     /* themeIcon.src = "https://elfrikiamv.com/media/img/light-mode.webp"; */
     themeIcon.forEach(function (element) {
-      element.src =
-        "https://elfrikiamv.com/media/img/light-mode.webp";
+      element.src = "https://elfrikiamv.com/media/img/light-mode.webp";
     });
-    
 
     logoIcon.forEach(function (element) {
       element.src =
@@ -49,8 +47,7 @@ function toggleTheme() {
     currentTheme = "dark";
     /* themeIcon.src = "https://elfrikiamv.com/media/img/night-mode.webp"; */
     themeIcon.forEach(function (element) {
-      element.src =
-        "https://elfrikiamv.com/media/img/night-mode.webp";
+      element.src = "https://elfrikiamv.com/media/img/night-mode.webp";
     });
 
     logoIcon.forEach(function (element) {
@@ -63,3 +60,43 @@ function toggleTheme() {
     body.classList.toggle("dark-theme");
   }
 }
+/* mobile back button */
+
+function toBack() {
+  // Oculta el contenido principal
+  var mainContentElement = document.querySelector(".allContent");
+  if (mainContentElement) {
+    mainContentElement.style.display = "none";
+  } else {
+    console.error("Elemento de contenido principal no encontrado.");
+  }
+
+  // Muestra el contenido móvil
+  var mobileContentElement = document.querySelector(".mobile-desktop");
+  if (mobileContentElement) {
+    mobileContentElement.style.display = "block";
+  } else {
+    console.error("Elemento de contenido móvil no encontrado.");
+  }
+}
+
+function toBackWeb() {
+
+  // Oculta el contenido móvil
+  var mobileContentElement = document.querySelector(".mobile-desktop");
+  if (mobileContentElement) {
+    mobileContentElement.style.display = "none";
+  } else {
+    console.error("Elemento de contenido móvil no encontrado.");
+  }
+
+  // Muestra el contenido principal
+  var mainContentElement = document.querySelector(".allContent");
+  if (mainContentElement) {
+    mainContentElement.style.display = "block";
+  } else {
+    console.error("Elemento de contenido principal no encontrado.");
+  }
+
+}
+/* mobile back button */

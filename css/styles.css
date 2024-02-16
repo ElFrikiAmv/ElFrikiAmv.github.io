@@ -2,15 +2,6 @@
   --backgroundColorDark: #171717;
   --backgroundColorLight: #ffffff;
 
-  /* --surface01dp: #121212;
-  --surface06dp: #2c2c2c;
-  --surface12dp: #313131;
-
-  --white87: #DEFFFFFF;
-  --white60: #99FFFFFF;
-  --white38: #61FFFFFF;
-   */
-
   /* <!--color dark--> */
 
   --white87: rgba(255, 255, 255, 0.87);
@@ -39,14 +30,6 @@
   --accentColorText: rgba(255, 255, 255, 0.87);
   /*   --accentColorTextOpacity: #d32f2fb2; */
   /* --accentColorText: #61191D; */
-
-  --text-light: rgba(0, 0, 0, 0.6);
-  --spacing-s: 8px;
-  --spacing-m: 16px;
-  --spacing-l: 24px;
-  --spacing-xl: 32px;
-  --spacing-xxl: 64px;
-  --width-container: 1200px;
 }
 
 /* Switch estilo toggle */
@@ -198,6 +181,58 @@ body.dark-theme button {
 }
 /* Navigation Bar */
 
+/* mobile-desktop */
+.mobile-desktop {
+  background-color: var(--backgroundColorDark);
+  background-image: url("https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-en-horizontal.webp");
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 99%;
+  position: relative !important;
+  height: 100vh;
+  justify-content: center !important;
+  align-items: center !important;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.mobile-desktop .app-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 7px;
+  background-color: var(--white87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 7px 1px var(--white38);
+}
+.mobile-desktop .chrome-icon i {
+  font-size: 48px;
+  color: var(--surface01dp);
+}
+
+.mobile-desktop .navbarMobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: 0px 0px 7px 8px var(--surface00dp);
+  padding: 13px 0;
+  /* box-sizing: border-box; */
+  z-index: 999;
+}
+
+.mobile-desktop .navbarMobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 7%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* mobile-desktop */
+
 /* Mobile Navbar Card */
 .mobile-navbar-card {
   display: none !important;
@@ -264,9 +299,9 @@ body.dark-theme button {
 }
 
 .fixed-toolbar .dropdown-menu {
-  background: var(--surface16dp) !important;
+  background: var(--surface08dp) !important;
   min-width: 0 !important;
-  box-shadow: 0 0 7px 4px var(--surface00dp);
+  box-shadow: 0 0 7px 8px var(--surface00dp);
 }
 .fixed-toolbar .dropdown-menu p {
   color: var(--white87);
@@ -305,14 +340,14 @@ body.dark-theme button {
 .welcome-section {
   position: relative;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
   background-image: url("https://elfrikiamv.com/media/img/yomero-OP.jpg");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: auto 100%;
   opacity: 99%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   animation: fadeIn 1s ease-in-out;
 }
 @keyframes fadeIn {

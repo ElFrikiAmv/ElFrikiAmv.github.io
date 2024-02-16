@@ -6,7 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-
     <meta
       name="description"
       content="Mobile app developer specializing in native Android applications."
@@ -28,12 +27,14 @@
 
     <title>elfrikiamv - Mobile App Developer</title>
 
-    <!-- Add CSS links here -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <link
       rel="elfrikiamv-logo"
       href="https://elfrikiamv.com/media/img/elfrikiamv-logo.webp"
       type="elfrikiamv-logo"
     />
+    <!-- Add CSS links here -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/theme.css" />
     <link
@@ -67,1191 +68,1219 @@
   </head>
 
   <body class="dark-theme">
-    <!-- navigation bar -->
-    <header>
-      <nav
-        class="navbar fixed-top navbar-expand-lg"
-        data-bs-theme="dark"
-        id="navbarItem"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="https://elfrikiamv.com">
-            <img
-              class="logo-icon"
-              src="https://elfrikiamv.com/media/img/elfrikiamv-logo.webp"
-              alt="elfrikiamv-logo"
-              height="40"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home-section">
-                  <p id="homeTextNav">Home</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio-section">
-                  <p id="portfolioTextNav">Portfolio</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about-section">
-                  <p id="aboutTextNav">About me</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact-section">
-                  <p id="contactTextNav">Contact me</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <!-- language switcher -->
-                <div class="language-switcher">
-                  <button
-                    id="language-button"
-                    class="language-button"
-                    onclick="toggleLanguage()"
-                  >
-                    <p class="language-txt">ES</p>
-                  </button>
-                </div>
-                <!-- language switcher -->
-              </li>
-              <li class="nav-item">
-                <!-- theme switcher -->
-                <div class="theme-switcher">
-                  <div id="theme-button" class="theme-button">
-                    <img
-                      class="theme-icon"
-                      src="https://elfrikiamv.com/media/img/night-mode.webp"
-                      alt="logo-night-mode"
-                    />
-                  </div>
-                </div>
-                <!-- theme switcher -->
-              </li>
-              <li class="nav-item">
-                <!-- Switch estilo toggle -->
-                <label class="switch">
-                  <input
-                    type="checkbox"
-                    id="theme-toggle"
-                    onclick="toggleTheme()"
-                  />
-                  <span class="slider"></span>
-                </label>
-                <!-- Switch estilo toggle -->
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- navigation bar -->
-
-    <!-- toolbar -->
-    <div class="fixed-toolbar">
-      <div class="container text-start">
-        <div class="row row-cols-3">
-          <div class="col-auto" id="btnBack" onclick="toBack()">
-            <div class="fa fa-angle-left"></div>
-          </div>
-          <div class="col-auto" id="dotcom">
-            <p>elfrikiamv.com</p>
-          </div>
-          <div
-            class="col-auto ms-auto"
-            id="btnSettings"
-            onclick="btnSettings()"
-          >
-            <!-- <div class="fa fa-cog"></div> -->
-            <div class="dropdown">
-              <button
-                class="fa fa-cog btn btn-secondary"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              ></button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" onclick="toggleLanguage()">
-                    <div class="row justify-content-center">
-                      <div class="col-auto">
-                        <!-- language switcher -->
-                        <div class="language-switcher">
-                          <button id="language-button" class="language-button">
-                            <p class="language-txt">ES</p>
-                          </button>
-                        </div>
-                        <!-- language switcher -->
-                      </div>
-                    </div>
+    <div class="allContent">
+      <!-- navigation bar -->
+      <header>
+        <nav
+          class="navbar fixed-top navbar-expand-lg"
+          data-bs-theme="dark"
+          id="navbarItem"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="https://elfrikiamv.com">
+              <img
+                class="logo-icon"
+                src="https://elfrikiamv.com/media/img/elfrikiamv-logo.webp"
+                alt="elfrikiamv-logo"
+                height="40"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home-section">
+                    <p id="homeTextNav">Home</p>
                   </a>
                 </li>
-                <li>
-                  <a class="dropdown-item" onclick="toggleTheme()">
-                    <div class="row justify-content-center">
-                      <div class="col-auto">
-                        <!-- theme switcher -->
-                        <div class="theme-switcher">
-                          <div id="theme-button" class="theme-button">
-                            <img
-                              class="theme-icon"
-                              src="https://elfrikiamv.com/media/img/night-mode.webp"
-                              alt="logo-night-mode"
-                            />
-                          </div>
-                        </div>
-                        <!-- theme switcher -->
-                      </div>
-                    </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio-section">
+                    <p id="portfolioTextNav">Portfolio</p>
                   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-section">
+                    <p id="aboutTextNav">About me</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-section">
+                    <p id="contactTextNav">Contact me</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <!-- language switcher -->
+                  <div class="language-switcher">
+                    <button
+                      id="language-button"
+                      class="language-button"
+                      onclick="toggleLanguage()"
+                    >
+                      <p class="language-txt">ES</p>
+                    </button>
+                  </div>
+                  <!-- language switcher -->
+                </li>
+                <li class="nav-item">
+                  <!-- theme switcher -->
+                  <div class="theme-switcher">
+                    <div id="theme-button" class="theme-button">
+                      <img
+                        class="theme-icon"
+                        src="https://elfrikiamv.com/media/img/night-mode.webp"
+                        alt="logo-night-mode"
+                      />
+                    </div>
+                  </div>
+                  <!-- theme switcher -->
+                </li>
+                <li class="nav-item">
+                  <!-- Switch estilo toggle -->
+                  <label class="switch">
+                    <input
+                      type="checkbox"
+                      id="theme-toggle"
+                      onclick="toggleTheme()"
+                    />
+                    <span class="slider"></span>
+                  </label>
+                  <!-- Switch estilo toggle -->
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- toolbar -->
+        </nav>
+      </header>
+      <!-- navigation bar -->
 
-    <!-- Mobile Navbar Card -->
-    <div class="mobile-navbar-card" id="navbar">
-      <div class="container text-center">
-        <div class="row row-cols-4">
-          <div class="col">
-            <i class="fa fa-home" aria-hidden="true" onclick="goToHome()"></i>
-          </div>
-          <div class="col">
-            <i
-              class="fa fa-folder"
-              aria-hidden="true"
-              onclick="goToPortfolio()"
-            ></i>
-          </div>
-          <div class="col">
-            <i
-              class="fa fa-user"
-              aria-hidden="true"
-              onclick="goToAboutMe()"
-            ></i>
-          </div>
-          <div class="col">
-            <i
-              class="fa fa-envelope"
-              aria-hidden="true"
-              onclick="goToContactMe()"
-            ></i>
+      <!-- toolbar -->
+      <div class="fixed-toolbar">
+        <div class="container text-start">
+          <div class="row row-cols-3">
+            <div class="col-auto" id="btnBack" onclick="toBack()">
+              <div class="fa fa-angle-left"></div>
+            </div>
+            <div class="col-auto" id="dotcom">
+              <p>elfrikiamv.com</p>
+            </div>
+            <div class="col-auto ms-auto" id="btnSettings">
+              <!-- <div class="fa fa-cog"></div> -->
+              <div class="dropdown">
+                <button
+                  class="fa fa-cog btn btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" onclick="toggleLanguage()">
+                      <div class="row justify-content-center">
+                        <div class="col-auto">
+                          <!-- language switcher -->
+                          <div class="language-switcher">
+                            <button
+                              id="language-button"
+                              class="language-button"
+                            >
+                              <p class="language-txt">ES</p>
+                            </button>
+                          </div>
+                          <!-- language switcher -->
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" onclick="toggleTheme()">
+                      <div class="row justify-content-center">
+                        <div class="col-auto">
+                          <!-- theme switcher -->
+                          <div class="theme-switcher">
+                            <div id="theme-button" class="theme-button">
+                              <img
+                                class="theme-icon"
+                                src="https://elfrikiamv.com/media/img/night-mode.webp"
+                                alt="logo-night-mode"
+                              />
+                            </div>
+                          </div>
+                          <!-- theme switcher -->
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Mobile Navbar Card -->
-    <!-- welcome section -->
-    <main>
-      <section class="welcome-section" id="home-section">
-        <div class="light x1"></div>
-        <div class="light x2"></div>
-        <div class="light x3"></div>
-        <div class="light x4"></div>
-        <div class="light x5"></div>
-        <div class="light x6"></div>
-        <div class="container text-center" data-aos="fade-up">
-          <div class="row row-cols-1">
+      <!-- toolbar -->
+
+      <!-- Mobile Navbar Card -->
+      <div class="mobile-navbar-card" id="navbar">
+        <div class="container text-center">
+          <div class="row row-cols-4">
             <div class="col">
-              <img
-                id="logoName-icon"
-                src="https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-en.webp"
-                class="img-fluid"
-                alt="logo-elfrikiamv"
-              />
+              <i class="fa fa-home" aria-hidden="true" onclick="goToHome()"></i>
             </div>
-            <div class="col" id="subText">
-              <p id="WelcomeText">I only make cool apps for Android devices.</p>
-            </div>
-            <div class="col" id="welcomeContact">
-              <button
-                id="btnDownloadCV"
-                type="button"
-                class="btn btn-outline-light"
-                onclick="downloadCV()"
-              >
-                CV
-              </button>
+            <div class="col">
               <i
-                class="fa fa-linkedin-square"
-                onclick="LinkedInGo()"
-                id="welcomeContactIcon"
+                class="fa fa-folder"
+                aria-hidden="true"
+                onclick="goToPortfolio()"
               ></i>
+            </div>
+            <div class="col">
               <i
-                class="fa fa-github"
-                onclick="GithubGo()"
-                id="welcomeContactIcon"
+                class="fa fa-user"
+                aria-hidden="true"
+                onclick="goToAboutMe()"
+              ></i>
+            </div>
+            <div class="col">
+              <i
+                class="fa fa-envelope"
+                aria-hidden="true"
+                onclick="goToContactMe()"
               ></i>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <!-- Mobile Navbar Card -->
       <!-- welcome section -->
-
-      <!-- portfolio section -->
-      <div class="simpleLine"></div>
-      <section class="portfolio-section" id="portfolio-section">
-        <div data-aos="fade-up">
-          <div class="container text-center">
+      <main>
+        <section class="welcome-section" id="home-section">
+          <div class="light x1"></div>
+          <div class="light x2"></div>
+          <div class="light x3"></div>
+          <div class="light x4"></div>
+          <div class="light x5"></div>
+          <div class="light x6"></div>
+          <div class="container text-center" data-aos="fade-up">
             <div class="row row-cols-1">
               <div class="col">
-                <div class="text-center">
-                  <div id="glow">
-                    <p class="bigSimpleTitle" id="myProjects">My projects.</p>
-                  </div>
-                </div>
+                <img
+                  id="logoName-icon"
+                  src="https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-en.webp"
+                  class="img-fluid"
+                  alt="logo-elfrikiamv"
+                />
+              </div>
+              <div class="col" id="subText">
+                <p id="WelcomeText">
+                  I only make cool apps for Android devices.
+                </p>
+              </div>
+              <div class="col" id="welcomeContact">
+                <button
+                  id="btnDownloadCV"
+                  type="button"
+                  class="btn btn-outline-light"
+                  onclick="downloadCV()"
+                >
+                  CV
+                </button>
+                <i
+                  class="fa fa-linkedin-square"
+                  onclick="LinkedInGo()"
+                  id="welcomeContactIcon"
+                ></i>
+                <i
+                  class="fa fa-github"
+                  onclick="GithubGo()"
+                  id="welcomeContactIcon"
+                ></i>
               </div>
             </div>
           </div>
-          <div class="container text-center">
-            <div class="projects-section">
-              <div class="row row-cols-1 row-cols-lg-2">
-                <div class="col">
-                  <div class="container text-center">
-                    <div class="row row-cols-1">
-                      <div class="col">
-                        <p class="simpleTitle" id="androidProjectsTxt">
-                          Android projects.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="projectsAndroid-container">
-                          <div class="card" id="cardPA-1">
-                            <img
-                              src="https://elfrikiamv.com/media/img/logo-super-pointSale.webp"
-                            />
-                            <p>Super_pointSale.</p>
-                            <button
-                              type="button"
-                              class="btn btn-outline-light"
-                              id="btnMoreInfoTxt"
-                              onclick="gitHubSuperPointSale()"
-                            >
-                              More info.
-                            </button>
-                            <div class="txtAboutProject">
-                              <p id="pointSaleTxt">
-                                Use your smartphone as a point of sale with
-                                pointSale.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="card2" id="cardPA-2"></div>
-                          <div class="card" id="cardPA-3">
-                            <img
-                              src="https://elfrikiamv.com/media/img/logo-student-folder.webp"
-                            />
-                            <p>Student_folder.</p>
-                            <button
-                              type="button"
-                              class="btn btn-outline-light"
-                              id="btnMoreInfoTxt"
-                              onclick="gitHubStudentFolder()"
-                            >
-                              More info.
-                            </button>
-                            <div class="txtAboutProject">
-                              <p id="studentFolderTxt">
-                                Manage and backup your files with
-                                Student_folder.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="card" id="cardPA-4">
-                            <img
-                              src="https://elfrikiamv.com/media/img/logo-super-coupons.webp"
-                            />
-                            <p>Super_coupons.</p>
-                            <button
-                              type="button"
-                              class="btn btn-outline-light"
-                              id="btnMoreInfoTxt"
-                              onclick="gitHubSuperCoupons()"
-                            >
-                              More info.
-                            </button>
-                            <div class="txtAboutProject">
-                              <p id="superCouponsTxt">
-                                Discover amazing coupons with Super_coupons.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="container text-center">
-                    <div class="row row-cols-1">
-                      <div class="col">
-                        <p class="title-winProjects" id="simpleTitle">
-                          Windows projects.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="projectsWindows-container">
-                          <div class="card2" id="cardPW-1">
-                            <p class="simpleTitle" id="windowsProjectsTxt">
-                              Windows projects.
-                            </p>
-                          </div>
-                          <div class="card" id="cardPW-2">
-                            <img
-                              src="https://elfrikiamv.com/media/img/logo-launch-mod.webp"
-                            />
-                            <p>Launch_mod.</p>
-                            <button
-                              type="button"
-                              class="btn btn-outline-light"
-                              id="btnMoreInfoTxt"
-                              onclick="gitHubLaunchMod()"
-                            >
-                              More info.
-                            </button>
-                            <div class="txtAboutProject">
-                              <p id="launchModTxt">
-                                Improve your MC experience with Launch_mod.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="card2" id="cardPW-3"></div>
-                          <div class="card" id="cardPW-4">
-                            <img
-                              src="https://elfrikiamv.com/media/img/logo-project-backup.webp"
-                            />
-                            <p>Project_backup.</p>
-                            <button
-                              type="button"
-                              class="btn btn-outline-light"
-                              id="btnMoreInfoTxt"
-                              onclick="gitHubProjectBackup()"
-                            >
-                              More info.
-                            </button>
-                            <div class="txtAboutProject">
-                              <p id="projectBackupTxt">
-                                Safeguard your data with Project_backup.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="container text-center">
-                    <div class="row row-cols-1">
-                      <div class="col">
-                        <p class="simpleTitle" id="webTxt">Website projects.</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="projectsWebsite-container">
-                          <div class="card" id="cardPWs-1">
-                            <img
-                              class="logo-icon"
-                              src="https://elfrikiamv.com/media/img/elfrikiamv-logo.webp"
-                            />
-                            <p>elfrikiamv.com.</p>
-                            <button
-                              type="button"
-                              class="btn btn-outline-light"
-                              id="btnMoreInfoTxt"
-                              onclick="gitHubElfrikiamvWeb()"
-                            >
-                              More info.
-                            </button>
-                            <div class="txtAboutProject">
-                              <p id="elfrikiamvWebTxt">
-                                Personal portfolio website, showcase your
-                                skills.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="card" id="cardPWs-2">
-                            <img
-                              src="https://elfrikiamv.com/media/img/logo-shop-wp.webp"
-                            />
-                            <p>Shop_wp.</p>
-                            <button
-                              type="button"
-                              class="btn btn-outline-light"
-                              id="btnMoreInfoTxt"
-                              onclick="gitHubShopWp()"
-                            >
-                              More info.
-                            </button>
-                            <div class="txtAboutProject">
-                              <p id="shopWpTxt">
-                                Send your shopping list via WhatsApp with
-                                Shop_wp.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="container text-center">
-                    <div class="row row-cols-1">
-                      <div class="col">
-                        <p class="simpleTitle" id="figmaProjectsTxt">
-                          Figma projects.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="projectsFigma-container">
-                          <div class="card" id="cardPF-1">
-                            <img
-                              class="logo-icon"
-                              src="https://elfrikiamv.com/media/img/elfrikiamv-logo.webp"
-                            />
-                            <p>elfrikiamv.tech.</p>
-                            <button
-                              type="button"
-                              class="btn btn-outline-light"
-                              id="btnMoreInfoTxt"
-                              onclick="gitHubElfrikiamvFigma()"
-                            >
-                              More info.
-                            </button>
-                            <div class="txtAboutProject">
-                              <p id="elfrikiamvFigmaTxt">
-                                Design for elfrikiamv.tech in Figma.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="card" id="cardPF-2">
-                            <img
-                              src="https://elfrikiamv.com/media/img/logo-student-folder.webp"
-                            />
-                            <p>Student_folder.</p>
-                            <button
-                              type="button"
-                              class="btn btn-outline-light"
-                              id="btnMoreInfoTxt"
-                              onclick="gitHubStudentFolderFigma()"
-                            >
-                              More info.
-                            </button>
-                            <div class="txtAboutProject">
-                              <p id="studentFolderFigmaTxt">
-                                Interface design for Student_folder in Figma.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- portfolio section -->
+        </section>
+        <!-- welcome section -->
 
-      <!-- About section -->
-      <div class="simpleLine"></div>
-      <section class="about-section" id="about-section">
-        <div class="skillsContainer">
+        <!-- portfolio section -->
+        <div class="simpleLine"></div>
+        <section class="portfolio-section" id="portfolio-section">
           <div data-aos="fade-up">
-            <div class="container text-start">
+            <div class="container text-center">
               <div class="row row-cols-1">
                 <div class="col">
                   <div class="text-center">
                     <div id="glow">
-                      <p class="bigSimpleTitle" id="AboutMeText">About me.</p>
+                      <p class="bigSimpleTitle" id="myProjects">My projects.</p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container text-center">
+              <div class="projects-section">
+                <div class="row row-cols-1 row-cols-lg-2">
+                  <div class="col">
+                    <div class="container text-center">
+                      <div class="row row-cols-1">
+                        <div class="col">
+                          <p class="simpleTitle" id="androidProjectsTxt">
+                            Android projects.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="projectsAndroid-container">
+                            <div class="card" id="cardPA-1">
+                              <img
+                                src="https://elfrikiamv.com/media/img/logo-super-pointSale.webp"
+                              />
+                              <p>Super_pointSale.</p>
+                              <button
+                                type="button"
+                                class="btn btn-outline-light"
+                                id="btnMoreInfoTxt"
+                                onclick="gitHubSuperPointSale()"
+                              >
+                                More info.
+                              </button>
+                              <div class="txtAboutProject">
+                                <p id="pointSaleTxt">
+                                  Use your smartphone as a point of sale with
+                                  pointSale.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="card2" id="cardPA-2"></div>
+                            <div class="card" id="cardPA-3">
+                              <img
+                                src="https://elfrikiamv.com/media/img/logo-student-folder.webp"
+                              />
+                              <p>Student_folder.</p>
+                              <button
+                                type="button"
+                                class="btn btn-outline-light"
+                                id="btnMoreInfoTxt"
+                                onclick="gitHubStudentFolder()"
+                              >
+                                More info.
+                              </button>
+                              <div class="txtAboutProject">
+                                <p id="studentFolderTxt">
+                                  Manage and backup your files with
+                                  Student_folder.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="card" id="cardPA-4">
+                              <img
+                                src="https://elfrikiamv.com/media/img/logo-super-coupons.webp"
+                              />
+                              <p>Super_coupons.</p>
+                              <button
+                                type="button"
+                                class="btn btn-outline-light"
+                                id="btnMoreInfoTxt"
+                                onclick="gitHubSuperCoupons()"
+                              >
+                                More info.
+                              </button>
+                              <div class="txtAboutProject">
+                                <p id="superCouponsTxt">
+                                  Discover amazing coupons with Super_coupons.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="container text-center">
+                      <div class="row row-cols-1">
+                        <div class="col">
+                          <p class="title-winProjects" id="simpleTitle">
+                            Windows projects.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="projectsWindows-container">
+                            <div class="card2" id="cardPW-1">
+                              <p class="simpleTitle" id="windowsProjectsTxt">
+                                Windows projects.
+                              </p>
+                            </div>
+                            <div class="card" id="cardPW-2">
+                              <img
+                                src="https://elfrikiamv.com/media/img/logo-launch-mod.webp"
+                              />
+                              <p>Launch_mod.</p>
+                              <button
+                                type="button"
+                                class="btn btn-outline-light"
+                                id="btnMoreInfoTxt"
+                                onclick="gitHubLaunchMod()"
+                              >
+                                More info.
+                              </button>
+                              <div class="txtAboutProject">
+                                <p id="launchModTxt">
+                                  Improve your MC experience with Launch_mod.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="card2" id="cardPW-3"></div>
+                            <div class="card" id="cardPW-4">
+                              <img
+                                src="https://elfrikiamv.com/media/img/logo-project-backup.webp"
+                              />
+                              <p>Project_backup.</p>
+                              <button
+                                type="button"
+                                class="btn btn-outline-light"
+                                id="btnMoreInfoTxt"
+                                onclick="gitHubProjectBackup()"
+                              >
+                                More info.
+                              </button>
+                              <div class="txtAboutProject">
+                                <p id="projectBackupTxt">
+                                  Safeguard your data with Project_backup.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="container text-center">
+                      <div class="row row-cols-1">
+                        <div class="col">
+                          <p class="simpleTitle" id="webTxt">
+                            Website projects.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="projectsWebsite-container">
+                            <div class="card" id="cardPWs-1">
+                              <img
+                                class="logo-icon"
+                                src="https://elfrikiamv.com/media/img/elfrikiamv-logo.webp"
+                              />
+                              <p>elfrikiamv.com.</p>
+                              <button
+                                type="button"
+                                class="btn btn-outline-light"
+                                id="btnMoreInfoTxt"
+                                onclick="gitHubElfrikiamvWeb()"
+                              >
+                                More info.
+                              </button>
+                              <div class="txtAboutProject">
+                                <p id="elfrikiamvWebTxt">
+                                  Personal portfolio website, showcase your
+                                  skills.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="card" id="cardPWs-2">
+                              <img
+                                src="https://elfrikiamv.com/media/img/logo-shop-wp.webp"
+                              />
+                              <p>Shop_wp.</p>
+                              <button
+                                type="button"
+                                class="btn btn-outline-light"
+                                id="btnMoreInfoTxt"
+                                onclick="gitHubShopWp()"
+                              >
+                                More info.
+                              </button>
+                              <div class="txtAboutProject">
+                                <p id="shopWpTxt">
+                                  Send your shopping list via WhatsApp with
+                                  Shop_wp.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="container text-center">
+                      <div class="row row-cols-1">
+                        <div class="col">
+                          <p class="simpleTitle" id="figmaProjectsTxt">
+                            Figma projects.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="projectsFigma-container">
+                            <div class="card" id="cardPF-1">
+                              <img
+                                class="logo-icon"
+                                src="https://elfrikiamv.com/media/img/elfrikiamv-logo.webp"
+                              />
+                              <p>elfrikiamv.tech.</p>
+                              <button
+                                type="button"
+                                class="btn btn-outline-light"
+                                id="btnMoreInfoTxt"
+                                onclick="gitHubElfrikiamvFigma()"
+                              >
+                                More info.
+                              </button>
+                              <div class="txtAboutProject">
+                                <p id="elfrikiamvFigmaTxt">
+                                  Design for elfrikiamv.tech in Figma.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="card" id="cardPF-2">
+                              <img
+                                src="https://elfrikiamv.com/media/img/logo-student-folder.webp"
+                              />
+                              <p>Student_folder.</p>
+                              <button
+                                type="button"
+                                class="btn btn-outline-light"
+                                id="btnMoreInfoTxt"
+                                onclick="gitHubStudentFolderFigma()"
+                              >
+                                More info.
+                              </button>
+                              <div class="txtAboutProject">
+                                <p id="studentFolderFigmaTxt">
+                                  Interface design for Student_folder in Figma.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- portfolio section -->
+
+        <!-- About section -->
+        <div class="simpleLine"></div>
+        <section class="about-section" id="about-section">
+          <div class="skillsContainer">
+            <div data-aos="fade-up">
+              <div class="container text-start">
+                <div class="row row-cols-1">
+                  <div class="col">
+                    <div class="text-center">
+                      <div id="glow">
+                        <p class="bigSimpleTitle" id="AboutMeText">About me.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <div class="cardSimpleTitleSkills">
+                      <div class="titleMySkills">
+                        <p class="simpleTitle" id="mySkillsText">My skills.</p>
+                      </div>
+                      <div class="otherSkills">
+                        <div class="container text-center">
+                          <div class="row">
+                            <div class="col-md-auto">
+                              <p class="simpleTitle" id="otherSkillsTxt">
+                                My other skills:
+                              </p>
+                            </div>
+                            <div class="col-md-auto">
+                              <div class="container text-center">
+                                <div class="row row-cols-auto">
+                                  <div class="col-md-auto">
+                                    <p id="designTxt">Design.</p>
+                                  </div>
+                                  <div class="col-md-auto">
+                                    <img
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="bottom"
+                                      data-bs-custom-class="custom-tooltip-class"
+                                      data-bs-title="Photoshop."
+                                      src="https://i.postimg.cc/SsH4VvW3/photoshop-logo.webp"
+                                    />
+                                  </div>
+                                  <div class="col-md-auto">
+                                    <img
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="bottom"
+                                      data-bs-custom-class="custom-tooltip-class"
+                                      data-bs-title="Premiere."
+                                      src="https://i.postimg.cc/Pf8TNdHj/premiere-logo.webp"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-auto">
+                              <div class="container">
+                                <div class="row row-cols-auto">
+                                  <div class="col-md-auto">
+                                    <p>Web.</p>
+                                  </div>
+                                  <div class="col-md-auto">
+                                    <img
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="bottom"
+                                      data-bs-custom-class="custom-tooltip-class"
+                                      data-bs-title="Bootstrap."
+                                      src="https://i.postimg.cc/VNVPLVHv/bootstrap-logo.webp"
+                                    />
+                                  </div>
+                                  <div class="col-md-auto">
+                                    <img
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="bottom"
+                                      data-bs-custom-class="custom-tooltip-class"
+                                      data-bs-title="JavaScript."
+                                      src="https://i.postimg.cc/JzhPp4PD/javascript-logo.webp"
+                                    />
+                                  </div>
+                                  <div class="col-md-auto">
+                                    <img
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="bottom"
+                                      data-bs-custom-class="custom-tooltip-class"
+                                      data-bs-title="HTML."
+                                      src="https://i.postimg.cc/pdhktcNP/html-logo.webp"
+                                    />
+                                  </div>
+                                  <div class="col-md-auto">
+                                    <img
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="bottom"
+                                      data-bs-custom-class="custom-tooltip-class"
+                                      data-bs-title="CSS3."
+                                      src="https://i.postimg.cc/bwFLWcB6/css-logo.webp"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-auto">
+                              <div class="container">
+                                <div class="row row-cols-auto">
+                                  <div class="col-md-auto">
+                                    <p>Windows.</p>
+                                  </div>
+                                  <div class="col-md-auto">
+                                    <img
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="bottom"
+                                      data-bs-custom-class="custom-tooltip-class"
+                                      data-bs-title="Visual Studio."
+                                      src="https://i.postimg.cc/28RmZgjB/visual-studio-logo.webp"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-auto">
+                              <div class="container">
+                                <div class="row row-cols-auto">
+                                  <div class="col-md-auto">
+                                    <p>Linux.</p>
+                                  </div>
+                                  <div class="col-md-auto">
+                                    <img
+                                      data-bs-toggle="tooltip"
+                                      data-bs-placement="bottom"
+                                      data-bs-custom-class="custom-tooltip-class"
+                                      data-bs-title="Terminal."
+                                      src="https://i.postimg.cc/JnC8TNNW/terminal-logo.webp"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="app" class="containerSkills">
+                  <card
+                    class="custom-card"
+                    data-image="https://i.postimg.cc/XYWVTmT0/kotlin-logo.webp"
+                  >
+                    <h1 slot="header">Kotlin</h1>
+                    <p slot="content" id="kotlinTxt">
+                      Main for Android app development.
+                    </p>
+                  </card>
+                  <card
+                    class="custom-card"
+                    data-image="https://i.postimg.cc/tgSpnT7X/java-logo.webp"
+                  >
+                    <h1 slot="header">Java</h1>
+                    <p slot="content" id="javaTxt">
+                      Used in Android app development.
+                    </p>
+                  </card>
+                  <card
+                    class="custom-card"
+                    data-image="https://elfrikiamv.com/media/img/android-studio-logo.webp"
+                  >
+                    <h1 slot="header">Android Studio</h1>
+                    <p slot="content" id="androidSTxt">
+                      IDE for Android app development.
+                    </p>
+                  </card>
+                  <card
+                    class="custom-card"
+                    data-image="https://i.postimg.cc/3Jm8fYfB/jetpack-compose-logo.webp"
+                  >
+                    <h1 slot="header">Jetpack Compose</h1>
+                    <p slot="content" id="androidJetpackTxt">
+                      Toolkit for Android apps.
+                    </p>
+                  </card>
+
+                  <card
+                    class="custom-card"
+                    data-image="https://elfrikiamv.com/media/img/xml-logo.webp"
+                  >
+                    <h1 slot="header">XML</h1>
+                    <p slot="content" id="xmlTxt">
+                      Markup for Android app interfaces.
+                    </p>
+                  </card>
+                  <card
+                    class="custom-card"
+                    data-image="https://i.postimg.cc/R0Vv0fSs/material-design-logo.webp"
+                  >
+                    <h1 slot="header">Material Design</h1>
+                    <p slot="content" id="materialDesignTxt">
+                      Google's app design guide.
+                    </p>
+                  </card>
+                  <card
+                    class="custom-card-large"
+                    data-image="https://elfrikiamv.com/media/img/android-architecture-logo.webp"
+                  >
+                    <h1 slot="header" id="androidArchitectureTxt">
+                      Android Architecture
+                    </h1>
+                    <p slot="content" id="androidArchitectureTxt00">
+                      Android design patterns.
+                    </p>
+                  </card>
+                  <card
+                    class="custom-card"
+                    data-image="https://elfrikiamv.com/media/img/figma-logo.webp"
+                  >
+                    <h1 slot="header">Figma</h1>
+                    <p slot="content" id="figmaTxt">Interface design tool.</p>
+                  </card>
+                  <card
+                    class="custom-card"
+                    data-image="https://elfrikiamv.com/media/img/android-api-logo.webp"
+                  >
+                    <h1 slot="header">Android API</h1>
+                    <p slot="content" id="androidApiTxt">
+                      Interface for system access.
+                    </p>
+                  </card>
+
+                  <card
+                    class="custom-card"
+                    data-image="https://i.postimg.cc/6qpXW4dV/firebase-logo.webp"
+                  >
+                    <h1 slot="header">Firebase</h1>
+                    <p slot="content" id="firebaseTxt">
+                      Google's mobile app platform.
+                    </p>
+                  </card>
+                  <card
+                    class="custom-card"
+                    data-image="https://i.postimg.cc/DyTkZs5r/git-logo.webp"
+                  >
+                    <h1 slot="header">Git</h1>
+                    <p slot="content" id="gitTxt">
+                      Track code changes and collaborate.
+                    </p>
+                  </card>
+                  <card
+                    class="custom-card-large"
+                    data-image="https://i.postimg.cc/pXJNnT1g/google-play-logo.webp"
+                  >
+                    <h1 slot="header" id="googlePlayTxt">
+                      Google Play publishing
+                    </h1>
+                    <p slot="content" id="googlePlayTxt00">
+                      Manage apps on Play.
+                    </p>
+                  </card>
+                </div>
+              </div>
+
+              <div class="container text-start">
+                <div class="aboutContainer">
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col" id="txtIam">
+                      <div class="containerSkillsMobile text-center">
+                        <div class="row row-cols-1">
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>Kotlin</h1>
+                                <p id="kotlinTxt">
+                                  Main for Android app development.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/kotlin-logo.webp"
+                                alt="kotlin-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>Java</h1>
+                                <p id="javaTxt">
+                                  Used in Android app development.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/java-logo.webp"
+                                alt="java-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>Android Studio</h1>
+                                <p id="androidSTxt">
+                                  IDE for Android app development.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/android-studio-logo.webp"
+                                alt="android-studio-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>Jetpack Compose</h1>
+                                <p id="androidJetpackTxt">
+                                  Toolkit for Android apps.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/jetpack-compose-logo.webp"
+                                alt="jetpack-compose-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>XML</h1>
+                                <p id="xmlTxt">
+                                  Markup for Android app interfaces.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/xml-logo.webp"
+                                alt="xml-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>Material Design</h1>
+                                <p id="materialDesignTxt">
+                                  Google's app design guide.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/material-design-logo.webp"
+                                alt="material-design-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1 id="androidArchitectureTxt">
+                                  Android Architecture
+                                </h1>
+                                <p id="androidArchitectureTxt00">
+                                  Android design patterns.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/android-architecture-logo.webp"
+                                alt="android-architecture-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>Figma</h1>
+                                <p id="figmaTxt">Interface design tool.</p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/figma-logo.webp"
+                                alt="figma-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>Android API</h1>
+                                <p id="androidApiTxt">
+                                  Interface for system access.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/android-api-logo.webp"
+                                alt="android-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>Firebase</h1>
+                                <p id="firebaseTxt">
+                                  Google's mobile app platform.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/firebase-logo.webp"
+                                alt="firebase-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1>Git</h1>
+                                <p id="gitTxt">
+                                  Track code changes and collaborate.
+                                </p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/git-logo.webp"
+                                alt="git-logo"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <div class="card-content">
+                                <h1 id="googlePlayTxt">
+                                  Google Play publishing
+                                </h1>
+                                <p id="googlePlayTxt00">Manage apps on Play.</p>
+                              </div>
+                              <img
+                                class="background-image"
+                                src="https://elfrikiamv.com/media/img/google-play-logo.webp"
+                                alt="google-play-logo"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row row-cols-1">
+                        <div class="col" id="txtIJust">
+                          <div class="card h-100">
+                            <p class="simpleTitle" id="AboutMeText00">
+                              I just.
+                            </p>
+                            <p id="AboutMeText01">
+                              Hello, I'm Daniel, a Mexican Android developer. My
+                              first line of code was when I was 13 years old,
+                              and now, "elfrikiamv" is my personal brand that I
+                              use in my projects and online.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col" id="txtIJust">
+                          <div class="card h-100">
+                            <p class="simpleTitle" id="coursesTxT">Courses.</p>
+                            <div class="academicContainer">
+                              <ul>
+                                <li>
+                                  <p id="androidPathTxt">
+                                    Android Application Development Learning
+                                    Path.
+                                  </p>
+                                  <p class="fst-italic" id="androidPathTxt00">
+                                    Certification from Platzi.com.
+                                  </p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" id="txtAcademic">
+                      <div class="card h-100">
+                        <p class="simpleTitle" id="AcademicTxt">
+                          Academic education.
+                        </p>
+                        <div class="academicContainer">
+                          <ul>
+                            <li>
+                              <p id="utcTxt">
+                                Computer Systems Engineering from the University
+                                of Three Cultures (UTC), México.
+                              </p>
+                              <p class="fst-italic" id="graduatedTxt">
+                                Graduated.
+                              </p>
+                            </li>
+                            <li>
+                              <p id="cetisTxT">
+                                Programming Technician from the General
+                                Directorate of Industrial Technological
+                                Education (DGETI), México.
+                              </p>
+                              <p class="fst-italic" id="graduatedTxt">
+                                Graduated.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About section -->
+
+        <!-- contact section -->
+        <div class="simpleLine"></div>
+        <section class="contact-section" id="contact-section">
+          <div class="light x1"></div>
+          <div class="light x2"></div>
+          <div class="light x3"></div>
+          <div class="light x4"></div>
+          <div class="light x5"></div>
+          <div class="light x6"></div>
+          <div class="light x7"></div>
+          <div class="light x8"></div>
+          <div class="light x9"></div>
+          <div data-aos="fade-up">
+            <div class="container text-center">
+              <div class="row row-cols-1">
+                <div class="col">
+                  <div id="glow">
+                    <p class="bigSimpleTitle" id="contactMe">Contact me.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="container text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="cardSimpleTitleSkills">
-                    <div class="titleMySkills">
-                      <p class="simpleTitle" id="mySkillsText">My skills.</p>
-                    </div>
-                    <div class="otherSkills">
-                      <div class="container text-center">
-                        <div class="row">
-                          <div class="col-md-auto">
-                            <p class="simpleTitle" id="otherSkillsTxt">
-                              My other skills:
-                            </p>
-                          </div>
-                          <div class="col-md-auto">
-                            <div class="container text-center">
-                              <div class="row row-cols-auto">
-                                <div class="col-md-auto">
-                                  <p id="designTxt">Design.</p>
-                                </div>
-                                <div class="col-md-auto">
-                                  <img
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom"
-                                    data-bs-custom-class="custom-tooltip-class"
-                                    data-bs-title="Photoshop."
-                                    src="https://i.postimg.cc/SsH4VvW3/photoshop-logo.webp"
-                                  />
-                                </div>
-                                <div class="col-md-auto">
-                                  <img
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom"
-                                    data-bs-custom-class="custom-tooltip-class"
-                                    data-bs-title="Premiere."
-                                    src="https://i.postimg.cc/Pf8TNdHj/premiere-logo.webp"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-auto">
-                            <div class="container">
-                              <div class="row row-cols-auto">
-                                <div class="col-md-auto">
-                                  <p>Web.</p>
-                                </div>
-                                <div class="col-md-auto">
-                                  <img
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom"
-                                    data-bs-custom-class="custom-tooltip-class"
-                                    data-bs-title="Bootstrap."
-                                    src="https://i.postimg.cc/VNVPLVHv/bootstrap-logo.webp"
-                                  />
-                                </div>
-                                <div class="col-md-auto">
-                                  <img
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom"
-                                    data-bs-custom-class="custom-tooltip-class"
-                                    data-bs-title="JavaScript."
-                                    src="https://i.postimg.cc/JzhPp4PD/javascript-logo.webp"
-                                  />
-                                </div>
-                                <div class="col-md-auto">
-                                  <img
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom"
-                                    data-bs-custom-class="custom-tooltip-class"
-                                    data-bs-title="HTML."
-                                    src="https://i.postimg.cc/pdhktcNP/html-logo.webp"
-                                  />
-                                </div>
-                                <div class="col-md-auto">
-                                  <img
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom"
-                                    data-bs-custom-class="custom-tooltip-class"
-                                    data-bs-title="CSS3."
-                                    src="https://i.postimg.cc/bwFLWcB6/css-logo.webp"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-auto">
-                            <div class="container">
-                              <div class="row row-cols-auto">
-                                <div class="col-md-auto">
-                                  <p>Windows.</p>
-                                </div>
-                                <div class="col-md-auto">
-                                  <img
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom"
-                                    data-bs-custom-class="custom-tooltip-class"
-                                    data-bs-title="Visual Studio."
-                                    src="https://i.postimg.cc/28RmZgjB/visual-studio-logo.webp"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-auto">
-                            <div class="container">
-                              <div class="row row-cols-auto">
-                                <div class="col-md-auto">
-                                  <p>Linux.</p>
-                                </div>
-                                <div class="col-md-auto">
-                                  <img
-                                    data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom"
-                                    data-bs-custom-class="custom-tooltip-class"
-                                    data-bs-title="Terminal."
-                                    src="https://i.postimg.cc/JnC8TNNW/terminal-logo.webp"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+              <div class="contactCards">
+                <div class="row row-cols-1 row-cols-lg-3">
+                  <div class="col">
+                    <div class="card h-100" id="cardLinkedIn">
+                      <div class="card-content">
+                        <h1>LinkedIn</h1>
                       </div>
+                      <img class="background-image mx-auto""
+                      src="https://elfrikiamv.com/media/img/linkedin-logo.webp"
+                      alt="linkedin-logo" />
+                      <p class="infoRedContact">linkedin.com/in/elfrikiamv</p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-light"
+                        id="btnContactMeTxt"
+                        onclick="LinkedInGo()"
+                      >
+                        Contact me.
+                      </button>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div id="app" class="containerSkills">
-                <card
-                  class="custom-card"
-                  data-image="https://i.postimg.cc/XYWVTmT0/kotlin-logo.webp"
-                >
-                  <h1 slot="header">Kotlin</h1>
-                  <p slot="content" id="kotlinTxt">
-                    Main for Android app development.
-                  </p>
-                </card>
-                <card
-                  class="custom-card"
-                  data-image="https://i.postimg.cc/tgSpnT7X/java-logo.webp"
-                >
-                  <h1 slot="header">Java</h1>
-                  <p slot="content" id="javaTxt">
-                    Used in Android app development.
-                  </p>
-                </card>
-                <card
-                  class="custom-card"
-                  data-image="https://elfrikiamv.com/media/img/android-studio-logo.webp"
-                >
-                  <h1 slot="header">Android Studio</h1>
-                  <p slot="content" id="androidSTxt">
-                    IDE for Android app development.
-                  </p>
-                </card>
-                <card
-                  class="custom-card"
-                  data-image="https://i.postimg.cc/3Jm8fYfB/jetpack-compose-logo.webp"
-                >
-                  <h1 slot="header">Jetpack Compose</h1>
-                  <p slot="content" id="androidJetpackTxt">
-                    Toolkit for Android apps.
-                  </p>
-                </card>
-
-                <card
-                  class="custom-card"
-                  data-image="https://elfrikiamv.com/media/img/xml-logo.webp"
-                >
-                  <h1 slot="header">XML</h1>
-                  <p slot="content" id="xmlTxt">
-                    Markup for Android app interfaces.
-                  </p>
-                </card>
-                <card
-                  class="custom-card"
-                  data-image="https://i.postimg.cc/R0Vv0fSs/material-design-logo.webp"
-                >
-                  <h1 slot="header">Material Design</h1>
-                  <p slot="content" id="materialDesignTxt">
-                    Google's app design guide.
-                  </p>
-                </card>
-                <card
-                  class="custom-card-large"
-                  data-image="https://elfrikiamv.com/media/img/android-architecture-logo.webp"
-                >
-                  <h1 slot="header" id="androidArchitectureTxt">
-                    Android Architecture
-                  </h1>
-                  <p slot="content" id="androidArchitectureTxt00">
-                    Android design patterns.
-                  </p>
-                </card>
-                <card
-                  class="custom-card"
-                  data-image="https://elfrikiamv.com/media/img/figma-logo.webp"
-                >
-                  <h1 slot="header">Figma</h1>
-                  <p slot="content" id="figmaTxt">Interface design tool.</p>
-                </card>
-                <card
-                  class="custom-card"
-                  data-image="https://elfrikiamv.com/media/img/android-api-logo.webp"
-                >
-                  <h1 slot="header">Android API</h1>
-                  <p slot="content" id="androidApiTxt">
-                    Interface for system access.
-                  </p>
-                </card>
-
-                <card
-                  class="custom-card"
-                  data-image="https://i.postimg.cc/6qpXW4dV/firebase-logo.webp"
-                >
-                  <h1 slot="header">Firebase</h1>
-                  <p slot="content" id="firebaseTxt">
-                    Google's mobile app platform.
-                  </p>
-                </card>
-                <card
-                  class="custom-card"
-                  data-image="https://i.postimg.cc/DyTkZs5r/git-logo.webp"
-                >
-                  <h1 slot="header">Git</h1>
-                  <p slot="content" id="gitTxt">
-                    Track code changes and collaborate.
-                  </p>
-                </card>
-                <card
-                  class="custom-card-large"
-                  data-image="https://i.postimg.cc/pXJNnT1g/google-play-logo.webp"
-                >
-                  <h1 slot="header" id="googlePlayTxt">
-                    Google Play publishing
-                  </h1>
-                  <p slot="content" id="googlePlayTxt00">
-                    Manage apps on Play.
-                  </p>
-                </card>
-              </div>
-            </div>
-
-            <div class="container text-start">
-              <div class="aboutContainer">
-                <div class="row row-cols-1 row-cols-lg-2">
-                  <div class="col" id="txtIam">
-                    <div class="containerSkillsMobile text-center">
-                      <div class="row row-cols-1">
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>Kotlin</h1>
-                              <p id="kotlinTxt">
-                                Main for Android app development.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/kotlin-logo.webp"
-                              alt="kotlin-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>Java</h1>
-                              <p id="javaTxt">
-                                Used in Android app development.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/java-logo.webp"
-                              alt="java-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>Android Studio</h1>
-                              <p id="androidSTxt">
-                                IDE for Android app development.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/android-studio-logo.webp"
-                              alt="android-studio-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>Jetpack Compose</h1>
-                              <p id="androidJetpackTxt">
-                                Toolkit for Android apps.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/jetpack-compose-logo.webp"
-                              alt="jetpack-compose-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>XML</h1>
-                              <p id="xmlTxt">
-                                Markup for Android app interfaces.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/xml-logo.webp"
-                              alt="xml-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>Material Design</h1>
-                              <p id="materialDesignTxt">
-                                Google's app design guide.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/material-design-logo.webp"
-                              alt="material-design-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1 id="androidArchitectureTxt">
-                                Android Architecture
-                              </h1>
-                              <p id="androidArchitectureTxt00">
-                                Android design patterns.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/android-architecture-logo.webp"
-                              alt="android-architecture-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>Figma</h1>
-                              <p id="figmaTxt">Interface design tool.</p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/figma-logo.webp"
-                              alt="figma-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>Android API</h1>
-                              <p id="androidApiTxt">
-                                Interface for system access.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/android-api-logo.webp"
-                              alt="android-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>Firebase</h1>
-                              <p id="firebaseTxt">
-                                Google's mobile app platform.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/firebase-logo.webp"
-                              alt="firebase-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1>Git</h1>
-                              <p id="gitTxt">
-                                Track code changes and collaborate.
-                              </p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/git-logo.webp"
-                              alt="git-logo"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col">
-                          <div class="card h-100">
-                            <div class="card-content">
-                              <h1 id="googlePlayTxt">Google Play publishing</h1>
-                              <p id="googlePlayTxt00">Manage apps on Play.</p>
-                            </div>
-                            <img
-                              class="background-image"
-                              src="https://elfrikiamv.com/media/img/google-play-logo.webp"
-                              alt="google-play-logo"
-                            />
-                          </div>
-                        </div>
+                  <div class="col" id="colCardGithub">
+                    <div class="card h-100" id="cardGithub">
+                      <div class="card-content">
+                        <h1>Github</h1>
                       </div>
-                    </div>
-
-                    <div class="row row-cols-1">
-                      <div class="col" id="txtIJust">
-                        <div class="card h-100">
-                          <p class="simpleTitle" id="AboutMeText00">I just.</p>
-                          <p id="AboutMeText01">
-                            Hello, I'm Daniel, a Mexican Android developer. My
-                            first line of code was when I was 13 years old, and
-                            now, "elfrikiamv" is my personal brand that I use in
-                            my projects and online.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col" id="txtIJust">
-                        <div class="card h-100">
-                          <p class="simpleTitle" id="coursesTxT">Courses.</p>
-                          <div class="academicContainer">
-                            <ul>
-                              <li>
-                                <p id="androidPathTxt">
-                                  Android Application Development Learning Path.
-                                </p>
-                                <p class="fst-italic" id="androidPathTxt00">
-                                  Certification from Platzi.com.
-                                </p>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                      <img class="background-image mx-auto""
+                      src="https://elfrikiamv.com/media/img/github-logo.webp"
+                      alt="github-logo" />
+                      <p class="infoRedContact">github.com/elfrikiamv</p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-light"
+                        id="btnContactMeTxt"
+                        onclick="GithubGo()"
+                      >
+                        Contact me.
+                      </button>
                     </div>
                   </div>
-                  <div class="col" id="txtAcademic">
-                    <div class="card h-100">
-                      <p class="simpleTitle" id="AcademicTxt">
-                        Academic education.
-                      </p>
-                      <div class="academicContainer">
-                        <ul>
-                          <li>
-                            <p id="utcTxt">
-                              Computer Systems Engineering from the University
-                              of Three Cultures (UTC), México.
-                            </p>
-                            <p class="fst-italic" id="graduatedTxt">
-                              Graduated.
-                            </p>
-                          </li>
-                          <li>
-                            <p id="cetisTxT">
-                              Programming Technician from the General
-                              Directorate of Industrial Technological Education
-                              (DGETI), México.
-                            </p>
-                            <p class="fst-italic" id="graduatedTxt">
-                              Graduated.
-                            </p>
-                          </li>
-                        </ul>
+                  <div class="col">
+                    <div class="card h-100" id="cardEmail">
+                      <div class="card-content">
+                        <h1>Email</h1>
                       </div>
+                      <img class="background-image mx-auto""
+                      src="https://elfrikiamv.com/media/img/gmail-logo.webp"
+                      alt="gmail-logo" />
+                      <p class="infoRedContact">contact@elfrikiamv.com</p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-light"
+                        id="btnContactMeTxt"
+                        onclick="GmailGo()"
+                      >
+                        Contact me.
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <!-- contact section -->
+      </main>
 
-      <!-- About section -->
-
-      <!-- contact section -->
+      <!-- footer content -->
       <div class="simpleLine"></div>
-      <section class="contact-section" id="contact-section">
-        <div class="light x1"></div>
-        <div class="light x2"></div>
-        <div class="light x3"></div>
-        <div class="light x4"></div>
-        <div class="light x5"></div>
-        <div class="light x6"></div>
-        <div class="light x7"></div>
-        <div class="light x8"></div>
-        <div class="light x9"></div>
-        <div data-aos="fade-up">
-          <div class="container text-center">
-            <div class="row row-cols-1">
-              <div class="col">
-                <div id="glow">
-                  <p class="bigSimpleTitle" id="contactMe">Contact me.</p>
-                </div>
-              </div>
+      <footer class="footer-section">
+        <div class="container text-center">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-5">
+            <div class="col">
+              <p>@elfrikiamv Copyright 2023.</p>
             </div>
-          </div>
-
-          <div class="container text-center">
-            <div class="contactCards">
-              <div class="row row-cols-1 row-cols-lg-3">
-                <div class="col">
-                  <div class="card h-100" id="cardLinkedIn">
-                    <div class="card-content">
-                      <h1>LinkedIn</h1>
-                    </div>
-                    <img class="background-image mx-auto""
-                    src="https://elfrikiamv.com/media/img/linkedin-logo.webp"
-                    alt="linkedin-logo" />
-                    <p class="infoRedContact">linkedin.com/in/elfrikiamv</p>
-                    <button
-                      type="button"
-                      class="btn btn-outline-light"
-                      id="btnContactMeTxt"
-                      onclick="LinkedInGo()"
-                    >
-                      Contact me.
-                    </button>
-                  </div>
-                </div>
-                <div class="col" id="colCardGithub">
-                  <div class="card h-100" id="cardGithub">
-                    <div class="card-content">
-                      <h1>Github</h1>
-                    </div>
-                    <img class="background-image mx-auto""
-                    src="https://elfrikiamv.com/media/img/github-logo.webp"
-                    alt="github-logo" />
-                    <p class="infoRedContact">github.com/elfrikiamv</p>
-                    <button
-                      type="button"
-                      class="btn btn-outline-light"
-                      id="btnContactMeTxt"
-                      onclick="GithubGo()"
-                    >
-                      Contact me.
-                    </button>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100" id="cardEmail">
-                    <div class="card-content">
-                      <h1>Email</h1>
-                    </div>
-                    <img class="background-image mx-auto""
-                    src="https://elfrikiamv.com/media/img/gmail-logo.webp"
-                    alt="gmail-logo" />
-                    <p class="infoRedContact">contact@elfrikiamv.com</p>
-                    <button
-                      type="button"
-                      class="btn btn-outline-light"
-                      id="btnContactMeTxt"
-                      onclick="GmailGo()"
-                    >
-                      Contact me.
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div class="col">
+              <ul class="social-icons">
+                <li>
+                  <a
+                    href="https://github.com/elfrikiamv"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i>
+                      <img
+                        src="https://i.postimg.cc/fbdR3PJH/github-logo.webp"
+                        class="rounded mx-auto d-block"
+                        alt="..."
+                      />
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/elfrikiamv"
+                    target="_blank"
+                    class="social-icon"
+                  >
+                    <i>
+                      <img
+                        src="https://i.postimg.cc/HxrHwg7b/linkedin-logo.webp"
+                        class="rounded mx-auto d-block"
+                        alt="..."
+                      />
+                    </i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-      <!-- contact section -->
-    </main>
-
-    <!-- footer content -->
-    <div class="simpleLine"></div>
-    <footer class="footer-section">
-      <div class="container text-center">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-5">
-          <div class="col">
-            <p>@elfrikiamv Copyright 2023.</p>
-          </div>
-          <div class="col">
-            <ul class="social-icons">
-              <li>
-                <a
-                  href="https://github.com/elfrikiamv"
-                  target="_blank"
-                  class="social-icon"
-                >
-                  <i>
-                    <img
-                      src="https://i.postimg.cc/fbdR3PJH/github-logo.webp"
-                      class="rounded mx-auto d-block"
-                      alt="..."
-                    />
-                  </i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/elfrikiamv"
-                  target="_blank"
-                  class="social-icon"
-                >
-                  <i>
-                    <img
-                      src="https://i.postimg.cc/HxrHwg7b/linkedin-logo.webp"
-                      class="rounded mx-auto d-block"
-                      alt="..."
-                    />
-                  </i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      </footer>
+      <!-- footer content -->
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+      <script src="/js/js.js"></script>
+      <script src="/js/theme.js"></script>
+      <script src="/js/language.js"></script>
+    </div>
+    <!-- mobile-desktop -->
+    <section class="mobile-desktop" style="display: none">
+      <div class="navbarMobile">
+        <ul>
+          <li>
+            <!-- Icono de Chrome de Font Awesome -->
+            <div class="app-icon" onclick="toBackWeb()">
+              <div class="chrome-icon">
+                <i class="fa fa-chrome"></i>
+              </div>
+            </div>
+            <!-- Fin del icono de Chrome -->
+          </li>
+        </ul>
       </div>
-    </footer>
-    <!-- footer content -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-    <script src="/js/js.js"></script>
-    <script src="/js/theme.js"></script>
-    <script src="/js/language.js"></script>
+    </section>
+    <!-- mobile-desktop -->
   </body>
+
   <!--  -->
 </html>
