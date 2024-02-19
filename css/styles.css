@@ -274,19 +274,23 @@ body.dark-theme button {
   box-shadow: 0 0 7px 4px var(--surface00dp);
 }
 .fixed-toolbar p {
-  padding-top: 8px;
+  font-size: large;
   margin: 0;
+  padding: 0;
 }
 .fixed-toolbar #btnSettings {
   font-size: 24px;
-  padding: 0 16px;
+  margin: 0;
+  padding: 0 17px;
 }
 .fixed-toolbar #btnBack {
-  font-size: 24px;
-  padding: 2px 16px;
+  font-size: 34px;
+  margin: 0;
+  padding: 0 17px;
 }
 #dotcom {
-  padding: 0 7px;
+  margin: 0;
+  padding: 0 3px;
 }
 .fixed-toolbar .fa {
   padding: 0;
