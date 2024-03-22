@@ -182,7 +182,48 @@ body.dark-theme button {
 /* Navigation Bar */
 
 /* mobile-desktop */
+
+/* .mobile-desktop #mobileDesktopContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+/* 
+.mobile-desktop card {
+  background-color: var(--white38);
+  border-radius: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.mobile-desktop card {
+  background-color: var(--surface04dp);
+  border-radius: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 13px;
+  font-size: 24px;
+}
+.mobile-desktop .col {
+  padding: 0 13px 22px 13px;
+}
 .mobile-desktop {
+  background-color: var(--backgroundColorDark);
+  background-image: url("https://elfrikiamv.com/media/img/wallpaper-v1-resize.webp");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 99%;
+  position: relative !important;
+  height: 100vh;
+  justify-content: center !important;
+  align-items: center !important;
+  animation: fadeIn 1s ease-in-out;
+}
+/* .mobile-desktop {
   background-color: var(--backgroundColorDark);
   background-image: url("https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-en-horizontal.webp");
   background-size: 90% auto;
@@ -196,6 +237,17 @@ body.dark-theme button {
   animation: fadeIn 1s ease-in-out;
 }
 
+.mobile-desktop .navbarMobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: 0px 0px 7px 8px var(--surface00dp);
+  padding: 13px 0;
+  z-index: 999;
+}
+*/
 .mobile-desktop .app-icon {
   width: 55px;
   height: 55px;
@@ -210,26 +262,13 @@ body.dark-theme button {
   font-size: 48px;
   color: var(--surface01dp);
 }
-
-.mobile-desktop .navbarMobile {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent;
-  box-shadow: 0px 0px 7px 8px var(--surface00dp);
-  padding: 13px 0;
-  /* box-sizing: border-box; */
-  z-index: 999;
-}
-
 .mobile-desktop .navbarMobile ul {
   list-style: none;
   padding: 0;
   margin: 0 7%;
   display: flex;
   justify-content: space-around;
-}
+} 
 
 /* mobile-desktop */
 

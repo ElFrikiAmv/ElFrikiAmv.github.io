@@ -3,82 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fixed Bottom Navbar with Chrome Icon</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Barra de Búsqueda - Estilo Android Desktop</title>
 <style>
   body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
   }
 
-  .navbar {
+  .search-bar {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    z-index: 999;
-  }
-
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    background-color: #F8F9FA;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-around;
-  }
-
-  .navbar li {
-    padding: 0 10px;
-  }
-
-  .navbar a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-
-  /* Estilos del icono de Chrome */
-  .app-icon {
-    width: 55px;
-    height: 55px;
-    border-radius: 7px;
-    background-color: var(--white87);
-    display: flex;
-    justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 7px 1px var(--white38);
+    z-index: 1000; /* Asegura que la barra esté sobre otros elementos */
   }
 
-  .chrome-icon i {
-    font-size: 24px;
-    color: var(--surface01dp);
+  .search-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+
+  .search-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-button:hover {
+    background-color: #0056b3;
   }
 </style>
 </head>
 <body>
-  <div class="content">
-    <!-- Aquí va el contenido de tu página -->
-  </div>
-  <nav class="navbar">
-    <ul>
-      <li>
-        <!-- Icono de Chrome de Font Awesome -->
-        <div class="app-icon">
-          <div class="chrome-icon">
-            <i class="fa fa-chrome"></i>
-          </div>
-        </div>
-        <!-- Fin del icono de Chrome -->
-      </li>
-    </ul>
-  </nav>
+
+<div class="search-bar">
+  <input type="text" class="search-input" placeholder="Buscar...">
+  <button class="search-button">Buscar</button>
+</div>
+
 </body>
 </html>
