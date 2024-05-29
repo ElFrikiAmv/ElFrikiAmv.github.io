@@ -42,9 +42,9 @@ Vue.config.devtools = true;
 // Obtén todos los elementos con la clase 'light'
 var lights = document.querySelectorAll(".light");
 
-if (screen.width > 768) {
-  Vue.component("card", {
-    template: `
+/* if (screen.width > 991) { */
+Vue.component("card", {
+  template: `
       <div class="card-wrap"
         @mousemove="handleMouseMove"
         @mouseenter="handleMouseEnter"
@@ -59,75 +59,82 @@ if (screen.width > 768) {
           </div>
         </div>
       </div>`,
-    data() {
+  data() {
+    return {
+      width: 0,
+      height: 0,
+      mouseX: 0,
+      mouseY: 0,
+      mouseLeaveDelay: null,
+    };
+  },
+  computed: {
+    mousePX() {
+      return this.mouseX / this.width;
+    },
+    mousePY() {
+      return this.mouseY / this.height;
+    },
+    cardStyle() {
+      const rX = this.mousePX * 10; // Reducido de 30 para una rotación más suave
+      //wea vertical de inclinacion
+      const rY = this.mousePY * -1; // Reducido de 30 para una rotación más suave
       return {
-        width: 0,
-        height: 0,
-        mouseX: 0,
-        mouseY: 0,
-        mouseLeaveDelay: null,
+        transform: `rotateY(${rX}deg) rotateX(${rY}deg)`,
       };
     },
-    computed: {
-      mousePX() {
-        return this.mouseX / this.width;
-      },
-      mousePY() {
-        return this.mouseY / this.height;
-      },
-      cardStyle() {
-        const rX = this.mousePX * 10; // Reducido de 30 para una rotación más suave
-        //wea vertical de inclinacion
-        const rY = this.mousePY * -1; // Reducido de 30 para una rotación más suave
-        return {
-          transform: `rotateY(${rX}deg) rotateX(${rY}deg)`,
-        };
-      },
-      cardBgTransform() {
-        const tX = this.mousePX * -13; // Reducido de -40 para una transición más suave
-        const tY = this.mousePY * -5; // Reducido de -40 para una transición más suave
-        return {
-          transform: `translateX(${tX}px) translateY(${tY}px)`,
-        };
-      },
-      cardBgImage() {
-        return {
-          backgroundImage: `url(${this.dataImage})`,
-        };
-      },
+    cardBgTransform() {
+      const tX = this.mousePX * -13; // Reducido de -40 para una transición más suave
+      const tY = this.mousePY * -5; // Reducido de -40 para una transición más suave
+      return {
+        transform: `translateX(${tX}px) translateY(${tY}px)`,
+      };
     },
-    methods: {
-      handleMouseMove(e) {
-        this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;
-        this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2;
-      },
-      handleMouseEnter() {
-        clearTimeout(this.mouseLeaveDelay);
-      },
-      handleMouseLeave() {
-        this.mouseLeaveDelay = setTimeout(() => {
-          this.mouseX = 0;
-          this.mouseY = 0;
-        }, 1000);
-      },
+    cardBgImage() {
+      return {
+        backgroundImage: `url(${this.dataImage})`,
+      };
     },
-    mounted() {
-      // Calcular las dimensiones de la tarjeta en la función montada
-      this.width = this.$refs.card.offsetWidth;
-      this.height = this.$refs.card.offsetHeight;
+  },
+  methods: {
+    handleMouseMove(e) {
+      this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;
+      this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2;
     },
-    props: ["dataImage"],
-  });
+    handleMouseEnter() {
+      clearTimeout(this.mouseLeaveDelay);
+    },
+    handleMouseLeave() {
+      this.mouseLeaveDelay = setTimeout(() => {
+        this.mouseX = 0;
+        this.mouseY = 0;
+      }, 1000);
+    },
+  },
+  mounted() {
+    // Calcular las dimensiones de la tarjeta en la función montada
+    this.width = this.$refs.card.offsetWidth;
+    this.height = this.$refs.card.offsetHeight;
+  },
+  props: ["dataImage"],
+});
 
-  const app = new Vue({
-    el: "#app",
-  });
-} else {
+const app = new Vue({
+  el: "#app",
+});
+
+if (screen.width <= 991) {
   // Itera sobre cada elemento y reemplaza 'light' con 'light22'
   lights.forEach(function (light) {
     light.className = light.className.replace(/\blight\b/g, "light22");
   });
 }
+/* } else {
+  // Itera sobre cada elemento y reemplaza 'light' con 'light22'
+  lights.forEach(function (light) {
+    light.className = light.className.replace(/\blight\b/g, "light22");
+  });
+} */
 
 //buttons
 

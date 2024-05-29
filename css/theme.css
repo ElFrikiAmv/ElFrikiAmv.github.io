@@ -122,7 +122,7 @@ body.light-theme .mobile-navbar-card {
 
 /* light theme  */
 
-/* A dark theme is a low-light UI that displays mostly dark surfaces. */
+/* colors of mobile design. */
 
 @media (max-width: 991px) {
   body.dark-theme .cardSimpleTitleSkills:hover,
@@ -149,7 +149,7 @@ body.light-theme .mobile-navbar-card {
   }
 }
 
-/* A dark theme is a low-light UI that displays mostly dark surfaces. */
+/* colors of mobile design.. */
 
 /* toolbar settings*/
 body.light-theme .fixed-toolbar .dropdown-menu {
