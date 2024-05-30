@@ -999,6 +999,9 @@ body.dark-theme button {
 
 /* card */
 
+.projects-section #showMoreTxtA {
+  padding-bottom: 22px;
+}
 .projectsAndroid-container {
   display: grid;
   grid-template-columns: repeat(2, 182px);
@@ -1006,7 +1009,7 @@ body.dark-theme button {
   gap: 16px;
   padding: 16px;
   justify-content: center;
-  margin-bottom: 7%;
+  /* margin-bottom: 7%; */
 }
 #cardPA-2 {
   background-color: transparent;
