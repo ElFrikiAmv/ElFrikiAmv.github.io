@@ -427,7 +427,7 @@ body.dark-theme button {
 }
 .welcome-section #welcomeContactIcon:hover {
   color: var(--accentColor);
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 @media (max-width: 768px) {
   .welcome-section p,
@@ -559,7 +559,7 @@ body.dark-theme button {
   padding: 0 0;
 }
 .cardSimpleTitleSkills:hover {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
   &:hover {
     .titleMySkills {
       opacity: 0;
@@ -574,9 +574,9 @@ body.dark-theme button {
     }
   }
 }
-.aboutContainer .card:hover {
+/* .aboutContainer .card:hover {
   transform: scale(1.02);
-}
+} */
 .aboutContainer .col {
   padding: 0 10px;
 }
@@ -999,9 +999,9 @@ body.dark-theme button {
 
 /* card */
 
-.projects-section #showMoreTxtA {
-  padding-bottom: 22px;
-}
+/* .projects-section #showMoreTxt {
+  margin-top: .5rem;
+} */
 .projectsAndroid-container {
   display: grid;
   grid-template-columns: repeat(2, 182px);
@@ -1009,7 +1009,7 @@ body.dark-theme button {
   gap: 16px;
   padding: 16px;
   justify-content: center;
-  /* margin-bottom: 7%; */
+  margin-bottom: 6%;
 }
 #cardPA-2 {
   background-color: transparent;

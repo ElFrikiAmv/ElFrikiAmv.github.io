@@ -1,0 +1,99 @@
+:root {
+  --backgroundColorDark: #171717;
+  --backgroundColorLight: #ffffff;
+
+  /* <!--color dark--> */
+
+  --white87: rgba(255, 255, 255, 0.87);
+  --white60: rgba(255, 255, 255, 0.6);
+  --white38: rgba(255, 255, 255, 0.38);
+
+  --surface00dp: #121212;
+  --surface01dp: #1e1e1e;
+  --surface02dp: #212121;
+  --surface03dp: #242424;
+  --surface04dp: #272727;
+  --surface06dp: #2c2c2c;
+  --surface08dp: #2d2d2d;
+  --surface12dp: #323232;
+  --surface16dp: #353535;
+  --surface24dp: #373737;
+
+  --white: #ffffff;
+  --dark: #000000;
+
+  --glowColor: rgba(255, 255, 255, 0.782);
+  --glowColorLight: rgba(0, 0, 0, 0.782);
+  /* --accentColor: #61191dcb; */
+  --accentColor: #61191d;
+
+  --accentColorText: rgba(255, 255, 255, 0.87);
+  /*   --accentColorTextOpacity: #d32f2fb2; */
+  /* --accentColorText: #61191D; */
+}
+
+.myProjectsContainer .card {
+  background-color: transparent !important;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset var(--white87) 0 0 0 1px,
+    inset transparent 0 0 0 6px;
+  transition: transform 0.3s ease-in-out;
+  padding: 1% 3%;
+  color: var(--white87);
+  display: grid;
+  align-items: center;
+}
+.myProjectsContainer .card:hover {
+  box-shadow: var(--accentColor) 0 0px 22px 0, inset var(--white87) 0 0 0 1px,
+    inset transparent 0 0 0 6px;
+}
+.containerMyProjects .col {
+  padding-bottom: 1rem;
+}
+
+.containerMyProjects p {
+  margin: 0;
+}
+.containerMyProjects h1 {
+  font-size: large;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: var(--accentColorText);
+  text-shadow: var(--surface12dp) 0 0px 3px;
+}
+/* .containerMyProjects p {
+  color: var(--white87);
+} */
+.containerMyProjects .card {
+  position: relative;
+}
+.containerMyProjects .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 3%;
+  opacity: 50%;
+  /* filter: saturate(50%); */
+}
+.containerMyProjects .card-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* button github in cards */
+.containerMyProjects a i.fa-github:hover {
+  color: var(--accentColor);
+  /* transform: scale(1.05); */
+}
+.containerMyProjects a i.fa-github {
+  font-size: 2rem;
+  /* cursor: pointer; */
+  text-decoration: none;
+  color: var(--white87);
+  transition: transform 0.3s ease-in-out;
+  margin: 0.1rem 0 0.2rem 0;
+}
+/* button github in cards */
