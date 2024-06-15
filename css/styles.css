@@ -25,7 +25,7 @@
   --glowColor: rgba(255, 255, 255, 0.782);
   --glowColorLight: rgba(0, 0, 0, 0.782);
   /* --accentColor: #61191dcb; */
-  --accentColor: #61191d;
+  --accentColor: #552177e7;
 
   --accentColorText: rgba(255, 255, 255, 0.87);
   /*   --accentColorTextOpacity: #d32f2fb2; */
@@ -385,13 +385,15 @@ body.dark-theme button {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("https://elfrikiamv.com/media/img/yomero-OP.jpg");
+  background-image: url("/img/test/elfrikiamvImg.jpg");
+  /* background-image: url("https://elfrikiamv.com/media/img/yomero-OP.jpg"); */
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: left bottom;
   background-size: auto 100%;
   opacity: 99%;
   display: flex;
   animation: fadeIn 1s ease-in-out;
+  margin-left: 7%;
 }
 @keyframes fadeIn {
   from {
@@ -401,15 +403,36 @@ body.dark-theme button {
     opacity: 1;
   }
 }
-
+.welcome-section p {
+  margin-bottom: 0 !important;
+}
 .welcome-section p,
 .welcome-section button,
 .welcome-section img {
-  margin-left: -50%;
+  margin-left: 33% !important;
 }
-#subText {
-  margin-top: 2%;
-  font-size: larger;
+.welcome-section #elfrikiamvLogoText {
+  font-size: 6.5rem;
+  font-family: "Covered By Your Grace", cursive;
+}
+.welcome-section #andDevLogoText {
+  font-size: 2.5rem;
+  margin-top: -2%;
+  color: var(--accentColor);
+}
+.welcome-section #WelcomeText .highlight {
+  color: var(--accentColor);
+  font-family: "Covered By Your Grace", cursive;
+  font-size: xx-large;
+}
+.welcome-section #WelcomeText {
+  margin-bottom: 1%;
+  font-size: x-large;
+  color: var(--white60);
+}
+.welcome-section #logoName-icon{
+  height: 182px;
+  width: auto;
 }
 .welcome-section #welcomeContact {
   display: flex;
