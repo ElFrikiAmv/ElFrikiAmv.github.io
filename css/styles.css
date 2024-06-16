@@ -430,7 +430,7 @@ body.dark-theme button {
   font-size: x-large;
   color: var(--white60);
 }
-.welcome-section #logoName-icon{
+.welcome-section #logoName-icon {
   height: 182px;
   width: auto;
 }
@@ -1021,10 +1021,16 @@ body.dark-theme button {
 /* card animated xd */
 
 /* card */
-
-/* .projects-section #showMoreTxt {
-  margin-top: .5rem;
-} */
+/* View all projects. link projects-section */
+.projects-section .custom-link {
+  color: var(--accentColor);
+  text-decoration: none;
+}
+.projects-section .custom-link:hover {
+  color: var(--white87);
+  text-decoration: underline;
+}
+/* View all projects. link projects-section */
 .projectsAndroid-container {
   display: grid;
   grid-template-columns: repeat(2, 182px);
