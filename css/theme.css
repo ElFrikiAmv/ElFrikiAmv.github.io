@@ -60,7 +60,10 @@ body.light-theme .welcome-section {
 body.light-theme .welcome-section p,
 body.light-theme .welcome-section button,
 body.light-theme .welcome-section img {
-  margin-left: 0%;
+  margin-left: -6% !important;
+}
+body.light-theme .welcome-section p {
+  color: var(--surface06dp) !important;
 }
 body.light-theme .projects-section .card,
 body.light-theme .custom-card-large .card,

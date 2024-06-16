@@ -6,19 +6,19 @@ function toggleTheme() {
   // Get the theme button element
   var body = document.body;
   var themeIcon = document.querySelectorAll(".theme-icon");
-  var logoNameIcon = document.getElementById("logoName-icon");
+  /* var logoNameIcon = document.getElementById("logoName-icon"); */
   var logoIcon = document.querySelectorAll(".logo-icon");
   var navbar = document.querySelector(".navbar");
 
   // Toggle the current theme
   if (currentTheme === "dark") {
-    if (currentLanguage === "en") {
+    /* if (currentLanguage === "en") {
       logoNameIcon.src =
         "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-dark-en.webp";
     } else {
       logoNameIcon.src =
         "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-dark-es.webp";
-    }
+    } */
     //update content
     currentTheme = "light";
     /* themeIcon.src = "https://elfrikiamv.com/media/img/light-mode.webp"; */
@@ -36,13 +36,13 @@ function toggleTheme() {
     body.classList.toggle("light-theme");
     body.classList.toggle("dark-theme");
   } else {
-    if (currentLanguage === "es") {
+    /* if (currentLanguage === "es") {
       logoNameIcon.src =
         "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-es.webp";
     } else {
       logoNameIcon.src =
         "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-en.webp";
-    }
+    } */
     //update content
     currentTheme = "dark";
     /* themeIcon.src = "https://elfrikiamv.com/media/img/night-mode.webp"; */

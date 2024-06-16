@@ -9,13 +9,13 @@ function toggleLanguage() {
   // Toggle the current language
   if (currentLanguage === "en") {
     currentLanguage = "es";
-    if (currentTheme == "dark") {
+    /* if (currentTheme == "dark") {
       logoNameIcon.src =
         "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-es.webp";
     } else {
       logoNameIcon.src =
         "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-dark-es.webp";
-    }
+    } */
 
     // Actualizar contenido en español
     document.getElementById("homeTextNav").textContent = "Inicio";
@@ -30,8 +30,10 @@ function toggleLanguage() {
     });
 
     // Bienvenida
-    document.getElementById("WelcomeText").textContent =
-      "Creo apps geniales para Android.";
+    document.getElementById("WelcomeText").innerHTML =
+      'Solamente <span class="highlight">hago aplicaciones</span> chidas para dispositivos <span class="highlight">Android</span>.';
+    /* document.getElementById("WelcomeText").textContent =
+      "Solamente hago aplicaciones chidas para dispositivos Android."; */
     document.getElementById("AboutMeText").textContent = "Sobre mí.";
     document.getElementById("AboutMeText00").textContent =
       "Yo mero, un desarrollador Android mexicano.";
@@ -183,13 +185,13 @@ function toggleLanguage() {
     });
   } else {
     currentLanguage = "en";
-    if (currentTheme == "light") {
+    /* if (currentTheme == "light") {
       logoNameIcon.src =
         "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-dark-en.webp";
     } else {
       logoNameIcon.src =
         "https://elfrikiamv.com/media/img/logo-elfrikiamv-dev-light-en.webp";
-    }
+    } */
 
     // Actualizar contenido en inglés
     document.getElementById("homeTextNav").textContent = "Home";
@@ -204,8 +206,11 @@ function toggleLanguage() {
     });
 
     //welcome
-    document.getElementById("WelcomeText").textContent =
-      "I only make cool apps for Android devices.";
+    document.getElementById("WelcomeText").innerHTML =
+      'I only <span class="highlight">make</span> cool <span class="highlight">apps</span> for <span class="highlight">Android</span> devices.';
+
+    /* document.getElementById("WelcomeText").textContent =
+      "I only make cool apps for Android devices."; */
     document.getElementById("AboutMeText").textContent = "About me.";
     document.getElementById("AboutMeText00").textContent = "I just.";
     document.getElementById("AboutMeText01").textContent =

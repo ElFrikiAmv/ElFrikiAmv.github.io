@@ -25,7 +25,7 @@
   --glowColor: rgba(255, 255, 255, 0.782);
   --glowColorLight: rgba(0, 0, 0, 0.782);
   /* --accentColor: #61191dcb; */
-  --accentColor: #552177e7;
+  --accentColor: #7b2bb1e7;
 
   --accentColorText: rgba(255, 255, 255, 0.87);
   /*   --accentColorTextOpacity: #d32f2fb2; */
@@ -385,7 +385,7 @@ body.dark-theme button {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/test/elfrikiamvImg.jpg");
+  background-image: url("/img/test/morados8-1572-copy.jpg");
   /* background-image: url("https://elfrikiamv.com/media/img/yomero-OP.jpg"); */
   background-repeat: no-repeat;
   background-position: left bottom;
