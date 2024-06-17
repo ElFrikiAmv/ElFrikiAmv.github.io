@@ -154,10 +154,13 @@ function toggleLanguage() {
       "Utiliza tu smartphone como punto de venta.";
     document.getElementById("superCouponsTxt").textContent =
       "Descubre cupones con Super_coupons.";
-    document.getElementsByClassName("title-winProjects").textContent =
-      "Proyectos Windows.";
+    var elements = document.querySelectorAll(".title-winProjects");
+
+    elements.forEach(function (element) {
+      element.textContent = "Proyectos para Windows.";
+    });
     document.getElementById("windowsProjectsTxt").textContent =
-      "Proyectos Windows.";
+      "Proyectos para Windows.";
     document.getElementById("launchModTxt").textContent =
       "Mejora tu experiencia en Minecraft.";
     document.getElementById("projectBackupTxt").textContent =
@@ -330,8 +333,11 @@ function toggleLanguage() {
       "Use your smartphone as a point of sale with pointSale.";
     document.getElementById("superCouponsTxt").textContent =
       "Discover amazing coupons with Super_coupons.";
-    document.getElementsByClassName("title-winProjects").textContent =
-      "Windows projects.";
+    var elements = document.querySelectorAll(".title-winProjects");
+
+    elements.forEach(function (element) {
+      element.textContent = "Windows projects.";
+    });
     document.getElementById("windowsProjectsTxt").textContent =
       "Windows projects.";
     document.getElementById("launchModTxt").textContent =

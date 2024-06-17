@@ -452,17 +452,24 @@ body.dark-theme button {
   color: var(--accentColor);
   /* transform: scale(1.05); */
 }
-@media (max-width: 768px) {
+@media (max-width: 884px) {
+  .welcome-section,
   .welcome-section p,
   .welcome-section button,
   .welcome-section img {
-    margin-left: 0%;
+    margin-left: 0% !important;
   }
 }
-@media (max-width: 569px) {
+@media (max-width: 884px) {
   .welcome-section {
-    background-image: url("https://elfrikiamv.com/media/img/yomero-bg-OP.jpg");
+    background-image: url("/img/test/morados8-1572-mobile-copy.jpg");
     background-position: center center;
+    background-size: 100% auto;
+  }
+}
+@media (max-width: 500px) {
+  .welcome-section {
+    background-size: auto 100%;
   }
 }
 @media (max-height: 500px) {
@@ -489,11 +496,15 @@ body.dark-theme button {
 }
 #simpleTitle,
 .simpleTitle {
+  font-family: "Covered By Your Grace", cursive;
   position: relative;
+  font-size: x-large;
+  color: var(--accentColorText);
+  /* position: relative;
   font-size: larger;
   color: var(--accentColorText);
   text-shadow: var(--accentColor) 0 3px 3px;
-  z-index: 1;
+  z-index: 1; */
 }
 .aboutContainer {
   margin-top: 1%;
