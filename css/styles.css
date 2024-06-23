@@ -1019,7 +1019,6 @@ body.dark-theme button {
 /* button github in cards */
 .projects-section i.fa:hover {
   color: var(--accentColor);
-  /* transform: scale(1.05); */
 }
 .projects-section i.fa {
   font-size: 2rem;
