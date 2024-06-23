@@ -30,7 +30,7 @@ body.light-theme button {
 body.light-theme #simpleTitle,
 body.light-theme .simpleTitle {
   color: var(--surface01dp);
-  text-shadow: var(--accentColor) 0 3px 3px;
+  /* text-shadow: var(--accentColor) 0 3px 3px; */
 }
 body.light-theme .aboutContainer .fst-italic {
   color: var(--surface06dp);

@@ -385,8 +385,7 @@ body.dark-theme button {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/test/morados8-1572-copy.jpg");
-  /* background-image: url("https://elfrikiamv.com/media/img/yomero-OP.jpg"); */
+  background-image: url("https://elfrikiamv.com/media/img/elfrikiamvImg.jpg");
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: auto 100%;
@@ -462,7 +461,7 @@ body.dark-theme button {
 }
 @media (max-width: 884px) {
   .welcome-section {
-    background-image: url("/img/test/morados8-1572-mobile-copy.jpg");
+    background-image: url("https://elfrikiamv.com/media/img/elfrikiamvImgMobile.jpg");
     background-position: center center;
     background-size: 100% auto;
   }
@@ -500,6 +499,8 @@ body.dark-theme button {
   position: relative;
   font-size: x-large;
   color: var(--accentColorText);
+  z-index: 1;
+  /* text-shadow: var(--accentColor) 0 3px 3px; */
   /* position: relative;
   font-size: larger;
   color: var(--accentColorText);
@@ -1003,12 +1004,34 @@ body.dark-theme button {
   margin: 0;
   transition: opacity 0.5s;
 }
+/* .projects-section .card .fa, */
 .projects-section .card .txtAboutProject p {
   opacity: 0;
   transition: opacity 0.5s;
   padding: 0px 5px;
-  padding-bottom: 13px;
+  padding-top: 13px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
+/* button github in cards */
+.projects-section i.fa:hover {
+  color: var(--accentColor);
+  /* transform: scale(1.05); */
+}
+.projects-section i.fa {
+  font-size: 2rem;
+  /* cursor: pointer; */
+  text-decoration: none;
+  color: var(--white87);
+  transition: transform 0.3s ease-in-out;
+  margin: 0.1rem 0 0.2rem 0;
+  cursor: pointer;
+}
+/* button github in cards */
+.projects-section .card:hover .fa,
 .projects-section .card:hover .txtAboutProject p {
   opacity: 1;
 }
@@ -1032,16 +1055,22 @@ body.dark-theme button {
 /* card animated xd */
 
 /* card */
-/* View all projects. link projects-section */
+/* View all projects link projects-section */
 .projects-section .custom-link {
   color: var(--accentColor);
   text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
 }
 .projects-section .custom-link:hover {
   color: var(--white87);
   text-decoration: underline;
 }
-/* View all projects. link projects-section */
+.projects-section .custom-link:focus {
+  outline: none;
+  text-decoration: underline;
+  color: var(--white87);
+}
+/* View all projects link projects-section */
 .projectsAndroid-container {
   display: grid;
   grid-template-columns: repeat(2, 182px);
@@ -1247,11 +1276,11 @@ body.dark-theme button {
   opacity: 0;
   transition: opacity 0.4s;
 }
-.contactCards h1 {
+.contactCards .simpleTitle {
   margin: 3% 0;
-  font-size: large;
+  /* font-size: large;
   font-weight: 700;
-  color: var(--accentColorText);
+  color: var(--accentColorText); */
 }
 .contactCards {
   padding: 0 54px;

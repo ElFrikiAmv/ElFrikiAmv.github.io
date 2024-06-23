@@ -236,7 +236,7 @@ function toggleLanguage() {
       "Programming Technician from the General Directorate of Industrial Technological Education (DGETI), México.";
 
     //skills
-    document.getElementById("mySkillsText").textContent = "My skills.";
+    document.getElementById("mySkillsText").textContent = "My Superpowers.";
     document.getElementById("otherSkillsTxt").textContent = "My other skills:";
     document.getElementById("designTxt").textContent = "Design.";
 
