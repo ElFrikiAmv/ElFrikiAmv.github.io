@@ -60,7 +60,7 @@ body.light-theme .welcome-section {
 body.light-theme .welcome-section p,
 body.light-theme .welcome-section button,
 body.light-theme .welcome-section img {
-  margin-left: -6% !important;
+  margin-left: 0% !important;
 }
 body.light-theme .welcome-section p {
   color: var(--surface06dp) !important;
@@ -84,6 +84,7 @@ body.light-theme .contact-section .card {
 body.light-theme .navbar p:hover,
 body.light-theme .custom-card .card-info,
 body.light-theme .custom-card-large .card-info,
+/* body.light-theme .projects-section .card i, */
 body.light-theme .projects-section .card p,
 body.light-theme .contact-section .card h1,
 body.light-theme .containerSkillsMobile p,

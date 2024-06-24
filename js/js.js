@@ -168,6 +168,12 @@ function gitHubElfrikiamvWeb() {
 function gitHubShopWp() {
   window.open("https://github.com/elfrikiamv/shop_wp", "_blank");
 }
+function webElfrikiamvWeb() {
+  window.open("https://elfrikiamv.github.io/", "_blank");
+}
+function webShopWp() {
+  window.open("https://elfrikiamv.com/shop-wp/", "_blank");
+}
 function gitHubElfrikiamvFigma() {
   window.open(
     "https://www.figma.com/file/fBtLXtJn8l194UhCD2ognI/elfrikiamv.tech?type=design&node-id=143%3A94&mode=design&t=joqUA7fXX6oTDwfr-1",

@@ -43,10 +43,18 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link
+    <!-- old Font Awesome Kit v4 -->
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> -->
+    <!-- old Font Awesome Kit -->
+    <!-- Font Awesome Kit v6 -->
+    <script
+      src="https://kit.fontawesome.com/47afa3763c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome Kit -->
     <!-- wea de animacion al bajar aparecen los elementos -->
     <link
       rel="stylesheet"
@@ -177,7 +185,7 @@
         <div class="container text-start">
           <div class="row row-cols-3 align-items-center">
             <div class="col-auto" id="btnBack" onclick="toBack()">
-              <div class="fa fa-angle-left"></div>
+              <i class="fa-solid fa-angle-left"></i>
             </div>
             <div class="col-auto" id="dotcom">
               <p>elfrikiamv.com</p>
@@ -185,7 +193,7 @@
             <div class="col-auto ms-auto" id="btnSettings">
               <div class="dropdown">
                 <button
-                  class="fa fa-cog btn btn-secondary"
+                  class="fa-solid fa-gear btn btn-secondary"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -241,25 +249,29 @@
         <div class="container text-center">
           <div class="row row-cols-4">
             <div class="col">
-              <i class="fa fa-home" aria-hidden="true" onclick="goToHome()"></i>
+              <i
+                class="fa-solid fa-house"
+                aria-hidden="true"
+                onclick="goToHome()"
+              ></i>
             </div>
             <div class="col">
               <i
-                class="fa fa-folder"
+                class="fa-solid fa-folder"
                 aria-hidden="true"
                 onclick="goToPortfolio()"
               ></i>
             </div>
             <div class="col">
               <i
-                class="fa fa-user"
+                class="fa-solid fa-user"
                 aria-hidden="true"
                 onclick="goToAboutMe()"
               ></i>
             </div>
             <div class="col">
               <i
-                class="fa fa-envelope"
+                class="fa-solid fa-envelope"
                 aria-hidden="true"
                 onclick="goToContactMe()"
               ></i>
@@ -313,12 +325,12 @@
                   CV
                 </button>
                 <i
-                  class="fa fa-linkedin-square"
+                  class="fa-brands fa-linkedin"
                   onclick="LinkedInGo()"
                   id="welcomeContactIcon"
                 ></i>
                 <i
-                  class="fa fa-github"
+                  class="fa-brands fa-github"
                   onclick="GithubGo()"
                   id="welcomeContactIcon"
                 ></i>
@@ -368,14 +380,16 @@
                               <img
                                 src="https://elfrikiamv.com/media/img/logo-super-pointSale.webp"
                               />
-                              <p>Super_pointSale.</p>
+                              <p class="titleCardProject">Super_pointSale.</p>
                               <div class="txtAboutProject">
                                 <p id="pointSaleTxt">
                                   Use your smartphone as a point of sale with
                                   pointSale.
+                                </p>
+                                <p>
                                   <a>
                                     <i
-                                      class="fa fa-github"
+                                      class="fa-brands fa-github"
                                       onclick="gitHubSuperPointSale()"
                                     ></i>
                                   </a>
@@ -387,14 +401,16 @@
                               <img
                                 src="https://elfrikiamv.com/media/img/logo-student-folder.webp"
                               />
-                              <p>Student_folder.</p>
+                              <p class="titleCardProject">Student_folder.</p>
                               <div class="txtAboutProject">
                                 <p id="studentFolderTxt">
                                   Manage and backup your files with
                                   Student_folder.
+                                </p>
+                                <p>
                                   <a>
                                     <i
-                                      class="fa fa-github"
+                                      class="fa-brands fa-github"
                                       onclick="gitHubStudentFolder()"
                                     ></i>
                                   </a>
@@ -405,13 +421,15 @@
                               <img
                                 src="https://elfrikiamv.com/media/img/logo-super-coupons.webp"
                               />
-                              <p>Super_coupons.</p>
+                              <p class="titleCardProject">Super_coupons.</p>
                               <div class="txtAboutProject">
                                 <p id="superCouponsTxt">
                                   Discover amazing coupons with Super_coupons.
+                                </p>
+                                <p>
                                   <a>
                                     <i
-                                      class="fa fa-github"
+                                      class="fa-brands fa-github"
                                       onclick="gitHubSuperCoupons()"
                                     ></i>
                                   </a>
@@ -444,13 +462,15 @@
                               <img
                                 src="https://elfrikiamv.com/media/img/logo-launch-mod.webp"
                               />
-                              <p>Launch_mod.</p>
+                              <p class="titleCardProject">Launch_mod.</p>
                               <div class="txtAboutProject">
                                 <p id="launchModTxt">
                                   Improve your MC experience with Launch_mod.
+                                </p>
+                                <p>
                                   <a>
                                     <i
-                                      class="fa fa-github"
+                                      class="fa-brands fa-github"
                                       onclick="gitHubLaunchMod()"
                                     ></i>
                                   </a>
@@ -462,13 +482,15 @@
                               <img
                                 src="https://elfrikiamv.com/media/img/logo-project-backup.webp"
                               />
-                              <p>Project_backup.</p>
+                              <p class="titleCardProject">Project_backup.</p>
                               <div class="txtAboutProject">
                                 <p id="projectBackupTxt">
                                   Safeguard your data with Project_backup.
+                                </p>
+                                <p>
                                   <a>
                                     <i
-                                      class="fa fa-github"
+                                      class="fa-brands fa-github"
                                       onclick="gitHubProjectBackup()"
                                     ></i>
                                   </a>
@@ -497,14 +519,20 @@
                                 class="logo-icon"
                                 src="https://elfrikiamv.com/media/img/elfrikiamv-logo.webp"
                               />
-                              <p>elfrikiamv.com.</p>
+                              <p class="titleCardProject">elfrikiamv.com.</p>
                               <div class="txtAboutProject">
                                 <p id="elfrikiamvWebTxt">
                                   Personal portfolio website, showcase your
                                   skills.
+                                </p>
+                                <p>
                                   <a>
                                     <i
-                                      class="fa fa-github"
+                                      class="fa-solid fa-globe"
+                                      onclick="webElfrikiamvWeb()"
+                                    ></i>
+                                    <i
+                                      class="fa-brands fa-github"
                                       onclick="gitHubElfrikiamvWeb()"
                                     ></i>
                                   </a>
@@ -515,14 +543,20 @@
                               <img
                                 src="https://elfrikiamv.com/media/img/logo-shop-wp.webp"
                               />
-                              <p>Shop_wp.</p>
+                              <p class="titleCardProject">Shop_wp.</p>
                               <div class="txtAboutProject">
                                 <p id="shopWpTxt">
                                   Send your shopping list via WhatsApp with
                                   Shop_wp.
+                                </p>
+                                <p>
                                   <a>
                                     <i
-                                      class="fa fa-github"
+                                      class="fa-solid fa-globe"
+                                      onclick="webShopWp()"
+                                    ></i>
+                                    <i
+                                      class="fa-brands fa-github"
                                       onclick="gitHubShopWp()"
                                     ></i>
                                   </a>
@@ -551,13 +585,15 @@
                                 class="logo-icon"
                                 src="https://elfrikiamv.com/media/img/elfrikiamv-logo.webp"
                               />
-                              <p>elfrikiamv.tech.</p>
+                              <p class="titleCardProject">elfrikiamv.tech.</p>
                               <div class="txtAboutProject">
                                 <p id="elfrikiamvFigmaTxt">
                                   Design for elfrikiamv.tech in Figma.
+                                </p>
+                                <p>
                                   <a>
                                     <i
-                                      class="fa fa-github"
+                                      class="fa-brands fa-figma"
                                       onclick="gitHubElfrikiamvFigma()"
                                     ></i>
                                   </a>
@@ -568,13 +604,15 @@
                               <img
                                 src="https://elfrikiamv.com/media/img/logo-student-folder.webp"
                               />
-                              <p>Student_folder.</p>
+                              <p class="titleCardProject">Student_folder.</p>
                               <div class="txtAboutProject">
                                 <p id="studentFolderFigmaTxt">
                                   Interface design for Student_folder in Figma.
+                                </p>
+                                <p>
                                   <a>
                                     <i
-                                      class="fa fa-github"
+                                      class="fa-brands fa-figma"
                                       onclick="gitHubStudentFolderFigma()"
                                     ></i>
                                   </a>
@@ -1303,7 +1341,7 @@
                 <li>
                   <div class="app-icon" onclick="toBackWeb()">
                     <div class="chrome-icon">
-                      <i class="fa fa-chrome"></i>
+                      <i class="fa-brands fa-chrome"></i>
                     </div>
                   </div>
                 </li>
@@ -1312,29 +1350,13 @@
           </div>
           <div class="col">
             <card>
-              <i class="fa fa-google" aria-hidden="true"></i>
-              <i class="fa fa-microphone ms-auto" aria-hidden="true"></i>
+              <i class="fa-brands fa-google" aria-hidden="true"></i>
+              <i class="fa-solid fa-microphone ms-auto" aria-hidden="true"></i>
             </card>
           </div>
         </div>
       </div>
-
-      <!-- <div class="navbarMobile">
-        <ul>
-          <li>
-
-            <div class="app-icon" onclick="toBackWeb()">
-              <div class="chrome-icon">
-                <i class="fa fa-chrome"></i>
-              </div>
-            </div>
-
-          </li>
-        </ul>
-      </div> -->
     </section>
     <!-- mobile-desktop -->
   </body>
-
-  <!--  -->
 </html>

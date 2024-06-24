@@ -318,22 +318,23 @@ body.dark-theme button {
   padding: 0;
 }
 .fixed-toolbar #btnSettings {
-  font-size: 24px;
+  font-size: 28px;
   margin: 0;
   padding: 0 17px;
+  margin-top: -2px;
 }
 .fixed-toolbar #btnBack {
-  font-size: 34px;
+  font-size: 24px;
   margin: 0;
-  padding: 0 17px;
+  padding: 3px 17px 0 17px;
 }
 #dotcom {
   margin: 0;
   padding: 0 3px;
 }
-.fixed-toolbar .fa {
+/* .fixed-toolbar .fa {
   padding: 0;
-}
+} */
 .fixed-toolbar button {
   --bs-btn-border-color: transparent !important;
   --bs-btn-hover-bg: transparent !important;
@@ -445,7 +446,7 @@ body.dark-theme button {
   font-size: 36px;
   margin-right: 12px;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition: color 0.2s, text-decoration 0.2s;
 }
 .welcome-section #welcomeContactIcon:hover {
   color: var(--accentColor);
@@ -958,14 +959,14 @@ body.dark-theme button {
 
 /* card animated xd */
 
-.projects-section .main-box {
+/* .projects-section .main-box {
   height: 500px;
   width: 400px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-}
+} */
 .projects-section .card {
   height: 400px;
   width: 300px;
@@ -1002,55 +1003,45 @@ body.dark-theme button {
   left: 0;
   right: 0;
   margin: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
 }
-/* .projects-section .card .fa, */
+.projects-section .card:hover .titleCardProject {
+  opacity: 0;
+}
 .projects-section .card .txtAboutProject p {
   opacity: 0;
-  transition: opacity 0.5s;
-  padding: 0px 5px;
-  padding-top: 13px;
-  text-align: center;
+  transition: opacity 0.4s;
+  padding: 2.5rem 5px 0 5px;
   display: flex;
+  text-align: center;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   height: 100%;
+  /* margin-top: -22px !important; */
 }
-/* button github in cards */
-.projects-section i.fa:hover {
-  color: var(--accentColor);
-}
-.projects-section i.fa {
-  font-size: 2rem;
-  /* cursor: pointer; */
-  text-decoration: none;
-  color: var(--white87);
-  transition: transform 0.3s ease-in-out;
-  margin: 0.1rem 0 0.2rem 0;
-  cursor: pointer;
-}
-/* button github in cards */
-.projects-section .card:hover .fa,
 .projects-section .card:hover .txtAboutProject p {
   opacity: 1;
 }
-.projects-section button {
-  margin-top: 0%;
-  opacity: 0;
-  transition: opacity 0.5s;
-  position: absolute;
-  white-space: nowrap;
-  padding: 13px 50px;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* button github in cards */
+.projects-section i.fa-solid:hover,
+.projects-section i.fa-brands:hover {
+  color: var(--accentColor);
 }
-.projects-section .card:hover button {
-  opacity: 1;
+.projects-section i.fa-solid,
+.projects-section i.fa-brands {
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0; */
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+  cursor: pointer;
+  margin: 5.1rem 0 1.5rem 0;
 }
-.projects-section .card:hover p {
-  opacity: 0;
-}
+/* button github in cards */
+
 /* card animated xd */
 
 /* card */
@@ -1172,7 +1163,20 @@ body.dark-theme button {
     height: 100%;
   }
 }
+@media (max-width: 500px) {
+  .projects-section .card .txtAboutProject p {
+    padding: 1.5rem 5px 0 5px;
+  }
+  .projects-section i.fa-solid,
+  .projects-section i.fa-brands {
+    margin: 4.1rem 0 1.5rem 0 !important;
+  }
+}
 @media (max-width: 622px) {
+  .projects-section i.fa-solid,
+  .projects-section i.fa-brands {
+    margin: 3.1rem 0 1.5rem 0;
+  }
   .projects-section img {
     height: 82px !important;
     width: auto;
